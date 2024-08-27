@@ -8,7 +8,7 @@ import ArrowCircleIconOne from "@/components/icons/arrow-circle-icon-one"
 import ArrowCircleIconTwo from "@/components/icons/arrow-circle-icon-two"
 
 const buttonVariants = cva(
-  "font-space text-white rounded-[14px] bg-primary-dark text-[1.25rem]/[1.75rem] flex items-center justify-center",
+  "font-space text-white rounded-[14px] bg-primary-dark text-outlaw flex items-center justify-center",
   {
     variants: {
       variant: {

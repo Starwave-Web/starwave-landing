@@ -18,8 +18,9 @@ export default function RootLayout({
   return (
       <html lang="en">
         <body className={space.className}>
-          <div className="h-[60px]"></div>
+          <div className="h-[60px]"/>
         <Navbar />
+        <div className="h-[70px]"/>
           {children}
         </body>
       </html>
