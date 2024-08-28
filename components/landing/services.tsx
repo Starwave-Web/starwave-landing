@@ -46,7 +46,7 @@ const Services = () => {
   return (
     <section className="w-full">
         <Header title="Szolgáltatásaink" description="Cégünknél számos szolgáltatást kínálunk, amelyek segítenek a vállalkozások online növekedésében és sikerében. Ezek a szolgáltatások a következőek:"/>
-        <div className="container mx-auto flex flex-wrap gap-10 mt-20">
+        <div className="container mx-auto flex flex-wrap gap-10 mt-20 mb-[100px]">
             {services.map((service, index) => <ServiceCard key={service.title[0] + service.title[1] + index} title={service.title} illustration={service.illustration} description={service.description} variant={service.variant}/>)}
         </div>
     </section>

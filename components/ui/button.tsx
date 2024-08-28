@@ -54,7 +54,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {variant === "icon" && (iconType === "dark" ? <ArrowCircleIconOne className="mr-[15px]" /> : <ArrowCircleIconTwo className="mr-[15px]" />)}
         {children}
-        {variant === "link" && <TopRightArrow fill="currentColor" className="ml-[15px]"/>}
+        {variant === "link" && <TopRightArrow className="ml-[15px] fill-primary-green"/>}
       </Comp>
     )
   }
