@@ -23,11 +23,11 @@ const researches = [
 
 const Researches = () => {
   return (
-    <section className="w-full">
+    <section className="w-full mb-[117px]">
       <div className="container mx-auto">
         <Header
           title="Tanulmányok"
-          description="Ismerd meg bizonyított digitális marketing módszereink valós alkalmazásait esettanulmányok segítségével"
+          description={"Ismerd meg bizonyított digitális marketing módszereink \nvalós alkalmazásait esettanulmányok segítségével"}
         />
         <div className="rounded-[45px] px-[60px] py-[70px] bg-primary-dark mt-[80px] flex">
           {researches.map((research, index) => (
