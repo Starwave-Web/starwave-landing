@@ -14,9 +14,9 @@ const CheckMarkIcon = (props: SVGProps<ElementRef<"svg">>) => {
       <path
         d="M9 21.7568L16.3333 28.9815L31 13.5"
         stroke="black"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

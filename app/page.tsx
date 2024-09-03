@@ -5,6 +5,7 @@ import PartnerLogos from "@/components/landing/partner-logos";
 import Prices from "@/components/landing/prices";
 import Researches from "@/components/landing/researches";
 import Services from "@/components/landing/services";
+import Testimonials from "@/components/landing/testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Researches/>
       <HowWeWork/>
       <Prices/>
+      <Testimonials/>
     </main>
   );
 }
