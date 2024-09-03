@@ -4,6 +4,7 @@ import TestimonialCard from "../ui/testimonial-card";
 import {
   Carousel,
   CarouselContent,
+  CarouselDots,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
@@ -62,7 +63,7 @@ const Testimonials = () => {
           >
             <CarouselContent className="">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem className="basis-[63%]" key={testimonial.name + index}>
+                <CarouselItem className="basis-1/2" key={testimonial.name + index}>
                   <TestimonialCard
                     name={testimonial.name}
                     occupation={testimonial.occupation}
@@ -71,6 +72,7 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
+            <CarouselDots/>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
