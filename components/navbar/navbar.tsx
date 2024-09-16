@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="h-[68px] sticky top-2">
+    <nav className="min-h-[68px] sticky top-0 py-4 z-[100] bg-white">
       <div className="container flex gap-[99px] items-center h-full mx-auto justify-between">
         <div>
           <StarwaveLogo />
