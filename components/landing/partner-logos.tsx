@@ -6,12 +6,20 @@ import BicycleServiceLogo from "@/components/icons/partner-icons/bicycle-service
 
 const PartnerLogos = () => {
   return (
-    <section className="w-full mt-[70px] mb-[138px]">
-      <div className="flex gap-44 mx-auto justify-center">
-        <PlumberLogo />
-        <ElectricianLogo />
-        <GardenerLogo />
-        <BicycleServiceLogo />
+    <section className="w-full mt-[41px] mb-[77.6px] md:mt-[70px] md:mb-[138px] px-5">
+      <div className="flex gap-20 min-[1605px]:gap-44 mx-auto justify-center flex-wrap">
+        <div>
+          <PlumberLogo />
+        </div>
+        <div>
+          <ElectricianLogo />
+        </div>
+        <div>
+          <GardenerLogo />
+        </div>
+        <div>
+          <BicycleServiceLogo />
+        </div>
       </div>
     </section>
   );

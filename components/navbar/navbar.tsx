@@ -6,12 +6,12 @@ import HamburgerMenu from "../icons/hamburger-menu";
 const Navbar = () => {
   return (
     <nav className="min-h-[68px] sticky top-0 py-4 z-[100] bg-white">
-      <div className="container flex gap-[99px] items-center h-full mx-auto justify-between">
+      <div className="container flex  items-center h-full mx-auto justify-between px-5">
         <div>
           <StarwaveLogo />
         </div>
         <div>
-          <ul className="gap-[40px] items-center hidden md:flex">
+          <ul className="gap-[40px] items-center hidden lg:flex">
             <li>
               <Link href="/">Szolgáltatások</Link>
             </li>
@@ -29,7 +29,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <HamburgerMenu/>
           </div>
       </div>
