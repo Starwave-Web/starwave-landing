@@ -112,7 +112,7 @@ const config = {
           {
             lineHeight: "24px",
             letterSpacing: "0%",
-            fontWeight: "500",
+            fontWeight: "400",
           },
         ],
       },

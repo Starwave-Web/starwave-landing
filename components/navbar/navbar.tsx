@@ -1,6 +1,7 @@
 import Link from "next/link";
 import StarwaveLogo from "@/components/icons/starwave-logo";
 import { Button } from "@/components/ui/button";
+import HamburgerMenu from "../icons/hamburger-menu";
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <StarwaveLogo />
         </div>
         <div>
-          <ul className="flex gap-[40px] items-center">
+          <ul className="gap-[40px] items-center hidden md:flex">
             <li>
               <Link href="/">Szolgáltatások</Link>
             </li>
@@ -28,6 +29,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <div className="md:hidden">
+          <HamburgerMenu/>
+          </div>
       </div>
     </nav>
   );

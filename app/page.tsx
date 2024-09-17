@@ -15,7 +15,7 @@ export default function Home() {
       <PartnerLogos/>
       <Services/>
       <CallToAction/>
-      <Researches/>
+      {/* <Researches/> */}
       <HowWeWork/>
       <Prices/>
       <Testimonials/>

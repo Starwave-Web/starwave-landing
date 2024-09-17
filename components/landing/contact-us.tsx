@@ -11,9 +11,9 @@ const ContactUs = () => {
           <div className="py-[70px] pl-[100px] h-full">
             <ContactForm />
           </div>
-          <div className="py-[62.5px] -right-[324px] relative">
+          {/* <div className="py-[62.5px] -right-[324px] relative">
             <ContactUsIllustartion />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

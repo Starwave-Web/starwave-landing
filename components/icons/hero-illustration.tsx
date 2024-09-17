@@ -4,8 +4,6 @@ const HeroIllustration = (props: SVGProps<ElementRef<"svg">>) => {
   return (
     <svg
     {...props}
-      width="601"
-      height="515"
       viewBox="0 0 601 515"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
