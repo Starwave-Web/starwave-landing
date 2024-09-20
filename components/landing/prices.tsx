@@ -1,5 +1,7 @@
 import Header from "@/components/ui/header";
 import PlanCard from "@/components/ui/plan-card";
+import Link from "next/link";
+import TopRightArrow from "../icons/top-right-arrow";
 
 const plans = [
   {
@@ -45,19 +47,29 @@ const plans = [
 
 const Prices = () => {
   return (
-    <section className="w-full mb-[208px]">
-        <div className="container mx-auto flex flex-col gap-20">
+    <section className="w-full mb-[76px] md:mb-[208px]">
+      <div className="container mx-auto flex flex-col gap-[35px] md:gap-20">
         <Header
-        title="Árak"
-        description={
-          "Válaszd ki ajánlataink közül azt amely legjobban\n támogatná vállalkozásod online fejlesztését."
-        }
-      />
-      <div className="flex gap-10">
-        {plans.map((plan) => <PlanCard key={plan.id} id={plan.id} name={plan.name} price={plan.price} featureList={plan.featureList} />)}
-      </div>
+          title="Árak"
+          description={
+            "Válaszd ki ajánlataink közül azt amely legjobban\n támogatná vállalkozásod online fejlesztését."
+          }
+        />
+        <div className="flex flex-col sm:flex-row gap-5 md:gap-10 px-5">
+          {plans.map((plan) => (
+            <PlanCard
+              key={plan.id}
+              id={plan.id}
+              name={plan.name}
+              price={plan.price}
+              featureList={plan.featureList}
+            />
+          ))}
         </div>
-      
+        <div className="container lg:hidden mt-[29px]">
+          <Link className="flex gap-[15px] items-center justify-center" href="mailto:udvardiendre@gmail.com"><h4 className="text-outlaw text-black">Egyedi ajánlatot kérek</h4><TopRightArrow className="fill-black w-[17.32px] h-[10px]"/></Link>
+        </div>
+      </div>
     </section>
   );
 };

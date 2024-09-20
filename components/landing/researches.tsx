@@ -2,6 +2,7 @@
 import Header from "../ui/header";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import ResearchesCarousel from "../ui/researches-carousel";
 
 const researches = [
   {
@@ -23,16 +24,17 @@ const researches = [
 
 const Researches = () => {
   return (
-    <section className="w-full mb-[117px]">
+    <section className="w-full mb-[45px] md:mb-[117px]">
       <div className="container mx-auto">
         <Header
           title="Tanulmányok"
           description={"Ismerd meg bizonyított digitális marketing módszereink \nvalós alkalmazásait esettanulmányok segítségével"}
         />
-        <div className="rounded-[45px] px-[60px] py-[70px] bg-primary-dark mt-[80px] flex">
+        <ResearchesCarousel researches={researches}/>
+        <div className="rounded-[45px] px-[60px] py-[70px] bg-primary-dark mt-[80px] hidden lg:flex mx-5">
           {researches.map((research, index) => (
-            <div key={research.link + index} className="flex">
-              <div className="flex flex-col gap-5 w-[286px]">
+            <div key={research.link + index} className="flex ">
+              <div className="flex flex-col justify-between gap-5 w-[210px] min-[1280px]:w-[286px]">
                 <p className="text-p text-white">{research.description}</p>
                 <Link href={research.link}>
                   <Button
@@ -48,7 +50,7 @@ const Researches = () => {
               )}
             </div>
           ))}
-        </div>
+        </div>  
       </div>
     </section>
   );

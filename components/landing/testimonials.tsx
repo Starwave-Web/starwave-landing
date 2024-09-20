@@ -72,9 +72,9 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselDots/>
+            {/* <CarouselDots/>
             <CarouselPrevious />
-            <CarouselNext />
+            <CarouselNext /> */}
           </Carousel>
         </div>
       </div>
