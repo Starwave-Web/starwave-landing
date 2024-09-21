@@ -46,24 +46,27 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="w-full mb-[140px]">
-      <div className="container flex flex-col gap-20 mx-auto">
+      <div className="container flex flex-col gap-10 md:gap-20 mx-auto">
         <Header
           title="Visszajelzések"
           description={
             "Ügyfeleink elégedettsége számunkra a legfontosabb,\n néhány visszajelzés az elmúlt időszakból:"
           }
         />
-        <div className="bg-primary-dark rounded-[45px] flex flex-col gap-40 min-h-[625px]">
+        <div className="bg-primary-dark rounded-[45px] flex flex-col gap-40 min-h-[625px] mx-5">
           <Carousel
             opts={{
-                startIndex: 2,
+              startIndex: 2,
               align: "center",
             }}
             className="w-full mx-auto my-auto"
           >
-            <CarouselContent className="">
+            <CarouselContent className="px-5">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem className="basis-1/2" key={testimonial.name + index}>
+                <CarouselItem
+                  className="md:basis-1/2"
+                  key={testimonial.name + index}
+                >
                   <TestimonialCard
                     name={testimonial.name}
                     occupation={testimonial.occupation}
@@ -72,9 +75,11 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {/* <CarouselDots/>
-            <CarouselPrevious />
-            <CarouselNext /> */}
+            <div>
+              <CarouselPrevious />
+              <CarouselDots />
+              <CarouselNext />
+            </div>
           </Carousel>
         </div>
       </div>

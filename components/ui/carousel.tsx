@@ -220,10 +220,6 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full",
-        orientation === "horizontal"
-          ? "-left-12 top-1/2 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollPrev}
@@ -249,10 +245,6 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 w-8 rounded-full",
-        orientation === "horizontal"
-          ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollNext}
@@ -292,8 +284,8 @@ const CarouselDots = React.forwardRef<
           key={index}
           onClick={() => onDotButtonClick(index)}
           className={cn(
-            "h-2 w-2 rounded-full bg-primitive-purple-pale-200 ",
-            index === selectedIndex && "h-3 w-3 bg-primitive-purple-pale-600",
+            "h-2 w-2 rounded-full bg-primary-grey ",
+            index === selectedIndex && "h-3 w-3 bg-primary-green",
             "embla__dot".concat(
               index === selectedIndex ? " embla__dot--selected" : ""
             )

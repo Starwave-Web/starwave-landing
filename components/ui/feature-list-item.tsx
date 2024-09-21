@@ -6,7 +6,7 @@ const FeatureListItem = ({featureElement}:{featureElement: {isIncluded: boolean,
   return (
     <div className="flex gap-[15px] items-center">
         <div>{featureElement.isIncluded ? <CheckMarkIcon className="h-[41px] w-[41px]"/> : <XIcon className="h-[41px] w-[41px]"/>}</div>
-        <p className="text-outlaw text-black">{featureElement.featureName}</p>
+        <p className="text-p-mobile md:text-outlaw text-black">{featureElement.featureName}</p>
     </div>
   )
 }
