@@ -64,19 +64,19 @@ const ContactForm = () => {
                 <RadioGroup
                   onValueChange={field.onChange}
                   defaultValue={field.value}
-                  className="flex flex-row"
+                  className="flex flex-row gap-[35px] justify-center sm:justify-start"
                 >
-                  <FormItem className="flex items-center space-x-3 space-y-0">
+                  <FormItem className="flex flex-col sm:flex-row items-center space-x-3 space-y-0 gap-[14px]">
                     <FormControl>
                       <RadioGroupItem value={SUBJECT.QUESTION} />
                     </FormControl>
-                    <FormLabel className="font-normal">Kérdésem van</FormLabel>
+                    <FormLabel className="font-normal text-p-mobile md:text-p">Kérdésem van</FormLabel>
                   </FormItem>
-                  <FormItem className="flex items-center space-x-3 space-y-0">
+                  <FormItem className="flex flex-col sm:flex-row items-center space-x-3 space-y-0 gap-[14px]">
                     <FormControl>
                       <RadioGroupItem value={SUBJECT.QUOTE} />
                     </FormControl>
-                    <FormLabel className="font-normal">
+                    <FormLabel className="font-normal text-p-mobile md:text-p">
                       Árajánlatot kérek
                     </FormLabel>
                   </FormItem>
@@ -91,9 +91,9 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Név</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Név</FormLabel>
               <FormControl>
-                <Input placeholder="Név" {...field} />
+                <Input className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]" placeholder="Név" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -104,9 +104,9 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Email</FormLabel>
               <FormControl>
-                <Input placeholder="Email" {...field} />
+                <Input className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]" placeholder="Email" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -117,15 +117,15 @@ const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Üzenet</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Üzenet</FormLabel>
               <FormControl>
-                <Textarea placeholder="Üzenet" {...field} />
+                <Textarea className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]" placeholder="Üzenet" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Küldés</Button>
+        <Button className="w-full rounded-[14px] h-[68px]" type="submit">Küldés</Button>
       </form>
     </Form>
   );

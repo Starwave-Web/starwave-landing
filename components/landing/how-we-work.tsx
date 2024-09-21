@@ -41,7 +41,7 @@ const HowWeWork = () => {
   return (
     <section className='w-full mb-[76px] md:mb-[140px]'>
         <div className='container flex flex-col gap-[35px] md:gap-20 mx-auto'>
-            <Header title='Hogyan dolgozunk?' description={'Az árajánlat elfogadása után a közös munka \naz alábbi lépések mentén zajlik:'}/>
+            <Header titleId='howwework' title='Hogyan dolgozunk?' description={'Az árajánlat elfogadása után a közös munka \naz alábbi lépések mentén zajlik:'}/>
             <div className='flex flex-col gap-5 md:gap-[30px] px-5'>
                 {workSteps.map((workStep) => <WorkStepCard key={workStep.stepNr} stepNr={workStep.stepNr} title={workStep.title} description={workStep.description}/>)}
             </div>

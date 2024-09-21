@@ -24,7 +24,7 @@ const WorkStepCard = ({
         )}
       >
         <div className="flex justify-between items-center w-full">
-          <div className="flex gap-[25px] items-center">
+          <div className="flex gap-[25px] items-center w-5/6">
             <h2 className="text-h3 md:text-h1 text-black">{stepNr}</h2>
             <h3 className="text-h4-mobile md:text-h3 text-black">{title}</h3>
           </div>

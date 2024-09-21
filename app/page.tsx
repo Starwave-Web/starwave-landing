@@ -1,5 +1,7 @@
+import Footer from "@/components/footer/footer";
 import CallToAction from "@/components/landing/call-to-action";
 import ContactUs from "@/components/landing/contact-us";
+import FAQ from "@/components/landing/faq";
 import Hero from "@/components/landing/hero";
 import HowWeWork from "@/components/landing/how-we-work";
 import PartnerLogos from "@/components/landing/partner-logos";
@@ -20,6 +22,8 @@ export default function Home() {
       <Prices/>
       <Testimonials/>
       <ContactUs/>
+      <FAQ/>
+      <Footer/>
     </main>
   );
 }

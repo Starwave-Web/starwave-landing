@@ -75,6 +75,22 @@ const config = {
             fontWeight: "400",
           },
         ],
+        "form-label": [
+          "16px",
+          {
+            lineHeight: "28px",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
+        "form-input": [
+          "18px",
+          {
+            lineHeight: "23px",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
         "h1-mobile": [
           "43px",
           {
@@ -111,6 +127,14 @@ const config = {
           "16px",
           {
             lineHeight: "24px",
+            letterSpacing: "0%",
+            fontWeight: "400",
+          },
+        ],
+        "form-label-mobile": [
+          "14px",
+          {
+            lineHeight: "18px",
             letterSpacing: "0%",
             fontWeight: "400",
           },

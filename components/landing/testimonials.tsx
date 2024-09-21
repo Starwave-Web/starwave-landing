@@ -45,7 +45,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full mb-[140px]">
+    <section className="w-full mb-[60px] md:mb-[140px]">
       <div className="container flex flex-col gap-10 md:gap-20 mx-auto">
         <Header
           title="Visszajelzések"
@@ -75,7 +75,7 @@ const Testimonials = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div>
+            <div className="flex items-center justify-between px-5 mt-20">
               <CarouselPrevious />
               <CarouselDots />
               <CarouselNext />
