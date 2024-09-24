@@ -1,6 +1,6 @@
 import Header from "@/components/ui/header";
 
-import Illustration from "@/assets/images/illustration.png";
+import Magnifier from "@/assets/images/magnifier.png";
 import Illustration2 from "@/assets/images/illustration2.png";
 import Illustration3 from "@/assets/images/illustration3.png";
 import Illustration4 from "@/assets/images/illustration4.png";
@@ -19,7 +19,7 @@ const services: ServiceType[] = [
   {
     id: 1,
     title: ["CRO vezérelt", "Web Design"],
-    illustration: Illustration,
+    illustration: Magnifier,
     description:
       "A CRO vezérelt web design célja, hogy maximalizálja a weboldal teljesítményét és a konverziókat. \n\nNem csupán esztétikai szempontok alapján tervezünk, hanem adatvezérelt döntésekkel optimalizáljuk az oldal minden elemét. \n\nAz oldal struktúráját, a CTA gombokat és a navigációt \nmind úgy alakítjuk ki, hogy növelje a felhasználói élményt és \na konverziós arányt.",
     variant: "grey",
