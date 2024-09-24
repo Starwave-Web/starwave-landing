@@ -1,9 +1,9 @@
 import Header from "@/components/ui/header";
 
-import Illustration from "@/assets/images/Illustration.png";
-import Illustration2 from "@/assets/images/Illustration2.png";
-import Illustration3 from "@/assets/images/Illustration3.png";
-import Illustration4 from "@/assets/images/Illustration4.png";
+import Illustration from "@/assets/images/illustration.png";
+import Illustration2 from "@/assets/images/illustration2.png";
+import Illustration3 from "@/assets/images/illustration3.png";
+import Illustration4 from "@/assets/images/illustration4.png";
 import ServiceCard, { type ServiceCardVariants } from "../ui/service-card";
 import { type StaticImageData } from "next/image";
 
