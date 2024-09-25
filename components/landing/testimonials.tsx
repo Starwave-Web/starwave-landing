@@ -45,7 +45,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="w-full mb-[60px] md:mb-[140px]">
+    <section id="testimonials" className="w-full mb-[60px] md:mb-[140px] scroll-mt-28">
       <div className="container flex flex-col gap-10 md:gap-20 mx-auto">
         <Header
           title="Visszajelzések"

@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import FeatureListItem from "@/components/ui/feature-list-item";
 import { cn } from "@/lib/utils";
+import GiveQuoteIcon from "./give-quote-button";
+import GiveQuoteButton from "./give-quote-button";
 
 const PlanCard = ({
   id,
@@ -51,16 +53,7 @@ const PlanCard = ({
             ))}
           </div>
         </div>
-        <Button
-          className={cn(
-            "py-[20px] px-[35px] h-[68px]",
-            id === "premium"
-              ? "bg-primary-grey text-black"
-              : "bg-primary-dark text-white"
-          )}
-        >
-          Ajánlatkérés
-        </Button>
+        <GiveQuoteButton id={id}/>
       </div>
     </div>
   );

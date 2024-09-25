@@ -18,12 +18,12 @@ const FAQCard = ({
         <h2 className="text-h2-mobile md:text-h2 text-black w-5/6">{question}</h2>
         {isOpen ? (
           <MinusIcon
-            className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px]"
+            className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           />
         ) : (
           <PlusIcon
-            className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px]"
+            className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           />
         )}

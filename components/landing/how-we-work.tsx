@@ -39,7 +39,7 @@ const workSteps = [
 
 const HowWeWork = () => {
   return (
-    <section className='w-full mb-[76px] md:mb-[140px]'>
+    <section id="howWeWork" className='w-full mb-[76px] md:mb-[140px] scroll-mt-28'>
         <div className='container flex flex-col gap-[35px] md:gap-20 mx-auto'>
             <Header titleId='howwework' title='Hogyan dolgozunk?' description={'Az árajánlat elfogadása után a közös munka \naz alábbi lépések mentén zajlik:'}/>
             <div className='flex flex-col gap-5 md:gap-[30px] px-5'>

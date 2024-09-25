@@ -20,7 +20,7 @@ export default function RootLayout({
         <body className={space.className}>
           <div className="h-[60px]"/>
         <Navbar />
-        <div className="h-[70px]"/>
+        <div className="h-10 md:h-[70px]"/>
           {children}
         </body>
       </html>

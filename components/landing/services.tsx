@@ -52,7 +52,7 @@ const services: ServiceType[] = [
 
 const Services = () => {
   return (
-    <section className="w-full">
+    <section id="services" className="w-full scroll-mt-28">
       <Header
         title="Szolgáltatásaink"
         description="Cégünknél számos szolgáltatást kínálunk, amelyek segítenek a vállalkozások online növekedésében és sikerében. Ezek a szolgáltatások a következőek:"
