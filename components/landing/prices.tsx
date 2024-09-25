@@ -47,7 +47,7 @@ const plans = [
 
 const Prices = () => {
   return (
-    <section className="w-full mb-[76px] md:mb-[208px]">
+    <section id="prices" className="w-full mb-[76px] md:mb-[208px] scroll-mt-28">
       <div className="container mx-auto flex flex-col gap-[35px] md:gap-20">
         <Header
           title="Árak"

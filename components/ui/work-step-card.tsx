@@ -30,11 +30,11 @@ const WorkStepCard = ({
           </div>
           {isOpen ? (
             <MinusIcon
-              className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px]"
+              className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
             />
           ) : (
-            <PlusIcon className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px]" onClick={() => setIsOpen(!isOpen)} />
+            <PlusIcon className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
           )}
         </div>
         {isOpen && (

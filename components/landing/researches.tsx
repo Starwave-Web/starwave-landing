@@ -8,23 +8,23 @@ const researches = [
   {
     description:
       "Egy közepes méretű e-kereskedelmi vállalat számára optimalizált landing page-t készítettünk, ami 25%-kal növelte a vásárlói konverziókat és 30%-kal csökkentette az oldalelhagyást.",
-    link: "/",
+    link: "#howWeWork",
   },
   {
     description:
       "Szolgáltatásalapú ügyfelünk új landing page-ével 40%-kal emeltük a leadek számát, valamint javítottuk a felhasználói élményt, ami növelte a weboldal látogatottságát és ügyféltartósságot.",
-    link: "/",
+    link: "#howWeWork",
   },
   {
     description:
       "Helyi vállalkozásunk számára készített landing page a keresőoptimalizálás révén 50%-kal növelte a helyi keresésekből származó látogatók számát és 35%-kal növelte a közvetlen ajánlások arányát.",
-    link: "/",
+    link: "#howWeWork",
   },
 ];
 
 const Researches = () => {
   return (
-    <section className="w-full mb-[45px] md:mb-[117px]">
+    <section id="researches" className="w-full mb-[45px] md:mb-[117px] scroll-mt-28">
       <div className="container mx-auto">
         <Header
           title="Tanulmányok"

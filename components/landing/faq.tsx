@@ -29,7 +29,7 @@ const questions = [
 
 const FAQ = () => {
   return (
-    <section className="w-full">
+    <section id="faq" className="w-full scroll-mt-28">
         <div className="container px-5 flex flex-col mx-auto gap-[32px] mb-[96px] md:mb-[100px]">
             {questions.map(question => <FAQCard key={question.question} question={question.question} answer={question.answer}/>)}
         </div>
