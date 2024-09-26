@@ -17,7 +17,7 @@ const researches = [
   },
   {
     description:
-      "Helyi vállalkozásunk számára készített landing page a keresőoptimalizálás révén 50%-kal növelte a helyi keresésekből származó látogatók számát és 35%-kal növelte a közvetlen ajánlások arányát.",
+      "Helyi pénzügyi vállalkozás számára készített új landing page 35%-kal növelte a konverziókat és jelentősen javította a felhasználói élményt, ösztönözve a szolgáltatások iránti érdeklődést.",
     link: "#howWeWork",
   },
 ];

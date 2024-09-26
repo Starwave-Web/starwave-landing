@@ -57,7 +57,7 @@ const Services = () => {
         title="Szolgáltatásaink"
         description="Cégünknél számos szolgáltatást kínálunk, amelyek segítenek a vállalkozások online növekedésében és sikerében. Ezek a szolgáltatások a következőek:"
       />
-      <div className="container mx-auto flex flex-wrap gap-10 mt-10 md:mt-20 mb-[70px] md:mb-[100px] px-5">
+      <div className="container mx-auto flex fle-row flex-wrap justify-center gap-10 mt-10 md:mt-20 mb-[70px] md:mb-[100px] px-5">
         {services.map((service, index) => (
           <ServiceCard
             id={service.id}

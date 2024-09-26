@@ -49,12 +49,36 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = () => {
-    console.log("This will send an email.");
+  const onSubmit = (data: any) => {
+    const formData = new FormData();
+    Object.keys(data).forEach((key) => {
+      formData.append(key, data[key]);
+    });
+    formData.append("form-name", "contact");
+
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
   };
+
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        name="contact" // Form name
+        method="POST" // Form method
+        data-netlify="true" // Enables Netlify forms
+        data-netlify-honeypot="bot-field" // Spam protection
+        className="space-y-8"
+      >
+        {/* Hidden input field for Netlify */}
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+
+        {/* The rest of your form fields */}
         <FormField
           control={form.control}
           name="subject"
@@ -70,7 +94,9 @@ const ContactForm = () => {
                     <FormControl>
                       <RadioGroupItem value={SUBJECT.QUESTION} />
                     </FormControl>
-                    <FormLabel className="font-normal text-p-mobile md:text-p">Kérdésem van</FormLabel>
+                    <FormLabel className="font-normal text-p-mobile md:text-p">
+                      Kérdésem van
+                    </FormLabel>
                   </FormItem>
                   <FormItem className="flex flex-col sm:flex-row items-center space-x-3 space-y-0 gap-[14px]">
                     <FormControl>
@@ -91,9 +117,15 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Név</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+                Név
+              </FormLabel>
               <FormControl>
-                <Input className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]" placeholder="Név" {...field} />
+                <Input
+                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
+                  placeholder="Név"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -104,9 +136,15 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Email</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+                Email
+              </FormLabel>
               <FormControl>
-                <Input className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]" placeholder="Email" {...field} />
+                <Input
+                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
+                  placeholder="Email"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -117,15 +155,24 @@ const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">Üzenet</FormLabel>
+              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+                Üzenet
+              </FormLabel>
               <FormControl>
-                <Textarea className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]" placeholder="Üzenet" {...field} />
+                <Textarea
+                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]"
+                  placeholder="Üzenet"
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button className="w-full rounded-[14px] h-[68px]" type="submit">Küldés</Button>
+        {/* Repeat similar fields for 'name', 'email', and 'message' */}
+        <Button className="w-full rounded-[14px] h-[68px]" type="submit">
+          Küldés
+        </Button>
       </form>
     </Form>
   );

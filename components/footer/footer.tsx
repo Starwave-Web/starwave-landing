@@ -9,7 +9,7 @@ import { scrollToSection } from "@/lib/utils";
 const Footer = () => {
   return (
     <section className="w-full">
-      <div className="sm:container sm:mx-auto">
+      <div className="sm:container sm:mx-auto !max-w-[1250px]">
         <div className="sm:rounded-t-[45px] bg-primary-dark sm:mx-5 pt-[50px] md:pt-[55px] pb-[30px] md:pb-[50px] px-[30px] md:px-[60px] flex flex-col gap-[66px]">
           <div className="flex flex-col gap-[37px] lg:gap-0 lg:flex-row lg:justify-between">
             <StarwaveLogoWhite />
