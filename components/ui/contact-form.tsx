@@ -70,7 +70,7 @@ const ContactForm = () => {
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
+        body: new URLSearchParams(form as any).toString(),
       });
 
       // Check the response status
