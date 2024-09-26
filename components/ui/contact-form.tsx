@@ -15,6 +15,8 @@ import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
+import { useToast } from "./use-toast";
+import { useState } from "react";
 
 export enum SUBJECT {
   QUESTION = "question",
@@ -39,6 +41,10 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
+  const { toast } = useToast();
+  const [status, setStatus] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -49,19 +55,39 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (data: any) => {
-    const formData = new FormData();
-    Object.keys(data).forEach((key) => {
-      formData.append(key, data[key]);
-    });
-    formData.append("form-name", "contact");
+  const onSubmit = async (data: any) => {
+    try {
+      setStatus("pending");
+      setError(null);
 
-    fetch("/", {
-      method: "POST",
-      body: formData,
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
+      // Create a FormData object from the data object
+      const formData = new FormData();
+      Object.keys(data).forEach((key) => {
+        formData.append(key, data[key]);
+      });
+
+      // Make the POST request
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      // Check the response status
+      if (res.status === 200) {
+        setStatus("ok");
+        toast({
+          title: "Sikeres üzenetküldés",
+          description: "Hamarosan felvesszük veled a kapcsolatot!",
+        });
+      } else {
+        setStatus("error");
+        setError(`${res.status} ${res.statusText}`);
+      }
+    } catch (e) {
+      setStatus("error");
+      setError(`${e}`);
+    }
   };
 
   return (
