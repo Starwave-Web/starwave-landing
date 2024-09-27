@@ -47,7 +47,7 @@ const plans = [
 
 const Prices = () => {
   return (
-    <section id="prices" className="w-full mb-[76px] md:mb-[208px] scroll-mt-28">
+    <section id="prices" className="w-full mb-[76px] md:mb-[208px] -scroll-mt-24 sm:-scroll-mt-5">
       <div className="container mx-auto flex flex-col gap-[35px] md:gap-20">
         <Header
           title="Árak"
@@ -67,7 +67,7 @@ const Prices = () => {
           ))}
         </div>
         <div className="container lg:hidden mt-[29px]">
-          <Link className="flex gap-[15px] items-center justify-center" href="mailto:udvardiendre@gmail.com"><h4 className="text-outlaw text-black">Egyedi ajánlatot kérek</h4><TopRightArrow className="fill-black w-[17.32px] h-[10px]"/></Link>
+          <Link className="flex gap-[15px] items-center justify-center" href="mailto:info@starwaveweb.com"><h4 className="text-outlaw text-black">Egyedi ajánlatot kérek</h4><TopRightArrow className="fill-black w-[17.32px] h-[10px]"/></Link>
         </div>
       </div>
     </section>

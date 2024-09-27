@@ -58,7 +58,6 @@ const ContactForm = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      console.log(values);
       const formData = new FormData();
       for (const key in values) {
         if (values.hasOwnProperty(key)) {
@@ -103,8 +102,6 @@ const ContactForm = () => {
         data-netlify-honeypot="bot-field"
         className="space-y-8"
       >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="bot-field" />
         <FormField
           control={form.control}
           name="form-name"
