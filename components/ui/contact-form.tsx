@@ -16,7 +16,6 @@ import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import { useToast } from "./use-toast";
-import { useState } from "react";
 
 export enum SUBJECT {
   QUESTION = "question",
@@ -42,8 +41,6 @@ const formSchema = z.object({
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const [status, setStatus] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -58,29 +55,32 @@ const ContactForm = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
-      setStatus("pending");
-      setError(null);
       const myForm = event.target;
       const formData = new FormData(myForm);
-      // @ts-expect-error
-      for (var pair of formData.entries()) {
-        console.log(pair[0] + ", " + pair[1]);
-      }
+      formData.append("subject", form.getValues("subject"));
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
       });
-      console.log(res);
       if (res.status === 200) {
-        setStatus("ok");
+        toast({
+          title: "Sikeres üzenetküldes!",
+          description: "Hamarosan felvesszük veled a kapcsolatot!",
+        });
       } else {
-        setStatus("error");
-        setError(`${res.status} ${res.statusText}`);
+        toast({
+          variant: "destructive",
+          title: "Valami hiba történt.",
+          description: "Próbáld újra.",
+        });
       }
     } catch (e) {
-      setStatus("error");
-      setError(`${e}`);
+      toast({
+        variant: "destructive",
+        title: "Valami hiba történt.",
+        description: "Próbáld újra.",
+      });
     }
   };
 
@@ -88,17 +88,15 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={handleSubmit}
-        name="contact" // Form name
-        method="POST" // Form method
-        data-netlify="true" // Enables Netlify forms
-        data-netlify-honeypot="bot-field" // Spam protection
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className="space-y-8"
       >
-        {/* Hidden input field for Netlify */}
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
 
-        {/* The rest of your form fields */}
         <FormField
           control={form.control}
           name="subject"
@@ -189,7 +187,6 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        {/* Repeat similar fields for 'name', 'email', and 'message' */}
         <Button className="w-full rounded-[14px] h-[68px]" type="submit">
           Küldés
         </Button>

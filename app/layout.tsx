@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
+import { Toaster } from "@/components/ui/toaster";
 
 const space = Space_Grotesk({ subsets: ["latin"] });
 
@@ -16,13 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en">
-        <body className={space.className}>
-          <div className="h-[60px]"/>
+    <html lang="en">
+      <body className={space.className}>
+        <div className="h-[60px]" />
         <Navbar />
-        <div className="h-10 md:h-[70px]"/>
-          {children}
-        </body>
-      </html>
+        <div className="h-10 md:h-[70px]" />
+        {children}
+        <Toaster />
+      </body>
+    </html>
   );
 }
