@@ -15,8 +15,9 @@ import { Button } from "../ui/button";
 import { useToast } from "./use-toast";
 
 const formSchema = z.object({
-  "form-name": z.string().default("contact"),
+  "form-name": z.string().default("newsletter"),
   "bot-field": z.string().optional(),
+  subject: z.string().default("Newsletter registration"),
   email: z
     .string()
     .email("A megadott email hibás formátumú")
@@ -32,6 +33,7 @@ const NewsletterForm = () => {
     defaultValues: {
       "form-name": "newsletter",
       "bot-field": "",
+      subject: "Newsletter registration",
       email: "",
     },
   });
@@ -54,7 +56,7 @@ const NewsletterForm = () => {
         form.reset();
         toast({
           title: "Sikeres feliratkozás!",
-          description: "Hamarosan értesülhetsz szolgáltatásainkról!",
+          description: "Hamarosan értesülhetsz legújabb szolgáltatásainkról!",
         });
       } else {
         toast({
@@ -96,6 +98,15 @@ const NewsletterForm = () => {
           render={({ field }) => (
             <FormItem>
               <Input type="hidden" {...field} />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <Input type="hidden" {...field} value="Newsletter registration"/>
             </FormItem>
           )}
         />
