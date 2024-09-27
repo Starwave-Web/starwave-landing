@@ -23,6 +23,8 @@ export enum SUBJECT {
 }
 
 const formSchema = z.object({
+  "form-name": z.string().default("contact"),
+  "bot-field": z.string().optional(),
   subject: z.enum([SUBJECT.QUESTION, SUBJECT.QUOTE]),
   name: z
     .string()
@@ -45,6 +47,8 @@ const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      "form-name": "contact",
+      "bot-field": "",
       subject: SUBJECT.QUESTION,
       name: "",
       email: "",
@@ -52,18 +56,23 @@ const ContactForm = () => {
     },
   });
 
-  const handleSubmit = async (event: any) => {
-    event.preventDefault();
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const myForm = event.target;
-      const formData = new FormData(myForm);
-      formData.append("subject", form.getValues("subject"));
+      console.log(values);
+      const formData = new FormData();
+      for (const key in values) {
+        if (values.hasOwnProperty(key)) {
+          const value = values[key as keyof typeof values] ?? "";
+          formData.append(key, value.toString());
+        }
+      }
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
       });
       if (res.status === 200) {
+        form.reset();
         toast({
           title: "Sikeres üzenetküldes!",
           description: "Hamarosan felvesszük veled a kapcsolatot!",
@@ -75,7 +84,7 @@ const ContactForm = () => {
           description: "Próbáld újra.",
         });
       }
-    } catch (e) {
+    } catch (error) {
       toast({
         variant: "destructive",
         title: "Valami hiba történt.",
@@ -87,7 +96,7 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={form.handleSubmit(onSubmit)}
         name="contact"
         method="POST"
         data-netlify="true"
@@ -96,7 +105,24 @@ const ContactForm = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
-
+        <FormField
+          control={form.control}
+          name="form-name"
+          render={({ field }) => (
+            <FormItem>
+              <Input type="hidden" {...field} value="contact" />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="bot-field"
+          render={({ field }) => (
+            <FormItem>
+              <Input type="hidden" {...field} />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="subject"
@@ -135,12 +161,12 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
                 Név
               </FormLabel>
               <FormControl>
                 <Input
-                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
+                  className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
                   placeholder="Név"
                   {...field}
                 />
@@ -154,12 +180,12 @@ const ContactForm = () => {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
                 Email
               </FormLabel>
               <FormControl>
                 <Input
-                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
+                  className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
                   placeholder="Email"
                   {...field}
                 />
@@ -173,12 +199,12 @@ const ContactForm = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-form-label-mobile md:text-form-label text-black">
+              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
                 Üzenet
               </FormLabel>
               <FormControl>
                 <Textarea
-                  className="text-p md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]"
+                  className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]"
                   placeholder="Üzenet"
                   {...field}
                 />
