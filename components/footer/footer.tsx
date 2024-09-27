@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import LinkedInIcon from "../icons/linkedin-icon";
 import FacebookIcon from "../icons/facebook-icon";
 import { scrollToSection } from "@/lib/utils";
+import NewsletterForm from "../ui/newsletter-form";
 
 const Footer = () => {
   return (
@@ -73,7 +74,8 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#292A32] rounded-[14px] px-[30px] py-[30px] md:px-10 md:py-[58px] flex flex-col sm:flex-row gap-5 items-center">
+            <NewsletterForm/>
+            {/* <div className="bg-[#292A32] rounded-[14px] px-[30px] py-[30px] md:px-10 md:py-[58px] flex flex-col sm:flex-row gap-5 items-center">
               <input
                 className="text-white w-full h-[67px] border border-white rounded-[14px] placeholder-white text-p-mobile md:text-p bg-transparent px-[35px] py-[22px]"
                 placeholder="Email"
@@ -84,7 +86,7 @@ const Footer = () => {
               >
                 Feliratkozom a hírlevélre
               </Button>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col gap-[70px]">
             <div className="w-full h-px bg-white" />
