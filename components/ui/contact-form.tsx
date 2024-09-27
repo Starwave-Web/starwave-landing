@@ -55,31 +55,25 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = async (data: any) => {
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
     try {
       setStatus("pending");
       setError(null);
-
-      // Create a FormData object from the data object
-      const formData = new FormData();
-      Object.keys(data).forEach((key) => {
-        formData.append(key, data[key]);
-      });
-
-      // Make the POST request
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+      // @ts-expect-error
+      for (var pair of formData.entries()) {
+        console.log(pair[0] + ", " + pair[1]);
+      }
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(form as any).toString(),
+        body: new URLSearchParams(formData as any).toString(),
       });
-
-      // Check the response status
+      console.log(res);
       if (res.status === 200) {
         setStatus("ok");
-        toast({
-          title: "Sikeres üzenetküldés",
-          description: "Hamarosan felvesszük veled a kapcsolatot!",
-        });
       } else {
         setStatus("error");
         setError(`${res.status} ${res.statusText}`);
@@ -93,7 +87,7 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form
-        onSubmit={form.handleSubmit(onSubmit)}
+        onSubmit={handleSubmit}
         name="contact" // Form name
         method="POST" // Form method
         data-netlify="true" // Enables Netlify forms
