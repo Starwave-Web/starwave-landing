@@ -18,34 +18,34 @@ type ServiceType = {
 const services: ServiceType[] = [
   {
     id: 1,
-    title: ["CRO vezérelt", "Web Design"],
+    title: ["Mobile First ", "Design"],
     illustration: Magnifier,
     description:
-      "A CRO vezérelt web design célja, hogy maximalizálja a weboldal teljesítményét és a konverziókat. \n\nNem csupán esztétikai szempontok alapján tervezünk, hanem adatvezérelt döntésekkel optimalizáljuk az oldal minden elemét. \n\nAz oldal struktúráját, a CTA gombokat és a navigációt \nmind úgy alakítjuk ki, hogy növelje a felhasználói élményt és \na konverziós arányt.",
+      "Elsőként a mobil eszközökre építjük a webhelyed, így a kód clean és optimalizált lesz, minden fölösleges sallang nélkül. \n\nEz nemcsak gyorsítja a webhelyet, de ez az első lépés a reszponzivitás felé.",
     variant: "grey",
   },
   {
     id: 2,
-    title: ["Landing Page", "fejlesztés"],
+    title: ["Teljesen", "reszponzív"],
     illustration: Illustration2,
     description:
-      "Egy jól megtervezett landing page a sikeres online kampány alapja. \nA fejlesztés során a cél, hogy a látogatókat konkrét akcióra ösztönözzük. \n\nA cím, a képek, a szöveg és a CTA gombok mind a felhasználói figyelmet a konverzióra irányítják. \n\nAz optimalizált dizájn és a pszichológiai elemek kombinációja segíti a célok elérését.",
+      "A webhelyed minden képernyőmérethez alkalmazkodni fog – legyen az mobil, tablet vagy asztali számítógép. \n\nBárhonnan is látogatják meg, mindig tökéletesen mutat majd.",
     variant: "green",
   },
   {
     id: 3,
-    title: ["Landing Page", "üzemeltetés"],
+    title: ["Optimalizált", "oldalsebesség"],
     illustration: Illustration3,
     description:
-      "A landing page üzemeltetése nem ér véget a fejlesztéssel; \nfolyamatos karbantartás és optimalizálás szükséges a hosszú távú sikerhez. \n\nAz oldal teljesítményének rendszeres monitorozása biztosítja, hogy \na konverziós arány mindig a lehető legmagasabb legyen. \n\nA/B teszteléssel és felhasználói viselkedés elemzésével finomítjuk az oldalt.",
+      "Ha a webhelyed 3 másodpercnél tovább tölt be, akár a látogatóid felét is elveszítheted. \n\nMi úgy készítjük el az oldaladat, hogy optimális esetben 1 másodperc alatt betöltődjön, így senki sem fog türelmetlenül távozni.",
     variant: "green",
   },
   {
     id: 4,
-    title: ["CRO Analitika és", "Konverzió követés"],
+    title: ["Egyedi kód", "és design"],
     illustration: Illustration4,
     description:
-      "Az analitika és a konverzió követés kulcsfontosságú elemei minden online marketingstratégiának. Segítségükkel pontos képet kapunk a kampányaink teljesítményéről. \n\nNyomon követjük a felhasználók viselkedését, az oldalforgalmat és a konverziós mutatókat. \n\nAz adatok alapján hozzuk meg a döntéseket, amelyek javítják a ROI-t és növelik a konverziókat.",
+      "Minden weboldalt egyedileg, kézzel írunk meg, nincsenek sablonok vagy oldalépítők. \n\nEz az, ami megkülönböztet minket – külön figyelmet fordítunk arra, hogy a lehető legjobb eredményt érjük el, ami a weboldalad indulása után is tükröződni fog az online jelenléteden.",
     variant: "dark",
   },
 ];
@@ -54,8 +54,8 @@ const Services = () => {
   return (
     <section id="services" className="w-full scroll-mt-28">
       <Header
-        title="Szolgáltatásaink"
-        description="Cégünknél számos szolgáltatást kínálunk, amelyek segítenek a vállalkozások online növekedésében és sikerében. Ezek a szolgáltatások a következőek:"
+        title="A termékről"
+        description="Minden egyes sor kódot kézzel írunk, hogy a legjobb teljesítményt biztosítsuk, és a Google-t boldoggá tegyük, ami segít több ügyfelet hozni a webhelyedre, és ezáltal több bevételt hoz a vállalkozásodnak"
       />
       <div className="container mx-auto flex fle-row flex-wrap justify-center gap-10 mt-10 md:mt-20 mb-[70px] md:mb-[100px] px-5">
         {services.map((service, index) => (

@@ -27,19 +27,19 @@ const testimonials = [
     name: "Tóth Gábor",
     occupation: "Ügyvezető igazgató",
     description:
-      "A csapat nagyon jól megértette az üzleti igényeinket és kiváló weboldalt készített számunkra. Az implementáció gyors és hibátlan volt, a weboldalunk már az első naptól kezdve hozza az eredményeket. Nagyon elégedettek vagyunk!",
+      "A csapat nagyon jól megértette az üzleti igényeinket és kiváló weboldalt készített számunkra. Az implementáció gyors és hibátlan volt. Nagyon elégedettek vagyunk!",
   },
   {
     name: "Nagy Petra",
     occupation: "Digitális Stratéga",
     description:
-      "Kivételes figyelmet kaptunk a projekt minden szakaszában. A tesztelési fázis során is alaposan figyeltek minden részletre, ami az oldal hibamentes működését garantálja. A végeredmény minden várakozásunkat felülmúlta. Nagyszerű csapat!",
+      "Kivételes figyelmet kaptunk a projekt minden szakaszában. A tesztelési fázis során is alaposan figyeltek minden részletre. A végeredmény minden várakozásunkat felülmúlta. Nagyszerű csapat!",
   },
   {
     name: "Varga Bence",
     occupation: "Projektmenedzser",
     description:
-      "Az új weboldal üzemeltetése zökkenőmentesen indult, hála a precíz és részletes átadásnak. Az oldal gyors és felhasználóbarát, az analitikák is kiválóan működnek. Elégedett vagyok a szolgáltatással és biztosan dolgozunk még együtt.",
+      "Az új weboldal üzemeltetése zökkenőmentesen indult, hála a precíz és részletes átadásnak. Az oldal gyors és felhasználóbarát. Elégedett vagyok a szolgáltatással.",
   },
 ];
 

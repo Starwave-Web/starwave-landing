@@ -81,7 +81,7 @@ const ServiceCard = ({
           data-variant={variant}
           className="flip-card-back w-[100%] h-[100%]  rounded-[45px] group border border-black bg-black"
         >
-          <div className="flex flex-col rounded-[45px] p-[30px] w-[100%] h-[98%] group-data-[variant=grey]:bg-primary-grey group-data-[variant=green]:bg-primary-green group-data-[variant=dark]:bg-primary-dark">
+          <div className="flex flex-col justify-between rounded-[45px] p-[30px] w-[100%] h-[98%] group-data-[variant=grey]:bg-primary-grey group-data-[variant=green]:bg-primary-green group-data-[variant=dark]:bg-primary-dark">
             <p className="text-p-mobile text-black group-data-[variant=dark]:text-white whitespace-pre-wrap">
               {description}
             </p>
