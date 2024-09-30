@@ -7,17 +7,17 @@ import ResearchesCarousel from "../ui/researches-carousel";
 const researches = [
   {
     description:
-      "Egy közepes méretű e-kereskedelmi vállalat számára optimalizált landing page-t készítettünk, ami 25%-kal növelte a vásárlói konverziókat és 30%-kal csökkentette az oldalelhagyást.",
+      "Mi a különbség egy Wordpress alapú és egy általunk készített weboldalban?  Mindez hogyan befolyásolja a betöltési időt, a felhasználók megtartását és a keresési rangsorolást. ",
     link: "#howWeWork",
   },
   {
     description:
-      "Szolgáltatásalapú ügyfelünk új landing page-ével 40%-kal emeltük a leadek számát, valamint javítottuk a felhasználói élményt, ami növelte a weboldal látogatottságát és ügyféltartósságot.",
+      "Hogyan kell olyan weboldalt tervezni, amely magas konverziós rátát tud produkálni? Mik a buktatók? Mi az amire érdemes odafigyelni egy ilyen tervezési folyamatba belevágva?",
     link: "#howWeWork",
   },
   {
     description:
-      "Helyi pénzügyi vállalkozás számára készített új landing page 35%-kal növelte a konverziókat és jelentősen javította a felhasználói élményt, ösztönözve a szolgáltatások iránti érdeklődést.",
+      "A Google Core Vitals mérőszámai megváltoztatják a webhelyek rangsorolását az optimalizált mobilélmény érdekében. Mit érdemes tundi a mérőszámok kapcsán? Hogyan tudjuk pozitív irányba változtatni őket?",
     link: "#howWeWork",
   },
 ];
@@ -27,8 +27,8 @@ const Researches = () => {
     <section id="researches" className="w-full mb-[45px] md:mb-[117px] scroll-mt-28">
       <div className="container mx-auto">
         <Header
-          title="Tanulmányok"
-          description={"Ismerd meg bizonyított digitális marketing módszereink \nvalós alkalmazásait esettanulmányok segítségével"}
+          title="Cikkek"
+          description={"Jobban elmélyülnél egy-egy témában a terület kapcsán? \nOlvass bele cikkjeinkbe!"}
         />
         <ResearchesCarousel researches={researches}/>
         <div className="rounded-[45px] px-[60px] py-[70px] bg-primary-dark mt-[80px] hidden lg:flex mx-5">

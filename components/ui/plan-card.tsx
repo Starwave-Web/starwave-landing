@@ -31,17 +31,18 @@ const PlanCard = ({
             <h3 className="text-h2-mobile md:text-h2 text-white bg-primary-dark rounded-[7px] px-[7px] group-data-[variant=premium]:text-black group-data-[variant=premium]:bg-primary-grey ">
               {name}
             </h3>
-            <p className="text-p-mobile text-black">Indulóár</p>
+            <p className="text-p-mobile text-black group-data-[variant=premium]:hidden">Indulóár</p>
+            <p className="text-p-mobile text-black hidden group-data-[variant=premium]:block">Havonta</p>
             <h1 className="text-h2-mobile md:text-h2 text-black text-center whitespace-nowrap group-data-[variant=custom]:whitespace-normal">
               {price}
             </h1>
             <p className="text-p-mobile text-black text-center">
               {id === "custom"
-                ? "+ Egyedi"
+                ? "+ Egyedi üzemeltetési díj"
                 : id === "basic"
-                ? "+ Havi 3.500 Ft"
-                : "+ Havi 6.000 Ft"}{" "}
-              üzemeltetési díj
+                ? "+ Havi 3.500 Ft üzemeltetési díj"
+                : "Minimum 1 éves szerződés"}
+              
             </p>
           </div>
           <div className="flex flex-col gap-3 max-w-[283px]">

@@ -2,7 +2,7 @@
 
 const TestimonialCard = ({name, occupation, description}:{name: string, occupation: string, description: string}) => {
   return (
-    <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-col gap-[20px] h-full">
         <div className="border border-primary-green rounded-[45px] max-w-[606px] w-full h-full px-[26px] py-6 md:px-[52px] md:py-12">
             <p className="text-p-mobile md:text-p text-white">{description}</p>
         </div>

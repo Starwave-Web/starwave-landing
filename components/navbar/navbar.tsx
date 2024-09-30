@@ -25,10 +25,10 @@ const Navbar = () => {
         <div>
           <ul className="gap-[40px] items-center hidden lg:flex xl:text-outlaw">
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSection("services")}>Szolgáltatások</p>
+              <p onClick={() => scrollToSection("services")}>A termékről</p>
             </li>
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSection("researches")}>Tanulmányok</p>
+              <p onClick={() => scrollToSection("researches")}>Cikkek</p>
             </li>
             <li className="cursor-pointer">
               <p onClick={() => scrollToSection("howWeWork")}>

@@ -6,28 +6,28 @@ import TopRightArrow from "../icons/top-right-arrow";
 const plans = [
   {
     id: "basic",
-    name: "Alap",
-    price: "125.000 Ft",
+    name: "Egyösszegű",
+    price: "300.000 Ft",
     featureList: [
       { isIncluded: true, featureName: "Választható design, egyedi kód" },
-      { isIncluded: true, featureName: "3 közös átnézés" },
-      { isIncluded: false, featureName: "Weboldal szöveg, tartalom" },
-      { isIncluded: true, featureName: "Domain, Tárhely" },
-      { isIncluded: false, featureName: "Google Analytics" },
-      { isIncluded: true, featureName: "12/5 üzemeltetés" },
+      { isIncluded: true, featureName: "+ Havi 3.500 Ft üzemeltetési díj " },
+      { isIncluded: true, featureName: "+ 10.000 Ft oldalanként 5 oldal után" },
+      { isIncluded: true, featureName: "+ Havi 6.000 Ft végtelen változtatás" },
+      { isIncluded: false, featureName: "24/7 üzemeltetés" },
+      { isIncluded: false, featureName: "Folyamatos frissítés" },
     ],
   },
   {
     id: "premium",
-    name: "Prémium",
-    price: "250.000 Ft",
+    name: "Havonta",
+    price: "15.000 Ft",
     featureList: [
       { isIncluded: true, featureName: "Választható design, egyedi kód" },
-      { isIncluded: true, featureName: "6 közös átnézés" },
-      { isIncluded: true, featureName: "Weboldal szöveg, tartalom" },
-      { isIncluded: true, featureName: "Domain, Tárhely" },
-      { isIncluded: true, featureName: "Google Analytics" },
-      { isIncluded: true, featureName: "12/5 üzemeltetés" },
+      { isIncluded: true, featureName: "Tárhely" },
+      { isIncluded: true, featureName: "+ 10.000 Ft oldalanként 5 oldal után" },
+      { isIncluded: true, featureName: "Végtelen változtatás" },
+      { isIncluded: true, featureName: "24/7 üzemeltetés" },
+      { isIncluded: true, featureName: "Folyamatos frissítés" },
     ],
   },
   {
@@ -36,11 +36,11 @@ const plans = [
     price: "Egyedi árajánlat",
     featureList: [
       { isIncluded: true, featureName: "Egyedi design, egyedi kód" },
-      { isIncluded: true, featureName: "Korlátlan átnézés" },
-      { isIncluded: true, featureName: "Weboldal szöveg, tartalom" },
-      { isIncluded: true, featureName: "Domain, Tárhely" },
-      { isIncluded: true, featureName: "Google Analytics" },
+      { isIncluded: true, featureName: "Tárhely" },
+      { isIncluded: true, featureName: "Oldalak száma egyedi ajánlat alapján" },
+      { isIncluded: true, featureName: "Végtelen változtatás" },
       { isIncluded: true, featureName: "24/7 üzemeltetés" },
+      { isIncluded: true, featureName: "Folyamatos frissítés" },
     ],
   },
 ];
@@ -52,7 +52,7 @@ const Prices = () => {
         <Header
           title="Árak"
           description={
-            "Válaszd ki ajánlataink közül azt amely legjobban\n támogatná vállalkozásod online fejlesztését."
+            "Válaszd ki ajánlataink közül azt amely legjobban \nilleszkedik a költségvetésedhez."
           }
         />
         <div className="flex flex-col sm:flex-row gap-5 md:gap-10 px-5">
