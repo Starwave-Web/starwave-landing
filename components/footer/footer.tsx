@@ -18,7 +18,7 @@ const Footer = () => {
               <li>
                 <p
                   onClick={() => scrollToSection("services")}
-                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer"
+                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer hover:text-primary-green"
                 >
                   Szolgáltatások
                 </p>
@@ -26,7 +26,7 @@ const Footer = () => {
               <li>
                 <p
                   onClick={() => scrollToSection("researches")}
-                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer"
+                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer hover:text-primary-green"
                 >
                   Tanulmányok
                 </p>
@@ -34,7 +34,7 @@ const Footer = () => {
               <li>
                 <p
                   onClick={() => scrollToSection("howWeWork")}
-                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer"
+                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer hover:text-primary-green"
                 >
                   Hogyan dolgozunk?
                 </p>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li>
                 <p
                   onClick={() => scrollToSection("prices")}
-                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer"
+                  className="text-p-mobile md:text-form-input underline text-white cursor-pointer hover:text-primary-green"
                 >
                   Árak
                 </p>
@@ -50,10 +50,10 @@ const Footer = () => {
             </ul>
             <div className="flex gap-5 items-center">
               <Link href="https://www.linkedin.com/">
-                <LinkedInIcon />
+                <LinkedInIcon className="fill-white hover:fill-primary-green"/>
               </Link>
-              <Link href="https://www.facebook.com/">
-                <FacebookIcon />
+              <Link  href="https://www.facebook.com/">
+                <FacebookIcon className="fill-white hover:fill-primary-green" />
               </Link>
             </div>
           </div>
@@ -63,8 +63,8 @@ const Footer = () => {
                 Kapcsolatfelvétel:
               </h4>
               <div className="flex flex-col gap-5">
-                <p className="text-p-mobile md:text-p text-white">
-                  Email: info@starwaveweb.com
+                <p  className="text-p-mobile md:text-p text-white ">
+                  Email: <Link href="mailto:starwaveweb@gmail.com" className="hover:text-primary-green">starwaveweb@gmail.com</Link>
                 </p>
                 <p className="text-p-mobile md:text-p text-white">
                   Telefon: +36 30 609 0155
@@ -75,18 +75,6 @@ const Footer = () => {
               </div>
             </div>
             <NewsletterForm/>
-            {/* <div className="bg-[#292A32] rounded-[14px] px-[30px] py-[30px] md:px-10 md:py-[58px] flex flex-col sm:flex-row gap-5 items-center">
-              <input
-                className="text-white w-full h-[67px] border border-white rounded-[14px] placeholder-white text-p-mobile md:text-p bg-transparent px-[35px] py-[22px]"
-                placeholder="Email"
-              />
-              <Button
-                className="w-full h-[67px] bg-primary-green"
-                variant="secondary"
-              >
-                Feliratkozom a hírlevélre
-              </Button>
-            </div> */}
           </div>
           <div className="flex flex-col gap-[70px]">
             <div className="w-full h-px bg-white" />
@@ -96,7 +84,7 @@ const Footer = () => {
               </p>
               <Link
                 href="/"
-                className="text-p-mobile md:text-form-input underline text-white"
+                className="text-p-mobile md:text-form-input underline text-white hover:text-primary-green"
               >
                 Adatkezelési szabályzat
               </Link>

@@ -11,7 +11,7 @@ const GiveQuoteButton = ({ id }: { id: string }) => {
       className={cn(
         "py-[20px] px-[35px] h-[68px]",
         id === "premium"
-          ? "bg-primary-grey text-black"
+          ? "bg-primary-grey text-black hover:bg-primary-grey/90"
           : "bg-primary-dark text-white"
       )}
     >

@@ -87,7 +87,7 @@ const ServiceCard = ({
             </p>
             <Button
               onClick={handleFlipAnimation}
-              className="self-end bg-black text-primary-green group-data-[variant=dark]:bg-primary-green group-data-[variant=dark]:text-black"
+              className="self-end bg-black text-primary-green group-data-[variant=dark]:bg-primary-green group-data-[variant=dark]:text-black group-data-[variant=dark]:hover:bg-primary-green/90"
             >
               Vissza
             </Button>

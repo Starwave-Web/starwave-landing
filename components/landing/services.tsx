@@ -55,7 +55,7 @@ const Services = () => {
     <section id="services" className="w-full scroll-mt-28">
       <Header
         title="A termékről"
-        description="Minden egyes sor kódot kézzel írunk, hogy a legjobb teljesítményt biztosítsuk, és a Google-t boldoggá tegyük. Ez segít több ügyfelet hozni a webhelyedre, és ezáltal több bevételt hoz a vállalkozásodnak"
+        description="Minden egyes sor kódot kézzel írunk, hogy a legjobb teljesítményt biztosítsuk, és a Google-t boldoggá tegyük. Ez segít több ügyfelet hozni a webhelyedre, és ezáltal több bevételt hoz a vállalkozásodnak."
       />
       <div className="container mx-auto flex fle-row flex-wrap justify-center gap-10 mt-10 md:mt-20 mb-[70px] md:mb-[100px] px-5">
         {services.map((service, index) => (
