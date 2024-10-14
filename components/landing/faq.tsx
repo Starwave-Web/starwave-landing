@@ -6,7 +6,7 @@ import FAQSelector from "../ui/faq-selector";
 import Header from "../ui/header";
 
 const options = [
-  { id: "prices", title: "Árak és fizetés" },
+  { id: "prices", title: "Árak" },
   { id: "subscriptions", title: "Előfizetések" },
   { id: "webpage", title: "Weboldal" },
 ];
