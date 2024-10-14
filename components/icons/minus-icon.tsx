@@ -3,7 +3,7 @@ import { type ElementRef, type SVGProps } from "react";
 const MinusIcon = (props: SVGProps<ElementRef<"svg">>) => {
   return (
     <svg
-    {...props}
+      {...props}
       width="58"
       height="58"
       viewBox="0 0 58 58"
