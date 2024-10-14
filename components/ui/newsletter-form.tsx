@@ -110,7 +110,7 @@ const NewsletterForm = () => {
             </FormItem>
           )}
         />
-        <div className="bg-[#292A32] rounded-[14px] px-[30px] py-[30px] md:px-10 md:py-[58px] flex flex-col sm:flex-row gap-5 items-center">
+        <div className="bg-[#292A32] rounded-[14px] px-[30px] pt-[30px] pb-[2px] md:px-10 md:pt-[58px] md:pb-[30px] flex flex-col sm:flex-row gap-5 items-start">
           <FormField
             control={form.control}
             name="email"
@@ -128,7 +128,7 @@ const NewsletterForm = () => {
             )}
           />
           <Button
-            className="w-full h-[67px] bg-primary-green"
+            className="w-full h-[67px] bg-primary-green mb-7 hover:bg-primary-green/90"
             variant="secondary"
             type="submit"
           >

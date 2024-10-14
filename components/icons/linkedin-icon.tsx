@@ -9,7 +9,7 @@ const LinkedInIcon = (props: SVGProps<ElementRef<"svg">>) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="15" cy="15.8008" r="15" fill="white" />
+      <circle cx="15" cy="15.8008" r="15" fill="inherit" />
       <path
         d="M8.22154 22.8596H11.3056V12.8752H8.22154V22.8596Z"
         fill="black"

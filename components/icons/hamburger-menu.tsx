@@ -1,8 +1,7 @@
-import React from "react";
+import { type ElementRef, type SVGProps } from "react";
 
-type Props = {};
 
-const HamburgerMenu = (props: Props) => {
+const HamburgerMenu = (props: SVGProps<ElementRef<"svg">>) => {
   return (
     <svg
       width="30"

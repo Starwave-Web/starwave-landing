@@ -12,8 +12,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "py-[20px] px-[35px] text-white",
-        outline: "text-black bg-transparent border border-black !py-[20px] !px-[35px]",
+        default: "py-[20px] px-[35px] text-white hover:bg-primary-dark/95",
+        outline: "text-black bg-transparent border border-black !py-[20px] !px-[35px] hover:bg-primary-grey",
         secondary: "text-black bg-white !py-[20px] !px-[35px]",
         link: "text-primary-green",
         icon: "text-black"
