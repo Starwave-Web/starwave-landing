@@ -80,7 +80,7 @@ const questions = {
         {
           question: "Ha letelik a 12 hónapos minimum időszak, folytatnom kell a fizetést utána is?",
           answer:
-            "Igen, az előfizetések határozatlan időre szólnak. A 12 hónapos minimum után is minden hónapban fizetni kell. Általában 2-3 évbe telik, mire annyi bevételünk lesz, mintha egy összegben fizetted volna ki az oldalt. Ideális esetben szeretnénk, ha az ügyfelek legalább 5 évig maradnának, hogy pénzügyileg kifizetődő legyen számunkra. Ezen a ponton a weboldalad már havonta több értéket fog termelni, mint amennyit az előfizetésed ér, így gyakorlatilag magát fizeti meg. Reméljük, hogy ügyfeleink felismerik ezt az értéket, és folytatják a fizetést, hogy mi is folytathassuk a munkánkat.",
+            "Igen, az előfizetések határozatlan időre szólnak. A 12 hónapos minimum után is minden hónapban fizetni kell. Általában 2-3 évbe telik, mire annyi bevételünk lesz, mintha egy összegben fizetted volna ki az oldalt. Ideális esetben szeretnénk, ha az ügyfelek legalább 5 évig maradnának, hogy pénzügyileg kifizetődő legyen számunkra. Ezen a ponton a weboldalad már havonta több értéket fog termelni, mint amennyit az előfizetésed ér, így gyakorlatilag magát fizeti meg.",
         },
         {
           question: "Kivásárolhatom magam az előfizetésből a minimum időszak letelte után?",
@@ -114,7 +114,7 @@ const questions = {
       ],
       "webpage": [
         {
-          question: "Mennyi ideig tart a folyamat a kezdetektől a befejezésig?",
+          question: "Mennyi ideig tart a fejlesztési folyamat a kezdetektől a befejezésig?",
           answer: "Általában 2-4 hét alatt elkészítünk egy weboldalt a kezdetektől a befejezésig, de ez attól függ, hogy az ügyfelek milyen gyorsan válaszolnak a tartalom- és képkéréseinkre, valamint hogy a tervezőink és fejlesztőink mennyire elérhetők. Bizonyos esetekben, ha minden gördülékenyen megy, akár 2-3 hét alatt is elkészülhet a weboldal."
         },
         {
@@ -123,19 +123,19 @@ const questions = {
         },
         {
           question: "A saját domainünket birtokoljuk?",
-          answer: "Igen. Még ha mi is vásároltuk neked a domaint, amikor lemondod az előfizetést, átadjuk neked a domain tulajdonjogát, így az továbbra is a te neveden marad."
+          answer: "Igen. Még ha mi is vásároltuk neked a domaint, amikor lemondod az előfizetést, átadjuk neked a tulajdonjogát, így az továbbra is a te neveden marad."
         },
         {
           question: "Használtok WordPress-t vagy oldalépítőket?",
-          answer: "Nem! Minden általunk készített weboldal egyedi, kézzel írt kóddal készül. Nincsenek sablonok vagy oldalépítők. Ez az egyik legnagyobb különbség közöttünk és más fejlesztők között – mi időt és energiát fektetünk abba, hogy teljesen testreszabott, magas minőségű weboldalt készítsünk ügyfeleink számára."
+          answer: "Nem! Minden általunk készített weboldal egyedi, kézzel írt kóddal készül. Nincsenek oldalépítők. Ez az egyik legnagyobb különbség közöttünk és más fejlesztők között – mi időt és energiát fektetünk abba, hogy teljesen testreszabott, magas minőségű weboldalt készítsünk ügyfeleink számára."
         },
         {
           question: "Milyen technológiákat használtok?",
-          answer: "A legmodernebb technológiákat alkalmazzuk, mint a Next.js, Tailwind CSS, Netlify, és Google Analytics. Ezek biztosítják a gyors betöltési időket, a reszponzív dizájnt és a pontos nyomon követést, hogy a weboldalad a legjobb teljesítményt nyújtsa."
+          answer: "A legmodernebb technológiákat alkalmazzuk, mint a Next.js, Tailwind CSS, Netlify. Ezek biztosítják a gyors betöltési időket, a reszponzív dizájnt és a pontos nyomon követést, hogy a weboldalad a legjobb teljesítményt nyújtsa."
         },
         {
           question: "Miért egyedi kód a WordPress helyett? Milyen előnyökkel jár?",
-          answer: "Egy egyedi kódolt weboldal számos előnnyel rendelkezik a WordPress-alapú oldalakkal szemben. Az egyedi kód gyorsabb, biztonságosabb, teljes mértékben testreszabható, és könnyebben optimalizálható egyedi igények szerint."
+          answer: "Egy egyedi kódolt weboldal számos előnnyel rendelkezik a WordPress-alapú oldalakkal szemben. Az egyedi kód gyorsabb, biztonságosabb, teljes mértékben testreszabható, és könnyebben optimalizálható egyedi igények szerint. A jövőben ahogy vállalkozásod növekszik, az egyedi kód alapján készített weboldal egyszerűbben skálázható."
         },
         {
           question: "Van már weboldalam. Felújítást vállaltok?",

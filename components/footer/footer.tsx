@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import StarwaveLogoWhite from "../icons/starwave-logo-white";
-import { Button } from "../ui/button";
 import LinkedInIcon from "../icons/linkedin-icon";
 import FacebookIcon from "../icons/facebook-icon";
 import { scrollToSection } from "@/lib/utils";
@@ -49,10 +48,10 @@ const Footer = () => {
               </li>
             </ul>
             <div className="flex gap-5 items-center">
-              <Link href="https://www.linkedin.com/">
+              <Link target="_blank" href="https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true">
                 <LinkedInIcon className="fill-white hover:fill-primary-green"/>
               </Link>
-              <Link  href="https://www.facebook.com/">
+              <Link target="_blank" href="https://www.facebook.com/profile.php?id=61566881334932">
                 <FacebookIcon className="fill-white hover:fill-primary-green" />
               </Link>
             </div>
@@ -80,7 +79,7 @@ const Footer = () => {
             <div className="w-full h-px bg-white" />
             <div className="flex items-center gap-10">
               <p className="text-p-mobile md:text-p text-white">
-                © 2024 Starwave. Minden jog fentartva.
+                © 2024 Starwave Web Development Agnecy. Minden jog fentartva.
               </p>
               <Link
                 href="/"
