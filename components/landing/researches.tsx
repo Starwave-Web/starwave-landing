@@ -27,7 +27,7 @@ const Researches = () => {
     <section id="researches" className="w-full mb-[45px] md:mb-[117px] scroll-mt-28">
       <div className="container mx-auto">
         <Header
-          title="Cikkek"
+          title="Blog"
           description={"Jobban elmélyülnél egy-egy témában a terület kapcsán? \nOlvass bele cikkjeinkbe!"}
         />
         <ResearchesCarousel researches={researches}/>

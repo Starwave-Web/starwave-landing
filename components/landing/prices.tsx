@@ -1,7 +1,7 @@
 import Header from "@/components/ui/header";
 import PlanCard from "@/components/ui/plan-card";
-import Link from "next/link";
-import TopRightArrow from "../icons/top-right-arrow";
+
+import CustomQuoteLink from "../ui/custom-quote-link";
 
 const plans = [
   {
@@ -67,7 +67,7 @@ const Prices = () => {
           ))}
         </div>
         <div className="container lg:hidden mt-[29px]">
-          <Link className="flex gap-[15px] items-center justify-center" href="mailto:info@starwaveweb.com"><h4 className="text-outlaw text-black">Egyedi ajánlatot kérek</h4><TopRightArrow className="fill-black w-[17.32px] h-[10px]"/></Link>
+          <CustomQuoteLink/>
         </div>
       </div>
     </section>

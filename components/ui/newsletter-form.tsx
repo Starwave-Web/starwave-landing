@@ -13,6 +13,7 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { useToast } from "./use-toast";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 const formSchema = z.object({
   "form-name": z.string().default("newsletter"),
@@ -128,6 +129,7 @@ const NewsletterForm = () => {
             )}
           />
           <Button
+            onClick={() => sendToMixpanel("newsletter_form_submitted")}
             className="w-full h-[67px] bg-primary-green mb-7 hover:bg-primary-green/90"
             variant="secondary"
             type="submit"

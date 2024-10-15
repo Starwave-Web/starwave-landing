@@ -16,6 +16,7 @@ import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import { useToast } from "./use-toast";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 export enum SUBJECT {
   QUESTION = "question",
@@ -210,7 +211,7 @@ const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button className="w-full rounded-[14px] h-[68px]" type="submit">
+        <Button onClick={() => sendToMixpanel("contact_form_submitted")} className="w-full rounded-[14px] h-[68px]" type="submit">
           Küldés
         </Button>
       </form>
