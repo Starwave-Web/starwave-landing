@@ -2,11 +2,17 @@
 
 import { scrollToSection } from "@/lib/utils";
 import { Button } from "./button";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 const ContactUsButton = () => {
+
+  const handleOnClick = (section:string) => {
+    sendToMixpanel("cta_btn_clciked")
+    scrollToSection(section)
+  }
   return (
     <Button
-      onClick={() => scrollToSection("contactUs")}
+      onClick={() => handleOnClick("contactUs")}
       className="py-[20px] px-[35px] h-[68px] md:w-auto w-full"
     >
       Kapcsolatfelvétel

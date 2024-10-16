@@ -76,9 +76,9 @@ const Testimonials = () => {
               ))}
             </CarouselContent>
             <div className="flex items-center justify-between px-5 mt-20">
-              <CarouselPrevious />
-              <CarouselDots />
-              <CarouselNext />
+              <CarouselPrevious btnLocation="testimonials" />
+              <CarouselDots btnLocation="testimonials" />
+              <CarouselNext btnLocation="testimonials"/>
             </div>
           </Carousel>
         </div>

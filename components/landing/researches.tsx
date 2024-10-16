@@ -1,21 +1,23 @@
 
 import Header from "../ui/header";
-import { Button } from "../ui/button";
-import Link from "next/link";
 import ResearchesCarousel from "../ui/researches-carousel";
+import GoToBlogArticleButton from "../ui/go-to-blog-article-button";
 
 const researches = [
-  {
+  { 
+    id:"blog-01",
     description:
       "Mi a különbség egy Wordpress alapú és egy általunk készített weboldalban?  Mindez hogyan befolyásolja a betöltési időt, a felhasználók megtartását és a keresési rangsorolást. ",
     link: "#howWeWork",
   },
   {
+    id:"blog-02",
     description:
       "Hogyan kell olyan weboldalt tervezni, amely magas konverziós rátát tud produkálni? Mik a buktatók? Mi az amire érdemes odafigyelni egy ilyen tervezési folyamatba belevágva?",
     link: "#howWeWork",
   },
   {
+    id:"blog-03",
     description:
       "A Google Core Vitals mérőszámai megváltoztatják a webhelyek rangsorolását az optimalizált mobilélmény érdekében. Mit érdemes tundi a mérőszámok kapcsán? Hogyan tudjuk pozitív irányba változtatni őket?",
     link: "#howWeWork",
@@ -36,14 +38,7 @@ const Researches = () => {
             <div key={research.link + index} className="flex ">
               <div className="flex flex-col justify-between gap-5 w-[210px] min-[1280px]:w-[286px]">
                 <p className="text-p text-white">{research.description}</p>
-                <Link href={research.link}>
-                  <Button
-                    className="bg-transparent text-outlaw text-primary-green border-none p-0"
-                    variant="link"
-                  >
-                    Bővebben
-                  </Button>
-                </Link>
+                <GoToBlogArticleButton research={research}/>
               </div>
               {index < researches.length - 1 && (
                 <div className="h-full w-[1px] bg-white mx-16" />

@@ -4,6 +4,7 @@ import MinusIcon from "@/components/icons/minus-icon";
 import PlusIcon from "@/components/icons/plus-icon";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 const WorkStepCard = ({
   stepNr,
@@ -15,6 +16,12 @@ const WorkStepCard = ({
   description: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleOnClick = () => {
+    setIsOpen(!isOpen)
+    sendToMixpanel("how_we_work_card_clicked", {action: isOpen ? "open": "close", cardTitle: title})
+  }
+
   return (
     <div className="w-full rounded-[45px] bg-black border border-black pb-[3px]">
       <div
@@ -31,10 +38,10 @@ const WorkStepCard = ({
           {isOpen ? (
             <MinusIcon
               className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={handleOnClick}
             />
           ) : (
-            <PlusIcon className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
+            <PlusIcon className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer" onClick={handleOnClick} />
           )}
         </div>
         {isOpen && (
