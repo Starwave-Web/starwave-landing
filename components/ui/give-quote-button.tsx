@@ -3,11 +3,16 @@
 import React from "react";
 import { Button } from "./button";
 import { cn, scrollToSection } from "@/lib/utils";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 const GiveQuoteButton = ({ id }: { id: string }) => {
+  const handleOnClick = (section: string) => {
+    sendToMixpanel("give_quote_clicked", { quoteId: id });
+    scrollToSection(section);
+  };
   return (
     <Button
-      onClick={() => scrollToSection("contactUs")}
+      onClick={() => handleOnClick("contactUs")}
       className={cn(
         "py-[20px] px-[35px] h-[68px]",
         id === "premium"

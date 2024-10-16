@@ -3,6 +3,7 @@
 import { useState } from "react";
 import MinusIcon from "../icons/minus-icon";
 import PlusIcon from "../icons/plus-icon";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 const FAQCard = ({
   question,
@@ -12,6 +13,12 @@ const FAQCard = ({
   answer: string;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleOnClick = () => {
+    setIsOpen(!isOpen)
+    sendToMixpanel("faq_card_clicked", {action: isOpen ? "open": "close", question: question})
+  }
+  
   return (
     <div className="flex flex-col w-full gap-[32px]">
       <div className="flex items-center justify-between">
@@ -19,12 +26,12 @@ const FAQCard = ({
         {isOpen ? (
           <MinusIcon
             className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={handleOnClick}
           />
         ) : (
           <PlusIcon
             className="h-[30px] w-[30px]  md:h-[58px] md:w-[58px] cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={handleOnClick}
           />
         )}
       </div>

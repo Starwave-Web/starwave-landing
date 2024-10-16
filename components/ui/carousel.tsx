@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import CarouselArrow from "../icons/carousel-arrow";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -211,9 +212,14 @@ CarouselItem.displayName = "CarouselItem";
 
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
-  React.ComponentProps<typeof Button>
->(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  React.ComponentProps<typeof Button> & { btnLocation: string }
+>(({ className, variant = "outline", size = "icon",btnLocation, ...props }, ref) => {
   const { scrollPrev, canScrollPrev } = useCarousel();
+
+  const handleOnClick = () => {
+    sendToMixpanel("carousel_prev_clicked",{location: btnLocation})
+    scrollPrev()
+  }
 
   return (
     <button
@@ -222,7 +228,7 @@ const CarouselPrevious = React.forwardRef<
         className
       )}
       disabled={!canScrollPrev}
-      onClick={scrollPrev}
+      onClick={handleOnClick}
       {...props}
     >
       <CarouselArrow  data-disabled={!canScrollPrev} className="fill-white data-[disabled=true]:fill-[#5E5E65] rotate-180"/>
@@ -234,9 +240,14 @@ CarouselPrevious.displayName = "CarouselPrevious";
 
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
-  React.ComponentProps<typeof Button>
->(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+  React.ComponentProps<typeof Button> & { btnLocation: string }
+>(({ className, variant = "outline", size = "icon", btnLocation, ...props }, ref) => {
   const { scrollNext, canScrollNext } = useCarousel();
+
+  const handleOnClick = () => {
+    sendToMixpanel("carousel_next_clicked",{location: btnLocation})
+    scrollNext()
+  }
 
   return (
     <button
@@ -245,7 +256,7 @@ const CarouselNext = React.forwardRef<
         className
       )}
       disabled={!canScrollNext}
-      onClick={scrollNext}
+      onClick={handleOnClick}
       {...props}
     >
       <CarouselArrow data-disabled={!canScrollNext} className="fill-white data-[disabled=true]:fill-[#5E5E65]" />
@@ -256,14 +267,15 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = "CarouselNext";
 
 const CarouselDots = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => {
+  HTMLDivElement, 
+  React.HTMLAttributes<HTMLDivElement>  & { btnLocation: string }
+>(({ className, btnLocation, ...props }, ref) => {
   const { api, onDotButtonClick, selectedIndex } = useCarousel();
   const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
 
 
   const onBtnClick = (index: number, selectedIndex:  number) => {
+    sendToMixpanel("carousel_dot_clicked",{location: btnLocation})
     onDotButtonClick(index)
     console.log(index)
     console.log(selectedIndex)

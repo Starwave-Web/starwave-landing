@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import TopRightArrow from "@/components/icons/top-right-arrow";
 import Image, { type StaticImageData } from "next/image";
 import { Button } from "./button";
+import sendToMixpanel from "@/lib/sendToMixpanel";
 export type ServiceCardVariants = "grey" | "green" | "dark";
 
 const ServiceCard = ({
@@ -14,7 +15,7 @@ const ServiceCard = ({
   description,
   variant,
 }: {
-  id:number,
+  id: number;
   title: [string, string];
   illustration: StaticImageData;
   description: string;
@@ -63,7 +64,12 @@ const ServiceCard = ({
                   <div className="h-[41px] w-[41px] rounded-full bg-black group-data-[variant=dark]:bg-white flex justify-center items-center">
                     <TopRightArrow className="fill-primary-green group-data-[variant=dark]:fill-black" />
                   </div>
-                  <p className="text-outlaw text-black group-data-[variant=dark]:text-white hidden sm:block">
+                  <p
+                    onClick={() =>
+                      sendToMixpanel("service_card_clicked", { cardId: id })
+                    }
+                    className="text-outlaw text-black group-data-[variant=dark]:text-white hidden sm:block"
+                  >
                     Bővebben
                   </p>
                 </button>
