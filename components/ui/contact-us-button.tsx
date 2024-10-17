@@ -7,7 +7,7 @@ import sendToMixpanel from "@/lib/sendToMixpanel";
 const ContactUsButton = () => {
 
   const handleOnClick = (section:string) => {
-    sendToMixpanel("cta_btn_clciked")
+    sendToMixpanel("cta_btn_clicked")
     scrollToSection(section)
   }
   return (

@@ -4,6 +4,15 @@ const sendToMixpanel = async (
   eventName: string,
   eventProperties?: Record<string, any>
 ) => {
+
+  // Check for user consent
+  const consent = localStorage.getItem("trackingConsent");
+
+  if (consent !== "true") {
+    return; // Exit if consent is not given
+  }
+
+
   //here we are getting the location from a separate endpoint /api/proxy
   const locationResponse = await fetch("/api/proxy");
   const locationData = await locationResponse.json();

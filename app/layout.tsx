@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import { Toaster } from "@/components/ui/toaster";
+import AskTrackingConsent from "@/components/ui/ask-tracking-consent";
 
 const space = Space_Grotesk({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <div className="h-10 md:h-[70px]" />
         {children}
         <Toaster />
+        <AskTrackingConsent />
       </body>
     </html>
   );
