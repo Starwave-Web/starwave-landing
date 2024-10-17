@@ -13,7 +13,7 @@ const FAQSelector = ({
   setActiveId: Dispatch<SetStateAction<string>>;
 }) => {
   const setActiveIdWithMixpanel = (optionId: string) => {
-    sendToMixpanel("FAQ_selector_clicked", { optionId: optionId });
+    sendToMixpanel("faq_selector_clicked", { optionId: optionId });
     setActiveId(optionId);
   };
   return (
