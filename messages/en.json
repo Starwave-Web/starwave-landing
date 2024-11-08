@@ -1,0 +1,41 @@
+{
+    "footer": {
+      "navigation": {
+        "blog": "Blog",
+        "howWeWork": "How We Work",
+        "prices": "Prices",
+        "testimonials": "Testimonials",
+        "faq": "FAQ",
+        "contact": "Contact"
+      },
+      "contactSection": {
+        "title": "Contact:",
+        "emailLabel": "Email",
+        "email": "starwaveweb@gmail.com",
+        "phoneLabel": "Phone",
+        "phone": "+36 30 609 0155",
+        "addressLabel": "Address",
+        "address": "2440 Százhalombatta Tél Street 41"
+      },
+      "socialLinks": {
+        "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
+        "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
+        "instagram": "https://www.instagram.com/starwaveweb/"
+      },
+      "copyright": {
+        "text": "© 2024 Starwave Web Development Agency. All rights reserved.",
+        "privacyPolicy": "Privacy Policy"
+      }
+    },
+    "callToAction": {
+      "title": "Let's work together!",
+      "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online."
+    },
+    "contactUs": {
+      "header": {
+        "title": "Contact Us",
+        "description": "Reach out to us, and let’s start developing your business online together!"
+      }
+    }
+  }
+  
