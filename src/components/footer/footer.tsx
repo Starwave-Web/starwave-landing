@@ -82,21 +82,21 @@ const Footer = () => {
               <Link
                 onClick={() => sendToMixpanel("linkedin_logo_clicked")}
                 target="_blank"
-                href="https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true"
+                href={t('socialLinks.linkedin')}
               >
                 <LinkedInIcon className="fill-white hover:fill-primary-green" />
               </Link>
               <Link
               onClick={() => sendToMixpanel("facebook_logo_clicked")}
                 target="_blank"
-                href="https://www.facebook.com/profile.php?id=61566881334932"
+                href={t('socialLinks.facebook')}
               >
                 <FacebookIcon className="fill-white hover:fill-primary-green" />
               </Link>
               <Link
               onClick={() => sendToMixpanel("instagram_logo_clicked")}
                 target="_blank"
-                href="https://www.instagram.com/starwaveweb/"
+                href={t('socialLinks.instagram')}
               >
                 <InstagramIcon className="fill-white hover:fill-primary-green" />
               </Link>
@@ -132,14 +132,14 @@ const Footer = () => {
             <div className="w-full h-px bg-white" />
             <div className="flex items-center gap-10">
               <p className="text-p-mobile md:text-p text-white">
-                © 2024 Starwave Web Development Agency. Minden jog fentartva.
+              {t('copyright.text')}
               </p>
               <Link
                 onClick={() => sendToMixpanel("privacy_policy_clicked")}
                 href="/"
                 className="text-p-mobile md:text-form-input underline text-white hover:text-primary-green"
               >
-                Adatkezelési szabályzat
+                {t('copyright.privacyPolicy')}
               </Link>
             </div>
           </div>

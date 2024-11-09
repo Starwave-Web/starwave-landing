@@ -14,20 +14,24 @@ import { Input } from "./input";
 import { Button } from "./button";
 import { useToast } from "./use-toast";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
+import { useTranslations } from "next-intl";
 
-const formSchema = z.object({
+
+
+const NewsletterForm = () => {
+  const { toast } = useToast();
+  const t = useTranslations("footer.newsletterForm")
+
+  const formSchema = z.object({
   "form-name": z.string().default("newsletter"),
   "bot-field": z.string().optional(),
   subject: z.string().default("Newsletter registration"),
   email: z
     .string()
-    .email("A megadott email hibás formátumú")
-    .min(1, { message: "A mező kitöltése kötelező" })
-    .max(50, { message: "Túllépted a megengedett karakterszámot" }),
+    .email(t('validation.invalidEmail'))
+    .min(1, { message: t('validation.requiredField') })
+    .max(50, { message: t('validation.characterLimitExceeded') }),
 });
-
-const NewsletterForm = () => {
-  const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

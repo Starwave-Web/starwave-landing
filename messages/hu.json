@@ -29,7 +29,8 @@
     },
     "callToAction": {
         "title": "Dolgozzunk együtt!",
-        "description": "Vedd fel velünk még ma a kapcsolatot, ha többet szeretnél megtudni arról, hogy szolgáltatásaink hogyan segíthetnek a vállalkozásodnak az online növekedésben és sikerben."
+        "description": "Vedd fel velünk még ma a kapcsolatot, ha többet szeretnél megtudni arról, hogy szolgáltatásaink hogyan segíthetnek a vállalkozásodnak az online növekedésben és sikerben.",
+        "button":"Kapcsolatfelvétel"
     },
     "contactUs": {
         "header": {

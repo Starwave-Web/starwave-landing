@@ -15,7 +15,7 @@
         "phoneLabel": "Phone",
         "phone": "+36 30 609 0155",
         "addressLabel": "Address",
-        "address": "2440 Százhalombatta Tél Street 41"
+        "address": "Tallörtsbacken 25. 554 58 Jönköping"
       },
       "socialLinks": {
         "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
@@ -29,7 +29,8 @@
     },
     "callToAction": {
       "title": "Let's work together!",
-      "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online."
+      "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online.",
+      "button":"Contact us"
     },
     "contactUs": {
       "header": {
