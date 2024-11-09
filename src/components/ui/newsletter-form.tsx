@@ -60,21 +60,21 @@ const NewsletterForm = () => {
       if (res.status === 200) {
         form.reset();
         toast({
-          title: "Sikeres feliratkozás!",
-          description: "Hamarosan értesülhetsz legújabb szolgáltatásainkról!",
+          title: t('successTitle'),
+          description: t('successDescription'),
         });
       } else {
         toast({
           variant: "destructive",
-          title: "Valami hiba történt.",
-          description: "Próbáld újra.",
+          title: t('errorTitle'),
+          description: t('errorDescription'),
         });
       }
     } catch (error) {
       toast({
         variant: "destructive",
-        title: "Valami hiba történt.",
-        description: "Próbáld újra.",
+        title: t('errorTitle'),
+        description: t('errorDescription'),
       });
     }
   };
@@ -138,7 +138,7 @@ const NewsletterForm = () => {
             variant="secondary"
             type="submit"
           >
-            Feliratkozom a hírlevélre
+            {t('submitButton')}
           </Button>
         </div>
       </form>

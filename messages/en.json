@@ -1,42 +1,96 @@
 {
-    "footer": {
-      "navigation": {
-        "blog": "Blog",
-        "howWeWork": "How We Work",
-        "prices": "Prices",
-        "testimonials": "Testimonials",
-        "faq": "FAQ",
-        "contact": "Contact"
-      },
-      "contactSection": {
-        "title": "Contact:",
-        "emailLabel": "Email",
-        "email": "starwaveweb@gmail.com",
-        "phoneLabel": "Phone",
-        "phone": "+36 30 609 0155",
-        "addressLabel": "Address",
-        "address": "Tallörtsbacken 25. 554 58 Jönköping"
-      },
-      "socialLinks": {
-        "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
-        "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
-        "instagram": "https://www.instagram.com/starwaveweb/"
-      },
-      "copyright": {
-        "text": "© 2024 Starwave Web Development Agency. All rights reserved.",
-        "privacyPolicy": "Privacy Policy"
-      }
+  "footer": {
+    "navigation": {
+      "blog": "Blog",
+      "howWeWork": "How We Work",
+      "prices": "Prices",
+      "testimonials": "Testimonials",
+      "faq": "FAQ",
+      "contact": "Contact"
     },
-    "callToAction": {
-      "title": "Let's work together!",
-      "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online.",
-      "button":"Contact us"
+    "contactSection": {
+      "title": "Contact:",
+      "emailLabel": "Email",
+      "email": "starwaveweb@gmail.com",
+      "phoneLabel": "Phone",
+      "phone": "+36 30 609 0155",
+      "addressLabel": "Address",
+      "address": "Tallörtsbacken 25. 554 58 Jönköping"
     },
-    "contactUs": {
-      "header": {
-        "title": "Contact Us",
-        "description": "Reach out to us, and let’s start developing your business online together!"
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
+      "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
+      "instagram": "https://www.instagram.com/starwaveweb/"
+    },
+    "copyright": {
+      "text": "© 2024 Starwave Web Development Agency. All rights reserved.",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "newsletterForm": {
+      "formName": "newsletter",
+      "subject": "Newsletter registration",
+      "emailPlaceholder": "Email",
+      "submitButton": "Subscribe to the newsletter",
+      "successTitle": "Subscription successful!",
+      "successDescription": "You’ll soon be informed about our latest services!",
+      "errorTitle": "Something went wrong.",
+      "errorDescription": "Please try again.",
+      "validation": {
+        "invalidEmail": "The provided email is invalid",
+        "requiredField": "This field is required",
+        "characterLimitExceeded": "You have exceeded the character limit"
       }
     }
+  },
+  "callToAction": {
+    "title": "Let's work together!",
+    "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online.",
+    "button": "Contact us"
+  },
+  "contactUs": {
+    "header": {
+      "title": "Contact Us",
+      "description": "Reach out to us, and let’s start developing your business online together!"
+    },
+    "form": {
+      "formName": "Contact",
+      "subject": {
+        "question": "I have a question",
+        "quote": "Request a quote"
+      },
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "button": "Send",
+      "successMessage": {
+        "title": "Message sent successfully!",
+        "description": "We will get in touch with you soon!"
+      },
+      "errorMessage": {
+        "title": "Something went wrong.",
+        "description": "Please try again."
+      },
+      "validation": {
+        "requiredField": "This field is required",
+        "invalidEmail": "Invalid email format",
+        "characterLimitExceeded": "Character limit exceeded"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Have a question? Check out our FAQ section where we provide detailed information about what we do, our rates, and our process.",
+    "categories": {
+      "prices": "Prices",
+      "subscriptions": "Subs",
+      "webpage": "Webpage"
+    }
   }
-  
+}

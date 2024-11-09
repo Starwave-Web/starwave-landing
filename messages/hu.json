@@ -1,42 +1,96 @@
 {
-    "footer": {
-      "navigation": {
-        "blog": "Blog",
-        "howWeWork": "Hogyan dolgozunk?",
-        "prices": "Árak",
-        "testimonials": "Visszajelzések",
-        "faq": "FAQ",
-        "contact": "Kapcsolat"
-      },
-      "contactSection": {
-        "title": "Kapcsolatfelvétel:",
-        "emailLabel": "Email",
-        "email": "starwaveweb@gmail.com",
-        "phoneLabel": "Telefon",
-        "phone": "+36 30 609 0155",
-        "addressLabel": "Cím",
-        "address": "2440 Százhalombatta Tél utca 41."
-      },
-      "socialLinks": {
-        "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
-        "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
-        "instagram": "https://www.instagram.com/starwaveweb/"
-      },
-      "copyright": {
-        "text": "© 2024 Starwave Web Development Agency. Minden jog fentartva.",
-        "privacyPolicy": "Adatkezelési szabályzat"
+  "footer": {
+    "navigation": {
+      "blog": "Blog",
+      "howWeWork": "Hogyan dolgozunk?",
+      "prices": "Árak",
+      "testimonials": "Visszajelzések",
+      "faq": "FAQ",
+      "contact": "Kapcsolat"
+    },
+    "contactSection": {
+      "title": "Kapcsolatfelvétel:",
+      "emailLabel": "Email",
+      "email": "starwaveweb@gmail.com",
+      "phoneLabel": "Telefon",
+      "phone": "+36 30 609 0155",
+      "addressLabel": "Cím",
+      "address": "2440 Százhalombatta Tél utca 41."
+    },
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
+      "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
+      "instagram": "https://www.instagram.com/starwaveweb/"
+    },
+    "copyright": {
+      "text": "© 2024 Starwave Web Development Agency. Minden jog fentartva.",
+      "privacyPolicy": "Adatkezelési szabályzat"
+    },
+    "newsletterForm": {
+      "formName": "hírlevél",
+      "subject": "Hírlevél feliratkozás",
+      "emailPlaceholder": "Email",
+      "submitButton": "Feliratkozom a hírlevélre",
+      "successTitle": "Sikeres feliratkozás!",
+      "successDescription": "Hamarosan értesülhetsz legújabb szolgáltatásainkról!",
+      "errorTitle": "Valami hiba történt.",
+      "errorDescription": "Próbáld újra.",
+      "validation": {
+        "invalidEmail": "A megadott email hibás formátumú",
+        "requiredField": "A mező kitöltése kötelező",
+        "characterLimitExceeded": "Túllépted a megengedett karakterszámot"
       }
+    }
+  },
+  "callToAction": {
+    "title": "Dolgozzunk együtt!",
+    "description": "Vedd fel velünk még ma a kapcsolatot, ha többet szeretnél megtudni arról, hogy szolgáltatásaink hogyan segíthetnek a vállalkozásodnak az online növekedésben és sikerben.",
+    "button": "Kapcsolatfelvétel"
+  },
+  "contactUs": {
+    "header": {
+      "title": "Kapcsolatfelvétel",
+      "description": "Lépj velünk kapcsolatba, kezdjük el közösen a vállalkozásod online fejlesztését!"
     },
-    "callToAction": {
-        "title": "Dolgozzunk együtt!",
-        "description": "Vedd fel velünk még ma a kapcsolatot, ha többet szeretnél megtudni arról, hogy szolgáltatásaink hogyan segíthetnek a vállalkozásodnak az online növekedésben és sikerben.",
-        "button":"Kapcsolatfelvétel"
-    },
-    "contactUs": {
-        "header": {
-            "title": "Kapcsolatfelvétel",
-            "description": "Lépj velünk kapcsolatba, kezdjük el közösen a vállalkozásod online fejlesztését!"
-        }
+    "form": {
+      "formName": "Kapcsolatfelvétel",
+      "subject": {
+        "question": "Kérdésem van",
+        "quote": "Árajánlatot kérek"
+      },
+      "labels": {
+        "name": "Név",
+        "email": "Email",
+        "message": "Üzenet"
+      },
+      "placeholders": {
+        "name": "Név",
+        "email": "Email",
+        "message": "Üzenet"
+      },
+      "button": "Küldés",
+      "successMessage": {
+        "title": "Sikeres üzenetküldés!",
+        "description": "Hamarosan felvesszük veled a kapcsolatot!"
+      },
+      "errorMessage": {
+        "title": "Valami hiba történt.",
+        "description": "Próbáld újra."
+      },
+      "validation": {
+        "requiredField": "A mező kitöltése kötelező",
+        "invalidEmail": "A megadott email hibás formátumú",
+        "characterLimitExceeded": "Túllépted a megengedett karakterszámot"
+      }
+    }
+  },
+  "faq": {
+    "title": "GYIK",
+    "description": "Kérdésed van? Nézd át a GYIK szekciónkat, ahol részletesebb információt biztosítunk arról, hogy mit csinálunk, mennyit kérünk, mi a folyamatunk.",
+    "categories": {
+      "prices": "Árak",
+      "subscriptions": "Folyamat",
+      "webpage": "Weboldal"
     }
   }
-  
+}

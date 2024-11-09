@@ -4,12 +4,9 @@ import { useState } from "react";
 import FAQCard from "../ui/faq-card";
 import FAQSelector from "../ui/faq-selector";
 import Header from "../ui/header";
+import { useTranslations } from "next-intl";
 
-const options = [
-  { id: "prices", title: "Árak" },
-  { id: "subscriptions", title: "Előfizetések" },
-  { id: "webpage", title: "Weboldal" },
-];
+
 
 const questions = {
     prices: [
@@ -126,13 +123,20 @@ const questions = {
 
 const FAQ = () => {
   const [activeId, setActiveId] = useState("prices");
+  const t = useTranslations('faq')
+
+  const options = [
+    { id: "prices", title: t('categories.prices') },
+    { id: "subscriptions", title: t('categories.subscriptions') },
+    { id: "webpage", title: t('categories.webpage') },
+  ];
 
   return (
     <section id="FAQ" className="w-full scroll-mt-28">
       <Header
-        title="FAQ"
+        title={t('title')}
         description={
-          "Kérdésed van? Nézd át a FAQ szekciónkat ahol részletesebb információt\n biztosítunk arról, hogy mit csinálunk, mennyit kérünk, mi a folyamatunk."
+          t('description')
         }
       />
       <div className="container px-5 flex flex-col mx-auto gap-[32px] mb-[96px] md:mb-[100px] mt-10 md:mt-20">
