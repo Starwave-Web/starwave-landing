@@ -5,8 +5,7 @@ import FAQCard from "../ui/faq-card";
 import FAQSelector from "../ui/faq-selector";
 import Header from "../ui/header";
 import { useTranslations } from "next-intl";
-
-
+import FAQList from "../ui/faq-list";
 
 const questions = {
     prices: [
@@ -145,13 +144,14 @@ const FAQ = () => {
           activeId={activeId}
           setActiveId={setActiveId}
         />
-        {questions[activeId as keyof typeof questions].map((question) => (
+        {/* {questions[activeId as keyof typeof questions].map((question) => (
           <FAQCard
             key={question.question}
             question={question.question}
             answer={question.answer}
           />
-        ))}
+        ))} */}
+        <FAQList activeId={activeId}/>
       </div>
     </section>
   );

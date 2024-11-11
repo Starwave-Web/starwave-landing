@@ -91,6 +91,107 @@
       "prices": "Prices",
       "subscriptions": "Subs",
       "webpage": "Webpage"
+    },
+    "questions": {
+      "prices": [
+        {
+          "question": "How long does the subscription last?",
+          "answer": "The subscription plan is for at least 12 months and then renews monthly. After 12 months, you can cancel anytime. If you cancel, you cannot keep the website (otherwise, everyone would do this, and we would go out of business!)."
+        },
+        {
+          "question": "What happens if I cancel after 12 months and want to come back?",
+          "answer": "You’ll need to sign a new 12-month contract."
+        },
+        {
+          "question": "What happens if I cancel before the end of the 12 months?",
+          "answer": "If you cancel before 12 months, you’ll need to pay the full website price of 300,000 Ft, minus any payments made so far."
+        },
+        {
+          "question": "How do you handle late payments?",
+          "answer": "Each invoice has a 7-day grace period. If it’s not paid within 7 days, we charge a 3,000 Ft late fee."
+        },
+        {
+          "question": "How does payment work, and what payment methods do you accept?",
+          "answer": "We send invoices via email through Stripe, allowing secure payment information entry."
+        },
+        {
+          "question": "Is the price for additional pages a one-time or monthly fee?",
+          "answer": "The price for extra pages is a one-time fee of 10,000 Ft."
+        },
+        {
+          "question": "Are there refunds?",
+          "answer": "If you sign a contract and we can’t create something you're 100% satisfied with, we will refund your initial payment."
+        }
+      ],
+      "subscriptions": [
+        {
+          "question": "Do I need to continue paying after the 12-month minimum period?",
+          "answer": "Yes, subscriptions are indefinite. Monthly payments continue after the 12-month minimum."
+        },
+        {
+          "question": "Can I buy out of the subscription after the minimum period?",
+          "answer": "No, there is no option to buy out of the monthly subscription."
+        },
+        {
+          "question": "Can I add unlimited editing and support to the one-time payment package?",
+          "answer": "Yes! We offer a monthly add-on for 6,000 Ft that provides unlimited editing and support."
+        },
+        {
+          "question": "What is the difference between a one-time payment and a subscription?",
+          "answer": "With a subscription, you will pay more over time but in manageable monthly amounts."
+        },
+        {
+          "question": "Is SEO included in the packages?",
+          "answer": "Yes and no. On-page SEO is included, but Off-page SEO is not."
+        },
+        {
+          "question": "Do you also work with e-commerce sites?",
+          "answer": "Our team specializes in optimizing websites and landing pages."
+        },
+        {
+          "question": "If I cancel the subscription, can I keep my domain name?",
+          "answer": "Yes, the domain name is always yours."
+        }
+      ],
+      "webpage": [
+        {
+          "question": "How long does the development process take from start to finish?",
+          "answer": "We typically complete a website within 2-4 weeks."
+        },
+        {
+          "question": "Can I keep my website if I cancel the subscription?",
+          "answer": "No, but the domain name remains yours."
+        },
+        {
+          "question": "Do we own our domain?",
+          "answer": "Yes. If you cancel the subscription, we will transfer ownership to you."
+        },
+        {
+          "question": "Do you use WordPress or page builders?",
+          "answer": "No! All websites we build are custom-coded by hand."
+        },
+        {
+          "question": "What technologies do you use?",
+          "answer": "We use the latest technologies, such as Next.js, Tailwind CSS, and Netlify."
+        },
+        {
+          "question": "Why custom code instead of WordPress?",
+          "answer": "Custom code is faster, more secure, and fully customizable."
+        },
+        {
+          "question": "I already have a website. Do you offer redesigns?",
+          "answer": "We only guarantee support for websites developed by our team."
+        },
+        {
+          "question": "How can we request changes to our website?",
+          "answer": "Please send an email to starwaveweb@gmail.com."
+        }
+      ]
     }
+  },
+  "hero": {
+    "headline": "Unlock the potential within your company.",
+    "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from 15,000 Ft per month.",
+    "ctaButton": "Go to Prices"
   }
 }
