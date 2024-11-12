@@ -4,8 +4,10 @@ import React from "react";
 import { Button } from "./button";
 import { cn, scrollToSection } from "@/src/lib/utils";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
+import { useTranslations } from "next-intl";
 
 const GiveQuoteButton = ({ id }: { id: string }) => {
+  const t = useTranslations('prices.planCard')
   const handleOnClick = (section: string) => {
     sendToMixpanel("give_quote_clicked", { quoteId: id });
     scrollToSection(section);
@@ -20,7 +22,7 @@ const GiveQuoteButton = ({ id }: { id: string }) => {
           : "bg-primary-dark text-white"
       )}
     >
-      Ajánlatkérés
+      {t('giveQuoteBtn')}
     </Button>
   );
 };

@@ -193,5 +193,206 @@
     "headline": "Hozd ki a cégedben rejlő potenciált.",
     "description": "A Starwave csapata gyors és magas konverziós rátájú weboldalakat és landing page-eket készít, kis- és középvállalkozások számára. Egyedi kód, valós eredmények, havi 15 ezer Ft-tól.",
     "ctaButton": "Szolgáltatások és árak"
+  },
+  "howWeWork": {
+    "howWeWorkTitle": {
+      "part1": "Hogyan",
+      "part2": "dolgozunk?"
+    },
+    "description": "A szerződés aláírása után küldünk neked egy rövid kérdőívet a vállalkozásodról és az általatok kínált szolgáltatásokról. Ez alapján megírjuk a teljes weboldal szövegét, elkészítjük a designt, és miután jóváhagytad, felépítjük a weboldalt. Az egész folyamat általában 2-3 hét alatt lezajlik, az elejétől a végéig.",
+    "workSteps": [
+      {
+        "stepNr": "01",
+        "title": "Kick off & Igényfelmérés",
+        "description": "A projekt elindítása során közösen meghatározzuk a célokat és követelményeket egy kérdőív segítségével, majd a kreatív csapat megalkotja a webdesign tervet, amely teljes mértékben igazodik az igényeidhez."
+      },
+      {
+        "stepNr": "02",
+        "title": "Web Design elfogadás",
+        "description": "A design bemutatását követően a visszajelzéseid alapján véglegesítjük a terveket. Célunk, hogy a végeredmény minden szempontból megfeleljen az elképzeléseknek."
+      },
+      {
+        "stepNr": "03",
+        "title": "Implementáció",
+        "description": "A végleges design terv alapján megkezdődik a weboldal fejlesztése és implementációja."
+      },
+      {
+        "stepNr": "04",
+        "title": "Tesztelés",
+        "description": "Az implementáció után alapos tesztelés következik, mely során minden funkciót és elemet ellenőrzünk. A cél, hogy a weboldal hibamentesen működjön, és minden technikai követelménynek megfeleljen. A végleges átadás előtt küldünk egy demo linket ahol még utoljára véleményezheted."
+      },
+      {
+        "stepNr": "05",
+        "title": "Termék átadás",
+        "description": "A sikeres tesztelést követően átadjuk a kész weboldalt. Ezzel a lépéssel zárul a projekt fejlesztési szakasza."
+      },
+      {
+        "stepNr": "06",
+        "title": "Üzemeltetés",
+        "description": "Az átadott weboldal üzemeltetése során monitorozzuk a teljesítményt és biztosítjuk a szükséges karbantartásokat. Célunk, hogy az oldal mindig naprakész, gyors és felhasználóbarát legyen."
+      }
+    ]
+  },
+  "prices": {
+    "pricingTitle": "Árak",
+    "pricingDescription": "Válaszd ki ajánlataink közül azt amely legjobban illeszkedik a költségvetésedhez.",
+    "plans": [
+      {
+        "id": "basic",
+        "name": "Egyösszegű",
+        "price": "300.000 Ft",
+        "featureList": [
+          {
+            "isIncluded": true,
+            "featureName": "Választható design, egyedi kód"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ Havi 3.500 Ft üzemeltetési díj"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ 10.000 Ft oldalanként 5 oldal után"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ Havi 6.000 Ft végtelen változtatás"
+          },
+          { "isIncluded": false, "featureName": "24/7 üzemeltetés" },
+          { "isIncluded": false, "featureName": "Folyamatos frissítés" }
+        ]
+      },
+      {
+        "id": "premium",
+        "name": "Havonta",
+        "price": "15.000 Ft",
+        "featureList": [
+          {
+            "isIncluded": true,
+            "featureName": "Választható design, egyedi kód"
+          },
+          { "isIncluded": true, "featureName": "Tárhely" },
+          {
+            "isIncluded": true,
+            "featureName": "+ 10.000 Ft oldalanként 5 oldal után"
+          },
+          { "isIncluded": true, "featureName": "Végtelen változtatás" },
+          { "isIncluded": true, "featureName": "24/7 üzemeltetés" },
+          { "isIncluded": true, "featureName": "Folyamatos frissítés" }
+        ]
+      },
+      {
+        "id": "custom",
+        "name": "Egyedi",
+        "price": "Egyedi árajánlat",
+        "featureList": [
+          { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+          { "isIncluded": true, "featureName": "Tárhely" },
+          {
+            "isIncluded": true,
+            "featureName": "Oldalak száma egyedi ajánlat alapján"
+          },
+          { "isIncluded": true, "featureName": "Végtelen változtatás" },
+          { "isIncluded": true, "featureName": "24/7 üzemeltetés" },
+          { "isIncluded": true, "featureName": "Folyamatos frissítés" }
+        ]
+      }
+    ],
+    "planCard": {
+      "priceLabel": "Indulóár",
+      "monthlyLabel": "Havonta",
+      "customMaintenance": "+ Egyedi üzemeltetési díj",
+      "basicMaintenance": "+ Havi 3.500 Ft üzemeltetési díj",
+      "premiumContract": "Minimum 1 éves szerződés",
+      "giveQuoteBtn": "Ajánlatkérés"
+    }
+  },
+  "researchesSection": {
+    "title": "Blog",
+    "description": "Jobban elmélyülnél egy-egy témában a terület kapcsán? Olvass bele cikkjeinkbe!",
+    "researches": [
+      {
+        "id": "blog-01",
+        "description": "Mi a különbség egy Wordpress alapú és egy általunk készített weboldalban? Mindez hogyan befolyásolja a betöltési időt, a felhasználók megtartását és a keresési rangsorolást.",
+        "link": "#howWeWork"
+      },
+      {
+        "id": "blog-02",
+        "description": "Hogyan kell olyan weboldalt tervezni, amely magas konverziós rátát tud produkálni? Mik a buktatók? Mi az amire érdemes odafigyelni egy ilyen tervezési folyamatba belevágva?",
+        "link": "#howWeWork"
+      },
+      {
+        "id": "blog-03",
+        "description": "A Google Core Vitals mérőszámai megváltoztatják a webhelyek rangsorolását az optimalizált mobilélmény érdekében. Mit érdemes tudni a mérőszámok kapcsán? Hogyan tudjuk pozitív irányba változtatni őket?",
+        "link": "#howWeWork"
+      }
+    ],
+    "findOutMore": "Bővebben"
+  },
+  "servicesSection": {
+    "title": "A termékről",
+    "description": "Minden egyes sor kódot kézzel írunk, hogy a legjobb teljesítményt biztosítsuk, és a Google-t boldoggá tegyük. Ez segít több ügyfelet hozni a webhelyedre, és ezáltal több bevételt hoz a vállalkozásodnak.",
+    "services": [
+      {
+        "id": 1,
+        "title": ["Mobile First", "Design"],
+        "description": "Elsőként a mobil eszközökre építjük a webhelyed, így a kód clean és optimalizált lesz, minden fölösleges sallang nélkül. Ez nemcsak gyorsítja a webhelyet, de ez az első lépés a reszponzivitás felé."
+      },
+      {
+        "id": 2,
+        "title": ["Teljesen", "Reszponzív"],
+        "description": "A webhelyed minden képernyőmérethez alkalmazkodni fog – legyen az mobil, tablet vagy asztali számítógép. Bárhonnan is látogatják meg, mindig tökéletesen mutat majd."
+      },
+      {
+        "id": 3,
+        "title": ["Optimalizált", "Oldalsebesség"],
+        "description": "Ha a webhelyed 3 másodpercnél tovább tölt be, akár a látogatóid felét is elveszítheted. Mi úgy készítjük el az oldaladat, hogy optimális esetben 1 másodperc alatt betöltődjön, így senki sem fog türelmetlenül távozni."
+      },
+      {
+        "id": 4,
+        "title": ["Egyedi Kód", "és Design"],
+        "description": "Minden weboldalt egyedileg, kézzel írunk meg, nincsenek sablonok vagy oldalépítők. Ez az, ami megkülönböztet minket – külön figyelmet fordítunk arra, hogy a lehető legjobb eredményt érjük el, ami a weboldalad indulása után is tükröződni fog az online jelenléteden."
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "title": "Visszajelzések",
+    "description": "Ügyfeleink elégedettsége számunkra a legfontosabb, néhány visszajelzés az elmúlt időszakból:",
+    "testimonials": [
+      {
+        "name": "Kovács András",
+        "occupation": "Marketing Manager",
+        "description": "Lenyűgözött a csapat kreativitása és szakértelme! A webdesign teljes mértékben megfelelt az elvárásainknak, és az oldalunk konverziói jelentősen megnőttek. Mindenképpen ajánlom őket mindenkinek, aki profi webfejlesztő csapatot keres."
+      },
+      {
+        "name": "Szabó Éva",
+        "occupation": "Vállalkozó",
+        "description": "Professzionális és gyors szolgáltatás! A teljes folyamatot gördülékenyen vezették, és mindig figyelembe vették az igényeimet. Az új weboldalunk fantasztikus lett, az ügyfeleink is imádják. Köszönöm a remek munkát!"
+      },
+      {
+        "name": "Tóth Gábor",
+        "occupation": "Ügyvezető igazgató",
+        "description": "A csapat nagyon jól megértette az üzleti igényeinket és kiváló weboldalt készített számunkra. Az implementáció gyors és hibátlan volt. Nagyon elégedettek vagyunk!"
+      },
+      {
+        "name": "Nagy Petra",
+        "occupation": "Digitális Stratéga",
+        "description": "Kivételes figyelmet kaptunk a projekt minden szakaszában. A tesztelési fázis során is alaposan figyeltek minden részletre. A végeredmény minden várakozásunkat felülmúlta. Nagyszerű csapat!"
+      },
+      {
+        "name": "Varga Bence",
+        "occupation": "Projektmenedzser",
+        "description": "Az új weboldal üzemeltetése zökkenőmentesen indult, hála a precíz és részletes átadásnak. Az oldal gyors és felhasználóbarát. Elégedett vagyok a szolgáltatással."
+      }
+    ]
+  },
+  "navbar": {
+    "home": "Kezdőlap",
+    "blog": "Blog",
+    "howWeWork": "Hogyan dolgozunk?",
+    "prices": "Árak",
+    "testimonials": "Visszajelzések",
+    "FAQ": "FAQ",
+    "contactUs": "Kapcsolatfelvétel"
   }
 }

@@ -3,6 +3,7 @@ import FeatureListItem from "@/src/components/ui/feature-list-item";
 import { cn } from "@/src/lib/utils";
 import GiveQuoteIcon from "./give-quote-button";
 import GiveQuoteButton from "./give-quote-button";
+import { useTranslations } from "next-intl";
 
 const PlanCard = ({
   id,
@@ -15,6 +16,7 @@ const PlanCard = ({
   price: string;
   featureList: { isIncluded: boolean; featureName: string }[];
 }) => {
+  const t = useTranslations('prices.planCard')
   return (
     <div
       data-variant={id}
@@ -31,17 +33,17 @@ const PlanCard = ({
             <h3 className="text-h2-mobile md:text-h2 text-white bg-primary-dark rounded-[7px] px-[7px] group-data-[variant=premium]:text-black group-data-[variant=premium]:bg-primary-grey ">
               {name}
             </h3>
-            <p className="text-p-mobile text-black group-data-[variant=premium]:hidden">Indulóár</p>
-            <p className="text-p-mobile text-black hidden group-data-[variant=premium]:block">Havonta</p>
+            <p className="text-p-mobile text-black group-data-[variant=premium]:hidden">{t('priceLabel')}</p>
+            <p className="text-p-mobile text-black hidden group-data-[variant=premium]:block">{t('monthlyLabel')}</p>
             <h1 className="text-h2-mobile md:text-h2 text-black text-center whitespace-nowrap group-data-[variant=custom]:whitespace-normal">
               {price}
             </h1>
             <p className="text-p-mobile text-black text-center">
               {id === "custom"
-                ? "+ Egyedi üzemeltetési díj"
+                ? t('customMaintenance')
                 : id === "basic"
-                ? "+ Havi 3.500 Ft üzemeltetési díj"
-                : "Minimum 1 éves szerződés"}
+                ? t('basicMaintenance')
+                : t('premiumContract')}
               
             </p>
           </div>

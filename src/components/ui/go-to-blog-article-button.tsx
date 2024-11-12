@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./button";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
+import { useTranslations } from "next-intl";
 
 const GoToBlogArticleButton = ({
   research,
@@ -14,6 +15,7 @@ const GoToBlogArticleButton = ({
     link: string;
   };
 }) => {
+  const t = useTranslations("researchesSection")
   return (
     <Link
       onClick={() =>
@@ -25,7 +27,7 @@ const GoToBlogArticleButton = ({
         className="bg-transparent text-outlaw text-primary-green border-none p-0"
         variant="link"
       >
-        Bővebben
+        {t('findOutMore')}
       </Button>
     </Link>
   );

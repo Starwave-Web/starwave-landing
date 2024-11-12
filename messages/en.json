@@ -193,5 +193,186 @@
     "headline": "Unlock the potential within your company.",
     "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from 15,000 Ft per month.",
     "ctaButton": "Go to Prices"
+  },
+  "howWeWork": {
+    "howWeWorkTitle": {
+      "part1": "How",
+      "part2": "we work?"
+    },
+    "description": "After signing the contract, we’ll send you a short questionnaire about your business and the services you offer. Based on this, we’ll write the full website content, create the design, and after you approve it, we’ll build the website. The whole process usually takes 2-3 weeks from start to finish.",
+    "workSteps": [
+      {
+        "stepNr": "01",
+        "title": "Kickoff & Requirements Gathering",
+        "description": "At the project kickoff, we jointly determine the goals and requirements through a questionnaire, and our creative team creates a web design plan tailored to your needs."
+      },
+      {
+        "stepNr": "02",
+        "title": "Web Design Approval",
+        "description": "After presenting the design, we finalize it based on your feedback. Our goal is to ensure that the result meets your expectations in every way."
+      },
+      {
+        "stepNr": "03",
+        "title": "Implementation",
+        "description": "Based on the finalized design plan, the development and implementation of the website begins."
+      },
+      {
+        "stepNr": "04",
+        "title": "Testing",
+        "description": "After implementation, thorough testing takes place, where we check every function and element. The goal is to ensure the website works without issues and meets all technical requirements. Before final delivery, we send a demo link for final review."
+      },
+      {
+        "stepNr": "05",
+        "title": "Product Delivery",
+        "description": "After successful testing, we deliver the finished website, concluding the development phase of the project."
+      },
+      {
+        "stepNr": "06",
+        "title": "Maintenance",
+        "description": "During the operation of the delivered website, we monitor its performance and ensure necessary maintenance. Our goal is to keep the site up-to-date, fast, and user-friendly."
+      }
+    ]
+  },
+  "prices": {
+    "pricingTitle": "Pricing",
+    "pricingDescription": "Choose the plan that best fits your budget.",
+    "plans": [
+    {
+      "id": "basic",
+      "name": "One-Time",
+      "price": "300,000 HUF",
+      "featureList": [
+        { "isIncluded": true, "featureName": "Selectable design, custom code" },
+        { "isIncluded": true, "featureName": "+ Monthly 3,500 HUF maintenance fee" },
+        { "isIncluded": true, "featureName": "+ 10,000 HUF per page after 5 pages" },
+        { "isIncluded": true, "featureName": "+ Monthly 6,000 HUF unlimited changes" },
+        { "isIncluded": false, "featureName": "24/7 operation" },
+        { "isIncluded": false, "featureName": "Continuous updates" }
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Monthly",
+      "price": "15,000 HUF",
+      "featureList": [
+        { "isIncluded": true, "featureName": "Selectable design, custom code" },
+        { "isIncluded": true, "featureName": "Hosting" },
+        { "isIncluded": true, "featureName": "+ 10,000 HUF per page after 5 pages" },
+        { "isIncluded": true, "featureName": "Unlimited changes" },
+        { "isIncluded": true, "featureName": "24/7 operation" },
+        { "isIncluded": true, "featureName": "Continuous updates" }
+      ]
+    },
+    {
+      "id": "custom",
+      "name": "Custom",
+      "price": "Custom quote",
+      "featureList": [
+        { "isIncluded": true, "featureName": "Custom design, custom code" },
+        { "isIncluded": true, "featureName": "Hosting" },
+        { "isIncluded": true, "featureName": "Page count based on custom quote" },
+        { "isIncluded": true, "featureName": "Unlimited changes" },
+        { "isIncluded": true, "featureName": "24/7 operation" },
+        { "isIncluded": true, "featureName": "Continuous updates" }
+      ]
+    }
+  ],
+  "planCard" : {
+    "priceLabel": "Starting price",
+    "monthlyLabel": "Monthly",
+    "customMaintenance": "+ Custom maintenance fee",
+    "basicMaintenance": "+ Monthly 3,500 HUF maintenance fee",
+    "premiumContract": "Minimum 1-year contract",
+    "giveQuoteBtn": "Ask for a quote"
   }
+  },
+  "researchesSection": {
+    "title": "Blog",
+    "description": "Would you like to explore specific topics in more depth? Check out our articles!",
+    "researches": [
+      {
+        "id": "blog-01",
+        "description": "What’s the difference between a WordPress-based website and one we create? How does this affect loading speed, user retention, and search rankings?",
+        "link": "#howWeWork"
+      },
+      {
+        "id": "blog-02",
+        "description": "How do you design a website that can deliver high conversion rates? What are the pitfalls, and what should you keep in mind when diving into this design process?",
+        "link": "#howWeWork"
+      },
+      {
+        "id": "blog-03",
+        "description": "Google’s Core Web Vitals metrics change site rankings for an optimized mobile experience. What should you know about these metrics, and how can we improve them?",
+        "link": "#howWeWork"
+      }
+    ],
+    "findOutMore": "Find out more"
+  },
+  "servicesSection": {
+    "title": "About the Product",
+    "description": "Every line of code is handcrafted to ensure top performance and make Google happy. This helps bring more clients to your website, driving more revenue for your business.",
+    "services": [
+      {
+        "id": 1,
+        "title": ["Mobile First", "Design"],
+        "description": "We build your website primarily for mobile devices, keeping the code clean and optimized, without unnecessary bloat. This not only speeds up the website but is also the first step towards full responsiveness."
+      },
+      {
+        "id": 2,
+        "title": ["Fully", "Responsive"],
+        "description": "Your website will adapt to all screen sizes, whether mobile, tablet, or desktop. Wherever it’s accessed from, it will always look perfect."
+      },
+      {
+        "id": 3,
+        "title": ["Optimized", "Page Speed"],
+        "description": "If your website takes longer than 3 seconds to load, you could lose up to half your visitors. We build your site to load in 1 second for an optimal experience, ensuring no one leaves impatiently."
+      },
+      {
+        "id": 4,
+        "title": ["Custom Code", "and Design"],
+        "description": "Each website is crafted uniquely by hand, with no templates or page builders. This is what sets us apart—we focus on achieving the best result, reflecting in your online presence long after launch."
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "title": "Testimonials",
+    "description": "Client satisfaction is our top priority. Here are a few testimonials from recent clients:",
+    "testimonials": [
+      {
+        "name": "András Kovács",
+        "occupation": "Marketing Manager",
+        "description": "I was impressed with the team's creativity and expertise! The web design fully met our expectations, and our website's conversions have significantly increased. I highly recommend them to anyone looking for a professional web development team."
+      },
+      {
+        "name": "Éva Szabó",
+        "occupation": "Entrepreneur",
+        "description": "Professional and fast service! They managed the entire process smoothly and always took my needs into account. Our new website is fantastic, and our clients love it. Thanks for the great work!"
+      },
+      {
+        "name": "Gábor Tóth",
+        "occupation": "CEO",
+        "description": "The team understood our business needs very well and created an excellent website for us. The implementation was fast and flawless. We are very satisfied!"
+      },
+      {
+        "name": "Petra Nagy",
+        "occupation": "Digital Strategist",
+        "description": "We received exceptional attention at every stage of the project. They paid great attention to detail even during the testing phase. The final result exceeded all our expectations. Great team!"
+      },
+      {
+        "name": "Bence Varga",
+        "occupation": "Project Manager",
+        "description": "The operation of the new website started smoothly, thanks to the precise and detailed handover. The site is fast and user-friendly. I'm satisfied with the service."
+      }
+    ]
+  },
+  "navbar": {
+    "home": "Home",
+    "blog": "Blog",
+    "howWeWork": "How We Work",
+    "prices": "Prices",
+    "testimonials": "Testimonials",
+    "FAQ": "FAQ",
+    "contactUs": "Contact Us"
+  }
+
 }
