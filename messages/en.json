@@ -1,0 +1,415 @@
+{
+  "metaLayout": {
+    "title": "Starwave Web Development Agency",
+    "description": "A Web Development Agency from Sweden."
+  },
+  "footer": {
+    "navigation": {
+      "blog": "Blog",
+      "howWeWork": "How We Work",
+      "prices": "Prices",
+      "testimonials": "Testimonials",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "contactSection": {
+      "title": "Contact:",
+      "emailLabel": "Email",
+      "email": "starwaveweb@gmail.com",
+      "phoneLabel": "Phone",
+      "phone": "+36 30 609 0155",
+      "addressLabel": "Address",
+      "address": "Tallörtsbacken 25, 554 58 Jönköping"
+    },
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
+      "facebook": "https://www.facebook.com/profile.php?id=61566881334932",
+      "instagram": "https://www.instagram.com/starwaveweb/"
+    },
+    "copyright": {
+      "text": "© 2024 Starwave Web Development Agency. All rights reserved.",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "newsletterForm": {
+      "formName": "newsletter",
+      "subject": "Newsletter registration",
+      "emailPlaceholder": "Email",
+      "submitButton": "Subscribe to the newsletter",
+      "successTitle": "Subscription successful!",
+      "successDescription": "You’ll soon be informed about our latest services!",
+      "errorTitle": "Something went wrong.",
+      "errorDescription": "Please try again.",
+      "validation": {
+        "invalidEmail": "The provided email is invalid",
+        "requiredField": "This field is required",
+        "characterLimitExceeded": "You have exceeded the character limit"
+      }
+    }
+  },
+  "callToAction": {
+    "title": "Let's work together!",
+    "description": "Get in touch with us today to learn more about how our services can help your business grow and succeed online.",
+    "button": "Contact us"
+  },
+  "contactUs": {
+    "header": {
+      "title": "Contact Us",
+      "description": "Reach out to us, and let’s start developing your business online together!"
+    },
+    "form": {
+      "formName": "Contact",
+      "subject": {
+        "question": "I have a question",
+        "quote": "Request a quote"
+      },
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "button": "Send",
+      "successMessage": {
+        "title": "Message sent successfully!",
+        "description": "We will get in touch with you soon!"
+      },
+      "errorMessage": {
+        "title": "Something went wrong.",
+        "description": "Please try again."
+      },
+      "validation": {
+        "requiredField": "This field is required",
+        "invalidEmail": "Invalid email format",
+        "characterLimitExceeded": "Character limit exceeded"
+      }
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Have a question? Check out our FAQ section where we provide detailed information about what we do, our rates, and our process.",
+    "categories": {
+      "prices": "Prices",
+      "subscriptions": "Plans",
+      "webpage": "Webpage"
+    },
+    "questions": {
+      "prices": [
+        {
+          "question": "How long does the subscription last?",
+          "answer": "The subscription plan is for at least 12 months and then renews monthly. After 12 months, you can cancel anytime. If you cancel, you cannot keep the website (otherwise, everyone would do this, and we would go out of business!)."
+        },
+        {
+          "question": "What happens if I cancel after 12 months and want to come back?",
+          "answer": "You’ll need to sign a new 12-month contract."
+        },
+        {
+          "question": "What happens if I cancel before the end of the 12 months?",
+          "answer": "If you cancel before 12 months, you’ll need to pay the full website price of $3000, minus any payments made so far."
+        },
+        {
+          "question": "How do you handle late payments?",
+          "answer": "Each invoice has a 7-day grace period. If it’s not paid within 7 days, we charge a $15 late fee."
+        },
+        {
+          "question": "How does payment work, and what payment methods do you accept?",
+          "answer": "We send invoices via email through Stripe, allowing secure payment information entry."
+        },
+        {
+          "question": "Is the price for additional pages a one-time or monthly fee?",
+          "answer": "The price for extra pages is a one-time fee of $80. (per page)"
+        },
+        {
+          "question": "Are there refunds?",
+          "answer": "If you sign a contract and we can’t create something you're 100% satisfied with, we will refund your initial payment."
+        }
+      ],
+      "subscriptions": [
+        {
+          "question": "Do I need to continue paying after the 12-month minimum period?",
+          "answer": "Yes, subscriptions are indefinite. Monthly payments continue after the 12-month minimum."
+        },
+        {
+          "question": "Can I buy out of the subscription after the minimum period?",
+          "answer": "No, there is no option to buy out of the monthly subscription."
+        },
+        {
+          "question": "Can I add unlimited editing and support to the one-time payment package?",
+          "answer": "Yes! We offer a monthly add-on for $35 that provides unlimited editing and support."
+        },
+        {
+          "question": "What is the difference between a one-time payment and a subscription?",
+          "answer": "With a subscription, you will pay more over time but in manageable monthly amounts."
+        },
+        {
+          "question": "Is SEO included in the packages?",
+          "answer": "Yes and no. On-page SEO is included, but Off-page SEO is not."
+        },
+        {
+          "question": "Do you also work with e-commerce sites?",
+          "answer": "Our team specializes in optimizing websites and landing pages."
+        },
+        {
+          "question": "If I cancel the subscription, can I keep my domain name?",
+          "answer": "Yes, the domain name is always yours."
+        }
+      ],
+      "webpage": [
+        {
+          "question": "How long does the development process take from start to finish?",
+          "answer": "We typically complete a website within 2-4 weeks."
+        },
+        {
+          "question": "Can I keep my website if I cancel the subscription?",
+          "answer": "No, but the domain name remains yours."
+        },
+        {
+          "question": "Do we own our domain?",
+          "answer": "Yes. If you cancel the subscription, we will transfer ownership to you."
+        },
+        {
+          "question": "Do you use WordPress or page builders?",
+          "answer": "No! All websites we build are custom-coded by hand."
+        },
+        {
+          "question": "What technologies do you use?",
+          "answer": "We use the latest technologies, such as Next.js, Tailwind CSS, and Netlify."
+        },
+        {
+          "question": "Why custom code instead of WordPress?",
+          "answer": "Custom code is faster, more secure, and fully customizable."
+        },
+        {
+          "question": "I already have a website. Do you offer redesigns?",
+          "answer": "We only guarantee support for websites developed by our team."
+        },
+        {
+          "question": "How can we request changes to our website?",
+          "answer": "Please send an email to starwaveweb@gmail.com."
+        }
+      ]
+    }
+  },
+  "hero": {
+    "headline": "Unlock the potential within your company.",
+    "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from $120 per month.",
+    "ctaButton": "Go to Prices"
+  },
+  "howWeWork": {
+    "howWeWorkTitle": {
+      "part1": "How",
+      "part2": "we work?"
+    },
+    "description": "After signing the contract, we’ll send you a short questionnaire about your business and the services you offer. Based on this, we’ll write the full website content, create the design, and after you approve it, we’ll build the website. The whole process usually takes 2-3 weeks from start to finish.",
+    "workSteps": [
+      {
+        "stepNr": "01",
+        "title": "Kickoff & Requirements Gathering",
+        "description": "At the project kickoff, we jointly determine the goals and requirements through a questionnaire, and our creative team creates a web design plan tailored to your needs."
+      },
+      {
+        "stepNr": "02",
+        "title": "Web Design Approval",
+        "description": "After presenting the design, we finalize it based on your feedback. Our goal is to ensure that the result meets your expectations in every way."
+      },
+      {
+        "stepNr": "03",
+        "title": "Implementation",
+        "description": "Based on the finalized design plan, the development and implementation of the website begins."
+      },
+      {
+        "stepNr": "04",
+        "title": "Testing",
+        "description": "After implementation, thorough testing takes place, where we check every function and element. The goal is to ensure the website works without issues and meets all technical requirements. Before final delivery, we send a demo link for final review."
+      },
+      {
+        "stepNr": "05",
+        "title": "Product Delivery",
+        "description": "After successful testing, we deliver the finished website, concluding the development phase of the project."
+      },
+      {
+        "stepNr": "06",
+        "title": "Maintenance",
+        "description": "During the operation of the delivered website, we monitor its performance and ensure necessary maintenance. Our goal is to keep the site up-to-date, fast, and user-friendly."
+      }
+    ]
+  },
+  "prices": {
+    "pricingTitle": "Pricing",
+    "pricingDescription": "Choose the plan that best fits your budget.",
+    "plans": [
+      {
+        "id": "basic",
+        "name": "One-Time",
+        "price": "$3000",
+        "featureList": [
+          {
+            "isIncluded": true,
+            "featureName": "Selectable design, custom code"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ Monthly $20 maintenance fee"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ $80 per page after 5 pages"
+          },
+          {
+            "isIncluded": true,
+            "featureName": "+ Monthly $35 unlimited changes"
+          },
+          { "isIncluded": false, "featureName": "24/7 operation" },
+          { "isIncluded": false, "featureName": "Continuous updates" }
+        ]
+      },
+      {
+        "id": "premium",
+        "name": "Monthly",
+        "price": "$120",
+        "featureList": [
+          {
+            "isIncluded": true,
+            "featureName": "Selectable design, custom code"
+          },
+          { "isIncluded": true, "featureName": "Hosting" },
+          {
+            "isIncluded": true,
+            "featureName": "+ $80 per page after 5 pages"
+          },
+          { "isIncluded": true, "featureName": "Unlimited changes" },
+          { "isIncluded": true, "featureName": "24/7 operation" },
+          { "isIncluded": true, "featureName": "Continuous updates" }
+        ]
+      },
+      {
+        "id": "custom",
+        "name": "Custom",
+        "price": "Custom quote",
+        "featureList": [
+          { "isIncluded": true, "featureName": "Custom design, custom code" },
+          { "isIncluded": true, "featureName": "Hosting" },
+          {
+            "isIncluded": true,
+            "featureName": "Page count based on custom quote"
+          },
+          { "isIncluded": true, "featureName": "Unlimited changes" },
+          { "isIncluded": true, "featureName": "24/7 operation" },
+          { "isIncluded": true, "featureName": "Continuous updates" }
+        ]
+      }
+    ],
+    "planCard": {
+      "priceLabel": "Starting price",
+      "monthlyLabel": "Monthly",
+      "customMaintenance": "+ Custom maintenance fee",
+      "basicMaintenance": "+ Monthly $20 maintenance fee",
+      "premiumContract": "Minimum 1-year contract",
+      "giveQuoteBtn": "Ask for a quote"
+    },
+    "customQuoteBtn": "I am asking for a custom offer"
+  },
+  "researchesSection": {
+    "title": "Blog",
+    "description": "Would you like to explore specific topics in more depth? Check out our collected articles!",
+    "researches": [
+      {
+        "id": "blog-01",
+        "description": "What’s the difference between a WordPress-based website and one we create? How does this affect loading speed, user retention, and search rankings?",
+        "link": "https://pressidium.com/blog/wordpress-vs-custom-website/"
+      },
+      {
+        "id": "blog-02",
+        "description": "How do you design a website that can deliver high conversion rates? What are the pitfalls, and what should you keep in mind when diving into this design process?",
+        "link": "https://vwo.com/conversion-rate-optimization/conversion-rate-optimisation-tips/"
+      },
+      {
+        "id": "blog-03",
+        "description": "Google’s Core Web Vitals metrics change site rankings for an optimized mobile experience. What should you know about these metrics, and how can we improve them?",
+        "link": "https://web.dev/articles/vitals"
+      }
+    ],
+    "findOutMore": "Find out more"
+  },
+  "servicesSection": {
+    "title": "About the Product",
+    "description": "Every line of code is handcrafted to ensure top performance and make Google happy. This helps bring more clients to your website, driving more revenue for your business.",
+    "services": [
+      {
+        "id": 1,
+        "title": ["Mobile First", "Design"],
+        "description": "We build your website primarily for mobile devices, keeping the code clean and optimized, without unnecessary bloat. This not only speeds up the website but is also the first step towards full responsiveness."
+      },
+      {
+        "id": 2,
+        "title": ["Fully", "Responsive"],
+        "description": "Your website will adapt to all screen sizes, whether mobile, tablet, or desktop. Wherever it’s accessed from, it will always look perfect."
+      },
+      {
+        "id": 3,
+        "title": ["Optimized", "Page Speed"],
+        "description": "If your website takes longer than 3 seconds to load, you could lose up to half your visitors. We build your site to load in 1 second for an optimal experience, ensuring no one leaves impatiently."
+      },
+      {
+        "id": 4,
+        "title": ["Custom Code", "and Design"],
+        "description": "Each website is crafted uniquely by hand, with no templates or page builders. This is what sets us apart—we focus on achieving the best result, reflecting in your online presence long after launch."
+      }
+    ],
+    "findOutMore": "Find out more",
+    "backBtn": "Back"
+  },
+  "testimonialsSection": {
+    "title": "Testimonials",
+    "description": "Client satisfaction is our top priority. Here are a few testimonials from recent clients:",
+    "testimonials": [
+      {
+        "name": "Alex Morgan",
+        "occupation": "Marketing Manager",
+        "description": "I was impressed with the team's creativity and expertise! The web design fully met our expectations, and our website's conversions have significantly increased. I highly recommend them to anyone looking for a professional web development team."
+      },
+      {
+        "name": "Lina Chen",
+        "occupation": "Entrepreneur",
+        "description": "Professional and fast service! They managed the entire process smoothly and always took my needs into account. Our new website is fantastic, and our clients love it. Thanks for the great work!"
+      },
+      {
+        "name": "Rafael Silva",
+        "occupation": "CEO",
+        "description": "The team understood our business needs very well and created an excellent website for us. The implementation was fast and flawless. We are very satisfied!"
+      },
+      {
+        "name": "Sofia Andersson",
+        "occupation": "Digital Strategist",
+        "description": "We received exceptional attention at every stage of the project. They paid great attention to detail even during the testing phase. The final result exceeded all our expectations. Great team!"
+      },
+      {
+        "name": "Marco Rossi",
+        "occupation": "Project Manager",
+        "description": "The operation of the new website started smoothly, thanks to the precise and detailed handover. The site is fast and user-friendly. I'm satisfied with the service."
+      }
+    ]
+  },
+  "navbar": {
+    "home": "Home",
+    "blog": "Blog",
+    "howWeWork": "How We Work",
+    "prices": "Prices",
+    "testimonials": "Testimonials",
+    "FAQ": "FAQ",
+    "contactUs": "Contact Us"
+  },
+  "consent": {
+    "message": "We use cookies to enhance your experience. Do you accept them?",
+    "accept": "Accept",
+    "reject": "Reject"
+  },
+  "partnerLogos": {
+    "electrician": "https://electrician-landing.netlify.app",
+    "saas": "https://orbit-ops.netlify.app",
+    "gardener": "https://harmatcsepp-kerttervezes.netlify.app"
+  }
+}
