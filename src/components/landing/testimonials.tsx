@@ -9,49 +9,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/src/components/ui/carousel";
+import { useTranslations } from "next-intl";
 
-const testimonials = [
-  {
-    name: "Kovács András",
-    occupation: "Marketing Manager",
-    description:
-      "Lenyűgözött a csapat kreativitása és szakértelme! A webdesign teljes mértékben megfelelt az elvárásainknak, és az oldalunk konverziói jelentősen megnőttek. Mindenképpen ajánlom őket mindenkinek, aki profi webfejlesztő csapatot keres.",
-  },
-  {
-    name: "Szabó Éva",
-    occupation: "Vállalkozó",
-    description:
-      "Professzionális és gyors szolgáltatás! A teljes folyamatot gördülékenyen vezették, és mindig figyelembe vették az igényeimet. Az új weboldalunk fantasztikus lett, az ügyfeleink is imádják. Köszönöm a remek munkát!",
-  },
-  {
-    name: "Tóth Gábor",
-    occupation: "Ügyvezető igazgató",
-    description:
-      "A csapat nagyon jól megértette az üzleti igényeinket és kiváló weboldalt készített számunkra. Az implementáció gyors és hibátlan volt. Nagyon elégedettek vagyunk!",
-  },
-  {
-    name: "Nagy Petra",
-    occupation: "Digitális Stratéga",
-    description:
-      "Kivételes figyelmet kaptunk a projekt minden szakaszában. A tesztelési fázis során is alaposan figyeltek minden részletre. A végeredmény minden várakozásunkat felülmúlta. Nagyszerű csapat!",
-  },
-  {
-    name: "Varga Bence",
-    occupation: "Projektmenedzser",
-    description:
-      "Az új weboldal üzemeltetése zökkenőmentesen indult, hála a precíz és részletes átadásnak. Az oldal gyors és felhasználóbarát. Elégedett vagyok a szolgáltatással.",
-  },
-];
 
 const Testimonials = () => {
+  const t = useTranslations('testimonialsSection')
+
   return (
     <section id="testimonials" className="w-full mb-[60px] md:mb-[140px] scroll-mt-28">
       <div className="container flex flex-col gap-10 md:gap-20 mx-auto">
         <Header
-          title="Visszajelzések"
-          description={
-            "Ügyfeleink elégedettsége számunkra a legfontosabb,\n néhány visszajelzés az elmúlt időszakból:"
-          }
+          title={t('title')}
+          description={t('description')}
         />
         <div className="bg-primary-dark rounded-[45px] flex flex-col gap-40 min-h-[625px] mx-5">
           <Carousel
@@ -62,7 +31,7 @@ const Testimonials = () => {
             className="w-full mx-auto my-auto"
           >
             <CarouselContent className="px-5">
-              {testimonials.map((testimonial, index) => (
+              {t.raw('testimonials').map((testimonial: {name: string, occupation: string, description: string}, index: number) => (
                 <CarouselItem
                   className="md:basis-1/2"
                   key={testimonial.name + index}

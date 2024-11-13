@@ -6,6 +6,7 @@ import TopRightArrow from "@/src/components/icons/top-right-arrow";
 import Image, { type StaticImageData } from "next/image";
 import { Button } from "./button";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
+import { useTranslations } from "next-intl";
 export type ServiceCardVariants = "grey" | "green" | "dark";
 
 const ServiceCard = ({
@@ -23,6 +24,8 @@ const ServiceCard = ({
 }) => {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
+  const t = useTranslations("servicesSection");
+  
 
   const handleFlipAnimation = () => {
     if (!isAnimating) {
@@ -68,9 +71,9 @@ const ServiceCard = ({
                     onClick={() =>
                       sendToMixpanel("service_card_clicked", { cardId: id })
                     }
-                    className="text-outlaw text-black group-data-[variant=dark]:text-white hidden sm:block"
+                    className="truncate text-outlaw text-black group-data-[variant=dark]:text-white hidden sm:block"
                   >
-                    Bővebben
+                    {t('findOutMore')}
                   </p>
                 </button>
                 <div data-id={id} className="w-[220px] sm:hidden self-center">
@@ -95,7 +98,7 @@ const ServiceCard = ({
               onClick={handleFlipAnimation}
               className="self-end bg-black text-primary-green group-data-[variant=dark]:bg-primary-green group-data-[variant=dark]:text-black group-data-[variant=dark]:hover:bg-primary-green/90"
             >
-              Vissza
+              {t('backBtn')}
             </Button>
           </div>
         </div>

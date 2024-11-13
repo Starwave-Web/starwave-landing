@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";  // Import translations hook
+import { useTranslations } from "next-intl"; 
 import StarwaveLogo from "@/src/components/icons/starwave-logo";
 import { Button } from "@/src/components/ui/button";
 import HamburgerMenu from "../icons/hamburger-menu";
@@ -33,19 +33,19 @@ const Navbar = () => {
         <div>
           <ul className="gap-[40px] items-center hidden lg:flex xl:text-outlaw">
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSectionWeb("researches")}>{t("blog")}</p>  {/* Translated text */}
+              <p onClick={() => scrollToSectionWeb("researches")}>{t("blog")}</p>  
             </li>
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSectionWeb("howWeWork")}>{t("howWeWork")}</p>  {/* Translated text */}
+              <p onClick={() => scrollToSectionWeb("howWeWork")}>{t("howWeWork")}</p> 
             </li>
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSectionWeb("prices")}>{t("prices")}</p>  {/* Translated text */}
+              <p onClick={() => scrollToSectionWeb("prices")}>{t("prices")}</p>  
             </li>
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSectionWeb("testimonials")}>{t("testimonials")}</p>  {/* Translated text */}
+              <p onClick={() => scrollToSectionWeb("testimonials")}>{t("testimonials")}</p> 
             </li>
             <li className="cursor-pointer">
-              <p onClick={() => scrollToSectionWeb("FAQ")}>{t("FAQ")}</p>  {/* Translated text */}
+              <p onClick={() => scrollToSectionWeb("FAQ")}>{t("FAQ")}</p>  
             </li>
             <li>
               <Button
@@ -53,7 +53,7 @@ const Navbar = () => {
                 className="h-full"
                 variant="outline"
               >
-                {t("contactUs")}  {/* Translated text */}
+                {t("contactUs")} 
               </Button>
             </li>
           </ul>
@@ -73,25 +73,25 @@ const Navbar = () => {
           <div>
             <ul className="flex flex-col gap-8 text-p text-white">
               <li className="cursor-pointer">
-                <p onClick={() => scrollToSectionMobile("hero")}>{t("home")}</p>  {/* Translated text */}
+                <p onClick={() => scrollToSectionMobile("hero")}>{t("home")}</p>  
               </li>
               <li className="cursor-pointer">
-                <p onClick={() => scrollToSectionMobile("researches")}>{t("blog")}</p>  {/* Translated text */}
+                <p onClick={() => scrollToSectionMobile("researches")}>{t("blog")}</p>  
               </li>
               <li className="cursor-pointer">
-                <p onClick={() => scrollToSectionMobile("howWeWork")}>{t("howWeWork")}</p>  {/* Translated text */}
+                <p onClick={() => scrollToSectionMobile("howWeWork")}>{t("howWeWork")}</p> 
               </li>
               <li className="cursor-pointer">
-                <p onClick={() => scrollToSectionMobile("prices")}>{t("prices")}</p>  {/* Translated text */}
+                <p onClick={() => scrollToSectionMobile("prices")}>{t("prices")}</p>  
               </li>
               <li className="cursor-pointer">
-                <p onClick={() => scrollToSectionMobile("testimonials")}>{t("testimonials")}</p>  {/* Translated text */}
+                <p onClick={() => scrollToSectionMobile("testimonials")}>{t("testimonials")}</p> 
               </li>
-              <li>
-                <p onClick={() => scrollToSectionMobile("FAQ")}>{t("FAQ")}</p>  {/* Translated text */}
+              <li className="cursor-pointer">
+                <p onClick={() => scrollToSectionMobile("FAQ")}>{t("FAQ")}</p>  
               </li>
-              <li>
-                <p onClick={() => scrollToSectionMobile("contactUs")}>{t("contactUs")}</p>  {/* Translated text */}
+              <li className="cursor-pointer">
+                <p onClick={() => scrollToSectionMobile("contactUs")}>{t("contactUs")}</p> 
               </li>
             </ul>
           </div>

@@ -38,7 +38,7 @@ const ContactForm = () => {
       .max(50, { message: t('validation.characterLimitExceeded') }),
     email: z
       .string()
-      .email("A megadott email hibás formátumú")
+      .email(t('validation.invalidEmail'))
       .min(1, { message: t('validation.requiredField') })
       .max(50, { message: t('validation.characterLimitExceeded') }),
     message: z

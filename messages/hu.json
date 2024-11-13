@@ -1,4 +1,8 @@
 {
+  "metaLayout": {
+    "title": "Starwave Web Development Agency",
+    "description": "A Web Development Agency from Hungary."
+  },
   "footer": {
     "navigation": {
       "blog": "Blog",
@@ -305,7 +309,8 @@
       "basicMaintenance": "+ Havi 3.500 Ft üzemeltetési díj",
       "premiumContract": "Minimum 1 éves szerződés",
       "giveQuoteBtn": "Ajánlatkérés"
-    }
+    },
+    "customQuoteBtn": "Egyedi ajánlatot kérek"
   },
   "researchesSection": {
     "title": "Blog",
@@ -353,7 +358,9 @@
         "title": ["Egyedi Kód", "és Design"],
         "description": "Minden weboldalt egyedileg, kézzel írunk meg, nincsenek sablonok vagy oldalépítők. Ez az, ami megkülönböztet minket – külön figyelmet fordítunk arra, hogy a lehető legjobb eredményt érjük el, ami a weboldalad indulása után is tükröződni fog az online jelenléteden."
       }
-    ]
+    ],
+    "findOutMore": "Bővebben",
+    "backBtn": "Vissza"
   },
   "testimonialsSection": {
     "title": "Visszajelzések",
@@ -394,5 +401,15 @@
     "testimonials": "Visszajelzések",
     "FAQ": "FAQ",
     "contactUs": "Kapcsolatfelvétel"
+  },
+  "consent": {
+    "message": "Cookiek-at használunk a jobb felhasználói élmény érdekében. Elfogadod őket?",
+    "accept": "Elfogadás",
+    "reject": "Elutasítás"
+  },
+  "partnerLogos": {
+    "electrician": "https://electrician-landing.netlify.app",
+    "saas": "https://orbit-ops.netlify.app",
+    "gardener": "https://harmatcsepp-kerttervezes.netlify.app"
   }
 }

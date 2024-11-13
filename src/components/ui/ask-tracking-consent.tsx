@@ -2,9 +2,11 @@
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
 import React, { useEffect, useState } from "react";
 import { Button } from "./button";
+import { useTranslations } from "next-intl";
 
 const AskTrackingConsent = () => {
   const [consentGiven, setConsentGiven] = useState(false);
+  const t = useTranslations("consent");
 
   useEffect(() => {
     // Check if user consent is stored in cookies or localStorage
@@ -26,14 +28,14 @@ const AskTrackingConsent = () => {
     !consentGiven && (
       <div className="w-[300px] h-auto rounded-[30px] bg-primary-grey sticky bottom-2 left-[85%] p-6 flex flex-col gap-3 justify-center border border-black mr-2">
         <p className="text-h4-mobile">
-          Cookiek-at használunk a jobb felhasználói élmény érdekében. Elfogadod őket?
+        {t("message")}
         </p>
         <div className="flex items-center gap-2 justify-between">
           <Button variant="default" onClick={() => handleConsent(true)}>
-            Elfogadás
+          {t("accept")}
           </Button>
           <Button className="bg-red-600 hover:bg-red-600/90" variant="default" onClick={() => handleConsent(false)}>
-            Elutasítás
+          {t("reject")}
           </Button>
         </div>
       </div>
