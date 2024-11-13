@@ -314,22 +314,22 @@
   },
   "researchesSection": {
     "title": "Blog",
-    "description": "Would you like to explore specific topics in more depth? Check out our articles!",
+    "description": "Would you like to explore specific topics in more depth? Check out our collected articles!",
     "researches": [
       {
         "id": "blog-01",
         "description": "What’s the difference between a WordPress-based website and one we create? How does this affect loading speed, user retention, and search rankings?",
-        "link": "#howWeWork"
+        "link": "https://pressidium.com/blog/wordpress-vs-custom-website/"
       },
       {
         "id": "blog-02",
         "description": "How do you design a website that can deliver high conversion rates? What are the pitfalls, and what should you keep in mind when diving into this design process?",
-        "link": "#howWeWork"
+        "link": "https://vwo.com/conversion-rate-optimization/conversion-rate-optimisation-tips/"
       },
       {
         "id": "blog-03",
         "description": "Google’s Core Web Vitals metrics change site rankings for an optimized mobile experience. What should you know about these metrics, and how can we improve them?",
-        "link": "#howWeWork"
+        "link": "https://web.dev/articles/vitals"
       }
     ],
     "findOutMore": "Find out more"

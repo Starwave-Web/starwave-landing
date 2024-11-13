@@ -22,6 +22,7 @@ const GoToBlogArticleButton = ({
         sendToMixpanel("blog_article_clicked", { blogId: research.id })
       }
       href={research.link}
+      target="_blank"
     >
       <Button
         className="bg-transparent text-outlaw text-primary-green border-none p-0"

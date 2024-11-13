@@ -314,22 +314,22 @@
   },
   "researchesSection": {
     "title": "Blog",
-    "description": "Jobban elmélyülnél egy-egy témában a terület kapcsán? Olvass bele cikkjeinkbe!",
+    "description": "Jobban elmélyülnél egy-egy témában a terület kapcsán? Olvass bele pár cikkbe!",
     "researches": [
       {
         "id": "blog-01",
         "description": "Mi a különbség egy Wordpress alapú és egy általunk készített weboldalban? Mindez hogyan befolyásolja a betöltési időt, a felhasználók megtartását és a keresési rangsorolást.",
-        "link": "#howWeWork"
+        "link": "https://boarit.com/egyedi-weboldal-fejlesztes-vagy-wordpress/"
       },
       {
         "id": "blog-02",
         "description": "Hogyan kell olyan weboldalt tervezni, amely magas konverziós rátát tud produkálni? Mik a buktatók? Mi az amire érdemes odafigyelni egy ilyen tervezési folyamatba belevágva?",
-        "link": "#howWeWork"
+        "link": "https://www.klikkmarketing.hu/blog/landolo-oldal-51-tipp-a-tobb-konverzioert"
       },
       {
         "id": "blog-03",
         "description": "A Google Core Vitals mérőszámai megváltoztatják a webhelyek rangsorolását az optimalizált mobilélmény érdekében. Mit érdemes tudni a mérőszámok kapcsán? Hogyan tudjuk pozitív irányba változtatni őket?",
-        "link": "#howWeWork"
+        "link": "https://ite.hu/core-web-vitals-mi-az-es-hogyan-tudod-javitani-az-ertekeit/"
       }
     ],
     "findOutMore": "Bővebben"
