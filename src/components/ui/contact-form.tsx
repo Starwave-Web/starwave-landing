@@ -17,7 +17,7 @@ import { Textarea } from "./textarea";
 import { RadioGroup, RadioGroupItem } from "./radio-group";
 import { useToast } from "./use-toast";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export enum SUBJECT {
   QUESTION = "question",
@@ -27,7 +27,6 @@ export enum SUBJECT {
 const ContactForm = () => {
   const { toast } = useToast();
   const t = useTranslations("contactUs.form");
-  const locale = useLocale()
 
   const formSchema = z.object({
     "form-name": z.string().default("contact"),
@@ -69,7 +68,7 @@ const ContactForm = () => {
           formData.append(key, value.toString());
         }
       }
-      const res = await fetch(`/${locale}/__forms.html`, {
+      const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData as any).toString(),
