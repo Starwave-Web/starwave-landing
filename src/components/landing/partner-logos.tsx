@@ -7,6 +7,7 @@ import BicycleServiceLogo from "@/src/components/icons/partner-icons/bicycle-ser
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Header from "../ui/header";
 
 const PartnerLogos = () => {
   const t = useTranslations("partnerLogos");
@@ -15,6 +16,9 @@ const PartnerLogos = () => {
       id="partnerLogos"
       className="w-full mt-[41px] mb-[77.6px] md:mt-[70px] md:mb-[138px] px-5 scroll-mt-28"
     >
+      <div className="container mx-auto mb-20">
+        <Header title={t('title')} description={t('description')}/>
+      </div>
       <div className="flex gap-20 min-[1605px]:gap-44 mx-auto justify-center flex-wrap">
         <Link target="_blank" href={t("saas")}>
           <div

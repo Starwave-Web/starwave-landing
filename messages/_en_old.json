@@ -19,7 +19,7 @@
       "phoneLabel": "Phone",
       "phone": "+36 30 609 0155",
       "addressLabel": "Address",
-      "address": "Tallörtsbacken 25. 554 58 Jönköping"
+      "address": "Tallörtsbacken 25, 554 58 Jönköping"
     },
     "socialLinks": {
       "linkedin": "https://www.linkedin.com/company/starwave-web-development-agency/?viewAsMember=true",
@@ -93,7 +93,7 @@
     "description": "Have a question? Check out our FAQ section where we provide detailed information about what we do, our rates, and our process.",
     "categories": {
       "prices": "Prices",
-      "subscriptions": "Subs",
+      "subscriptions": "Plans",
       "webpage": "Webpage"
     },
     "questions": {
@@ -108,11 +108,11 @@
         },
         {
           "question": "What happens if I cancel before the end of the 12 months?",
-          "answer": "If you cancel before 12 months, you’ll need to pay the full website price of 6500 Kr, minus any payments made so far."
+          "answer": "If you cancel before 12 months, you’ll need to pay the full website price of $3000, minus any payments made so far."
         },
         {
           "question": "How do you handle late payments?",
-          "answer": "Each invoice has a 7-day grace period. If it’s not paid within 7 days, we charge a 80 kr late fee."
+          "answer": "Each invoice has a 7-day grace period. If it’s not paid within 7 days, we charge a $15 late fee."
         },
         {
           "question": "How does payment work, and what payment methods do you accept?",
@@ -120,7 +120,7 @@
         },
         {
           "question": "Is the price for additional pages a one-time or monthly fee?",
-          "answer": "The price for extra pages is a one-time fee of 250 Kr. (per page)"
+          "answer": "The price for extra pages is a one-time fee of $80. (per page)"
         },
         {
           "question": "Are there refunds?",
@@ -138,7 +138,7 @@
         },
         {
           "question": "Can I add unlimited editing and support to the one-time payment package?",
-          "answer": "Yes! We offer a monthly add-on for 140 Kr that provides unlimited editing and support."
+          "answer": "Yes! We offer a monthly add-on for $35 that provides unlimited editing and support."
         },
         {
           "question": "What is the difference between a one-time payment and a subscription?",
@@ -195,7 +195,7 @@
   },
   "hero": {
     "headline": "Unlock the potential within your company.",
-    "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from 260 Kr per month.",
+    "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from $120 per month.",
     "ctaButton": "Go to Prices",
     "referenceButton": "Reference"
   },
@@ -241,13 +241,11 @@
   "prices": {
     "pricingTitle": "Pricing",
     "pricingDescription": "Choose the plan that best fits your budget.",
-    "ctaGoToFAQ": "Do you have more questions about the subscriptions and prices? Check out our",
-    "ctaFAQBtnText": "FAQ",
     "plans": [
       {
         "id": "basic",
         "name": "One-Time",
-        "price": "6500 Kr",
+        "price": "$3000",
         "featureList": [
           {
             "isIncluded": true,
@@ -255,15 +253,15 @@
           },
           {
             "isIncluded": true,
-            "featureName": "+ Monthly 80 Kr maintenance fee"
+            "featureName": "+ Monthly $20 maintenance fee"
           },
           {
             "isIncluded": true,
-            "featureName": "+ 240 Kr per page after 5 pages"
+            "featureName": "+ $80 per page after 5 pages"
           },
           {
             "isIncluded": true,
-            "featureName": "+ Monthly 140 Kr unlimited changes"
+            "featureName": "+ Monthly $35 unlimited changes"
           },
           { "isIncluded": false, "featureName": "24/7 operation" },
           { "isIncluded": false, "featureName": "Continuous updates" }
@@ -272,7 +270,7 @@
       {
         "id": "premium",
         "name": "Monthly",
-        "price": "260 Kr",
+        "price": "$120",
         "featureList": [
           {
             "isIncluded": true,
@@ -281,7 +279,7 @@
           { "isIncluded": true, "featureName": "Hosting" },
           {
             "isIncluded": true,
-            "featureName": "+ 250 Kr per page after 5 pages"
+            "featureName": "+ $80 per page after 5 pages"
           },
           { "isIncluded": true, "featureName": "Unlimited changes" },
           { "isIncluded": true, "featureName": "24/7 operation" },
@@ -309,9 +307,8 @@
       "priceLabel": "Starting price",
       "monthlyLabel": "Monthly",
       "customMaintenance": "+ Custom maintenance fee",
-      "basicMaintenance": "+ Monthly 80 Kr maintenance fee",
-      "premiumContract": "Minimum 1-year contract",
-      "premiumContractRules": "(The discount is valid during the first year only.)",
+      "basicMaintenance": "+ Monthly $20 maintenance fee",
+      "premiumContract": "Minimum 1-year contract (The discount is valid during the first year only.)",
       "giveQuoteBtn": "Ask for a quote"
     },
     "customQuoteBtn": "I am asking for a custom offer"
@@ -371,27 +368,27 @@
     "description": "Client satisfaction is our top priority. Here are a few testimonials from recent clients:",
     "testimonials": [
       {
-        "name": "Erik Lundgren",
+        "name": "Alex Morgan",
         "occupation": "Marketing Manager",
         "description": "I was impressed with the team's creativity and expertise! The web design fully met our expectations, and our website's conversions have significantly increased. I highly recommend them to anyone looking for a professional web development team."
       },
       {
-        "name": "Sofia Johansson",
+        "name": "Lina Chen",
         "occupation": "Entrepreneur",
         "description": "Professional and fast service! They managed the entire process smoothly and always took my needs into account. Our new website is fantastic, and our clients love it. Thanks for the great work!"
       },
       {
-        "name": "Oscar Bergström",
+        "name": "Rafael Silva",
         "occupation": "CEO",
         "description": "The team understood our business needs very well and created an excellent website for us. The implementation was fast and flawless. We are very satisfied!"
       },
       {
-        "name": "Emelie Svensson",
+        "name": "Sofia Andersson",
         "occupation": "Digital Strategist",
         "description": "We received exceptional attention at every stage of the project. They paid great attention to detail even during the testing phase. The final result exceeded all our expectations. Great team!"
       },
       {
-        "name": "Jonas Lindqvist",
+        "name": "Marco Rossi",
         "occupation": "Project Manager",
         "description": "The operation of the new website started smoothly, thanks to the precise and detailed handover. The site is fast and user-friendly. I'm satisfied with the service."
       }
@@ -412,8 +409,8 @@
     "reject": "Reject"
   },
   "partnerLogos": {
-    "title": "Reference",
-    "description": "Check out our works! Click one of the logos.",
+    "title":"Reference",
+    "description":"Check out our works! Click one of the logos.",
     "electrician": "https://electrician-landing.netlify.app",
     "saas": "https://orbit-ops.netlify.app",
     "gardener": "https://harmatcsepp-kerttervezes.netlify.app"
