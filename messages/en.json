@@ -310,7 +310,7 @@
         "monthlyLabel": "Monthly",
         "customMaintenance": "+ Custom maintenance fee",
         "basicMaintenance": "+ Monthly 80 Kr hosting fee",
-        "premiumContract": "Minimum 1-year contract (The discount is valid during the first year only.)",
+        "premiumContract": "Minimum 1-year contract",
         "premiumContractRules": "(The discount is valid during the first year only.)",
         "giveQuoteBtn": "Ask for a quote"
       },
