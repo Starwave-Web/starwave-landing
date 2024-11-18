@@ -308,7 +308,8 @@
       "monthlyLabel": "Monthly",
       "customMaintenance": "+ Custom maintenance fee",
       "basicMaintenance": "+ Monthly $20 maintenance fee",
-      "premiumContract": "Minimum 1-year contract (The discount is valid during the first year only.)",
+      "premiumContract": "Minimum 1-year contract",
+      "premiumContractRules": "(The discount is valid during the first year only.)",
       "giveQuoteBtn": "Ask for a quote"
     },
     "customQuoteBtn": "I am asking for a custom offer"
@@ -409,8 +410,8 @@
     "reject": "Reject"
   },
   "partnerLogos": {
-    "title":"Reference",
-    "description":"Check out our works! Click one of the logos.",
+    "title": "Reference",
+    "description": "Check out our works! Click one of the logos.",
     "electrician": "https://electrician-landing.netlify.app",
     "saas": "https://orbit-ops.netlify.app",
     "gardener": "https://harmatcsepp-kerttervezes.netlify.app",
