@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import HeroIllustration from "../icons/hero-illustration";
 
 import GoToPricesButton from "../ui/go-to-prices-button";
+import GoToReferencesButton from "../ui/go-to-references-button";
 
 const Hero = () => {
   const t = useTranslations("hero");
@@ -17,7 +18,10 @@ const Hero = () => {
           <h5 className="text-p-mobile md:text-[20px]/[28px]">
             {t("description")}
           </h5>
-          <GoToPricesButton />
+          <div className="flex gap-2 flex-col sm:flex-row">
+            <GoToPricesButton />
+            <GoToReferencesButton />
+          </div>
         </div>
         <div className="hidden lg:block pr-5">
           <HeroIllustration className="w-[601px] h-[515px]" />

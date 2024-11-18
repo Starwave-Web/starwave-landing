@@ -196,7 +196,8 @@
   "hero": {
     "headline": "Hozd ki a cégedben rejlő potenciált.",
     "description": "A Starwave csapata gyors és magas konverziós rátájú weboldalakat és landing page-eket készít, kis- és középvállalkozások számára. Egyedi kód, valós eredmények, havi 15 ezer Ft-tól.",
-    "ctaButton": "Szolgáltatások és árak"
+    "ctaButton": "Szolgáltatások és árak",
+    "referenceButton": "Munkáink"
   },
   "howWeWork": {
     "howWeWorkTitle": {
@@ -240,6 +241,8 @@
   "prices": {
     "pricingTitle": "Árak",
     "pricingDescription": "Válaszd ki ajánlataink közül azt amely legjobban illeszkedik a költségvetésedhez.",
+    "ctaGoToFAQ": "Kérdésed van az elérhető csomagjaink és áraink kapcsán?",
+    "ctaFAQBtnText":"GYIK",
     "plans": [
       {
         "id": "basic",
@@ -308,6 +311,7 @@
       "customMaintenance": "+ Egyedi üzemeltetési díj",
       "basicMaintenance": "+ Havi 3.500 Ft üzemeltetési díj",
       "premiumContract": "Minimum 1 éves szerződés",
+      "premiumContractRules": "",
       "giveQuoteBtn": "Ajánlatkérés"
     },
     "customQuoteBtn": "Egyedi ajánlatot kérek"
@@ -408,8 +412,11 @@
     "reject": "Elutasítás"
   },
   "partnerLogos": {
+    "title":"Munkáink",
+    "description":"Checkold eddigi munkáinkat! Kattints az egyik logóra.",
     "electrician": "https://electrician-landing.netlify.app",
     "saas": "https://orbit-ops.netlify.app",
-    "gardener": "https://harmatcsepp-kerttervezes.netlify.app"
+    "gardener": "https://harmatcsepp-kerttervezes.netlify.app",
+    "gym": "https://gym-evogym-landing.netlify.app/"
   }
 }
