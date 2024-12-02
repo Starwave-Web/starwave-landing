@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import SaasLogo from "@/src/components/icons/partner-icons/saas-logo";
-import ElectricianLogo from "@/src/components/icons/partner-icons/electrician-logo";
-import GardenerLogo from "@/src/components/icons/partner-icons/gardener-logo";
+import {ElectricianLogo, ElectricianLogoIntl} from "@/src/components/icons/partner-icons/electrician-logo";
+import {GardenerLogo, GardenerLogoIntl} from "@/src/components/icons/partner-icons/gardener-logo";
 // import BicycleServiceLogo from "@/src/components/icons/partner-icons/bicycle-service-logo";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import Header from "../ui/header";
 import EvogymLogo from "@/assets/images/evogym-logo.png";
@@ -13,6 +13,7 @@ import Image from "next/image";
 
 const PartnerLogos = () => {
   const t = useTranslations("partnerLogos");
+  const locale = useLocale()
   return (
     <section
       id="partnerLogos"
@@ -35,7 +36,7 @@ const PartnerLogos = () => {
             onClick={() => sendToMixpanel("partner_electrician_clicked")}
             className="cursor-pointer"
           >
-            <ElectricianLogo />
+            {locale === "hu" ? <ElectricianLogo />: <ElectricianLogoIntl /> }
           </div>
         </Link>
         <Link target="_blank" href={t("gardener")}>
@@ -43,7 +44,7 @@ const PartnerLogos = () => {
             onClick={() => sendToMixpanel("partner_gardener_clicked")}
             className="cursor-pointer"
           >
-            <GardenerLogo />
+            {locale === "hu" ? <GardenerLogo /> : <GardenerLogoIntl/>}
           </div>
         </Link>
         <Link target="_blank" href={t("gym")}>
