@@ -7,7 +7,7 @@ import { scrollToSection } from "@/src/lib/utils";
 import NewsletterForm from "../ui/newsletter-form";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
 import InstagramIcon from "../icons/instagram-icon";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const Footer = () => {
 
@@ -16,6 +16,9 @@ const Footer = () => {
     scrollToSection(section);
   };
   const t = useTranslations("footer")
+  const locale = useLocale()
+  const privacyPolicy = "/legal/privacy_policy.pdf";
+  const privacyPolicyIntl = "/legal/privacy_policy_intl.pdf";
 
   return (
     <section className="w-full">
@@ -136,8 +139,9 @@ const Footer = () => {
               </p>
               <Link
                 onClick={() => sendToMixpanel("privacy_policy_clicked")}
-                href="/"
+                href={locale === "hu" ? privacyPolicy : privacyPolicyIntl}
                 className="text-p-mobile md:text-form-input underline text-white hover:text-primary-green"
+                target="_blank"
               >
                 {t('copyright.privacyPolicy')}
               </Link>
