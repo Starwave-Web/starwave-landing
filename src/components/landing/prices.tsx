@@ -1,9 +1,12 @@
+"use client"
 import Header from "@/src/components/ui/header";
 import PlanCard from "@/src/components/ui/plan-card";
 
 import CustomQuoteLink from "../ui/custom-quote-link";
 import { useTranslations } from "next-intl";
 import GoToFAQButton from "../ui/go-to-faq-button";
+import {useStripePrices} from "@/src/hooks/stripe";
+
 
 type PlanType = {
   id: string;
@@ -13,6 +16,12 @@ type PlanType = {
 };
 const Prices = () => {
   const t = useTranslations("prices");
+  const { prices, loading, error } = useStripePrices()
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+  console.log(prices)
+  
   return (
     <section
       id="prices"
