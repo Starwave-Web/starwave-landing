@@ -9,7 +9,7 @@
       "howWeWork": "Hogyan dolgozunk?",
       "prices": "Árak",
       "testimonials": "Visszajelzések",
-      "faq": "FAQ",
+      "faq": "GYIK",
       "contact": "Kapcsolat"
     },
     "contactSection": {
@@ -195,7 +195,7 @@
   },
   "hero": {
     "headline": "Hozd ki a cégedben rejlő potenciált.",
-    "description": "A Starwave csapata gyors és magas konverziós rátájú weboldalakat és landing page-eket készít, kis- és középvállalkozások számára. Egyedi kód, valós eredmények, havi 15 ezer Ft-tól.",
+    "description": "A Starwave csapata gyors, magas konverziós rátájú weboldalakat és online marketing megoldásokat kínál kis- és középvállalkozások számára.",
     "ctaButton": "Szolgáltatások és árak",
     "referenceButton": "Munkáink"
   },
@@ -204,112 +204,214 @@
       "part1": "Hogyan",
       "part2": "dolgozunk?"
     },
-    "description": "A szerződés aláírása után küldünk neked egy rövid kérdőívet a vállalkozásodról és az általatok kínált szolgáltatásokról. Ez alapján megírjuk a teljes weboldal szövegét, elkészítjük a designt, és miután jóváhagytad, felépítjük a weboldalt. Az egész folyamat általában 2-3 hét alatt lezajlik, az elejétől a végéig.",
-    "workSteps": [
-      {
-        "stepNr": "01",
-        "title": "Kick off & Igényfelmérés",
-        "description": "A projekt elindítása során közösen meghatározzuk a célokat és követelményeket egy kérdőív segítségével, majd a kreatív csapat megalkotja a webdesign tervet, amely teljes mértékben igazodik az igényeidhez."
-      },
-      {
-        "stepNr": "02",
-        "title": "Web Design elfogadás",
-        "description": "A design bemutatását követően a visszajelzéseid alapján véglegesítjük a terveket. Célunk, hogy a végeredmény minden szempontból megfeleljen az elképzeléseknek."
-      },
-      {
-        "stepNr": "03",
-        "title": "Implementáció",
-        "description": "A végleges design terv alapján megkezdődik a weboldal fejlesztése és implementációja."
-      },
-      {
-        "stepNr": "04",
-        "title": "Tesztelés",
-        "description": "Az implementáció után alapos tesztelés következik, mely során minden funkciót és elemet ellenőrzünk. A cél, hogy a weboldal hibamentesen működjön, és minden technikai követelménynek megfeleljen. A végleges átadás előtt küldünk egy demo linket ahol még utoljára véleményezheted."
-      },
-      {
-        "stepNr": "05",
-        "title": "Termék átadás",
-        "description": "A sikeres tesztelést követően átadjuk a kész weboldalt. Ezzel a lépéssel zárul a projekt fejlesztési szakasza."
-      },
-      {
-        "stepNr": "06",
-        "title": "Üzemeltetés",
-        "description": "Az átadott weboldal üzemeltetése során monitorozzuk a teljesítményt és biztosítjuk a szükséges karbantartásokat. Célunk, hogy az oldal mindig naprakész, gyors és felhasználóbarát legyen."
-      }
-    ]
+    "hwwbuttons":{
+      "webdev": "Weboldal fejlesztés",
+      "onlineMarketing": "Online marketing"
+    },
+    "workSteps": {
+      "webdev": [
+        {
+          "stepNr": "01",
+          "title": "Kick off & Igényfelmérés",
+          "description": "A projekt elindítása során közösen meghatározzuk a célokat és követelményeket egy kérdőív segítségével, majd a kreatív csapat megalkotja a webdesign tervet, amely teljes mértékben igazodik az igényeidhez."
+        },
+        {
+          "stepNr": "02",
+          "title": "Web Design elfogadás",
+          "description": "A design bemutatását követően a visszajelzéseid alapján véglegesítjük a terveket. Célunk, hogy a végeredmény minden szempontból megfeleljen az elképzeléseknek."
+        },
+        {
+          "stepNr": "03",
+          "title": "Implementáció",
+          "description": "A végleges design terv alapján megkezdődik a weboldal fejlesztése és implementációja."
+        },
+        {
+          "stepNr": "04",
+          "title": "Tesztelés",
+          "description": "Az implementáció után alapos tesztelés következik, mely során minden funkciót és elemet ellenőrzünk. A cél, hogy a weboldal hibamentesen működjön, és minden technikai követelménynek megfeleljen. A végleges átadás előtt küldünk egy demo linket ahol még utoljára véleményezheted."
+        },
+        {
+          "stepNr": "05",
+          "title": "Termék átadás",
+          "description": "A sikeres tesztelést követően átadjuk a kész weboldalt. Ezzel a lépéssel zárul a projekt fejlesztési szakasza."
+        },
+        {
+          "stepNr": "06",
+          "title": "Üzemeltetés",
+          "description": "Az átadott weboldal üzemeltetése során monitorozzuk a teljesítményt és biztosítjuk a szükséges karbantartásokat. Célunk, hogy az oldal mindig naprakész, gyors és felhasználóbarát legyen."
+        }
+      ],
+      "onlineMarketing": [
+        {
+          "stepNr": "01",
+          "title": "Stratégia és célmeghatározás",
+          "description": "Meghatározzuk az üzleti célokat, a célközönséget és a legjobb platformokat a kampányhoz. Egyedi stratégiát készítünk az elérni kívánt eredmények alapján."
+        },
+        {
+          "stepNr": "02",
+          "title": "Tartalomtervezés és ütemezés",
+          "description": "Előre elkészítjük a posztokat, figyelembe véve az aktuális trendeket és a márkaarculatot. Az időzítést optimalizáljuk a maximális elérés érdekében."
+        },
+        {
+          "stepNr": "03",
+          "title": "Kreatív tartalomkészítés",
+          "description": "Látványos grafikákat, videókat és szöveges tartalmakat készítünk, hogy figyelemfelkeltő és hatékony kommunikációt biztosítsunk."
+        },
+        {
+          "stepNr": "04",
+          "title": "Közösségkezelés és interakció",
+          "description": "Aktívan kezeljük a kommenteket és üzeneteket, építjük a követői közösséget és növeljük az elköteleződést."
+        },
+        {
+          "stepNr": "05",
+          "title": "Hirdetéskezelés és optimalizáció",
+          "description": "Kampányokat indítunk és folyamatosan optimalizáljuk azokat, hogy a legjobb eredményeket érjük el a rendelkezésre álló költségkeretből."
+        },
+        {
+          "stepNr": "06",
+          "title": "Elemzés és jelentéskészítés",
+          "description": "Rendszeresen értékeljük az eredményeket, elemzéseket készítünk, és javaslatokat teszünk a kampány további fejlesztésére."
+        }
+      ]
+    }
+  },
+  "technologies": {
+    "title": "Technológiák",
+    "description": "Megoldásainkban az alábbi technológiákat használjuk."
   },
   "prices": {
     "pricingTitle": "Árak",
     "pricingDescription": "Válaszd ki ajánlataink közül azt amely legjobban illeszkedik a költségvetésedhez.",
+    "selectPeriod" : {
+      "monthly" : "Havi",
+      "yearly" : "Éves"
+    },
     "ctaGoToFAQ": "Kérdésed van az elérhető csomagjaink és áraink kapcsán?",
     "ctaFAQBtnText":"GYIK",
-    "plans": [
-      {
-        "id": "basic",
-        "name": "Egyösszegű",
-        "price": "300.000 Ft",
-        "featureList": [
-          {
-            "isIncluded": true,
-            "featureName": "Választható design, egyedi kód"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ Havi 3.500 Ft üzemeltetési díj"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ 10.000 Ft oldalanként 5 oldal után"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ Havi 6.000 Ft végtelen változtatás"
-          },
-          { "isIncluded": false, "featureName": "24/7 üzemeltetés" },
-          { "isIncluded": false, "featureName": "Folyamatos frissítés" }
-        ]
-      },
-      {
-        "id": "premium",
-        "name": "Havonta",
-        "price": "15.000 Ft",
-        "featureList": [
-          {
-            "isIncluded": true,
-            "featureName": "Választható design, egyedi kód"
-          },
-          { "isIncluded": true, "featureName": "Tárhely" },
-          {
-            "isIncluded": true,
-            "featureName": "+ 10.000 Ft oldalanként 5 oldal után"
-          },
-          { "isIncluded": true, "featureName": "Végtelen változtatás" },
-          { "isIncluded": true, "featureName": "24/7 üzemeltetés" },
-          { "isIncluded": true, "featureName": "Folyamatos frissítés" }
-        ]
-      },
-      {
-        "id": "custom",
-        "name": "Egyedi",
-        "price": "Egyedi árajánlat",
-        "featureList": [
-          { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
-          { "isIncluded": true, "featureName": "Tárhely" },
-          {
-            "isIncluded": true,
-            "featureName": "Oldalak száma egyedi ajánlat alapján"
-          },
-          { "isIncluded": true, "featureName": "Végtelen változtatás" },
-          { "isIncluded": true, "featureName": "24/7 üzemeltetés" },
-          { "isIncluded": true, "featureName": "Folyamatos frissítés" }
-        ]
-      }
-    ],
+    "plans": {
+      "monthly": [
+        {
+          "id": "basic",
+          "name": "Csak weboldal",
+          "price": "25.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": false,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": false, "featureName": "Heti posztolás" },
+            { "isIncluded": false, "featureName": "Google Ads konfiguráció" }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Kezdő vállalkozó",
+          "price": "55.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": true, "featureName": "Heti posztolás" },
+            { "isIncluded": false, "featureName": "Google Ads konfiguráció" }
+          ]
+        },
+        {
+          "id": "custom",
+          "name": "Növekvő vállalat",
+          "price": "75.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": true, "featureName": "Heti posztolás" },
+            { "isIncluded": true, "featureName": "Google Ads konfiguráció" }
+          ]
+        }
+      ],
+      "yearly": [
+        {
+          "id": "basic",
+          "name": "Csak weboldal",
+          "price": "300.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": false,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": false, "featureName": "Heti posztolás" },
+            { "isIncluded": false, "featureName": "Google Ads konfiguráció" }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Kezdő vállalkozó",
+          "price": "660.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": true, "featureName": "Heti posztolás" },
+            { "isIncluded": false, "featureName": "Google Ads konfiguráció" }
+          ]
+        },
+        {
+          "id": "custom",
+          "name": "Növekvő vállalat",
+          "price": "900.000 Ft",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Egyedi design, egyedi kód" },
+            { "isIncluded": true, "featureName": "Tárhely" },
+            {
+              "isIncluded": true,
+              "featureName": "Végtelen változtatás"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram kampány menedzsment"
+            },
+            { "isIncluded": true, "featureName": "Heti posztolás" },
+            { "isIncluded": true, "featureName": "Google Ads konfiguráció" }
+          ]
+        }
+      ]
+    }, 
     "planCard": {
+      "yearlyLabel":"Évente",
       "priceLabel": "Indulóár",
       "monthlyLabel": "Havonta",
-      "customMaintenance": "+ Egyedi üzemeltetési díj",
-      "basicMaintenance": "+ Havi 3.500 Ft üzemeltetési díj",
       "premiumContract": "Minimum 1 éves szerződés",
       "premiumContractRules": "",
       "giveQuoteBtn": "Ajánlatkérés"
@@ -339,7 +441,7 @@
     "findOutMore": "Bővebben"
   },
   "servicesSection": {
-    "title": "A termékről",
+    "title": "A weboldal",
     "description": "Minden egyes sor kódot kézzel írunk, hogy a legjobb teljesítményt biztosítsuk, és a Google-t boldoggá tegyük. Ez segít több ügyfelet hozni a webhelyedre, és ezáltal több bevételt hoz a vállalkozásodnak.",
     "services": [
       {
@@ -403,7 +505,7 @@
     "howWeWork": "Hogyan dolgozunk?",
     "prices": "Árak",
     "testimonials": "Visszajelzések",
-    "FAQ": "FAQ",
+    "FAQ": "GYIK",
     "contactUs": "Kapcsolatfelvétel"
   },
   "consent": {

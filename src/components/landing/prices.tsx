@@ -1,12 +1,13 @@
-"use client"
+"use client";
 import Header from "@/src/components/ui/header";
 import PlanCard from "@/src/components/ui/plan-card";
 
 import CustomQuoteLink from "../ui/custom-quote-link";
 import { useTranslations } from "next-intl";
 import GoToFAQButton from "../ui/go-to-faq-button";
-import {useStripePrices} from "@/src/hooks/stripe";
-
+import { useStripePrices } from "@/src/hooks/stripe";
+import PlansSelector from "./plans-selector";
+import { useMemo, useState } from "react";
 
 type PlanType = {
   id: string;
@@ -15,13 +16,23 @@ type PlanType = {
   featureList: { isIncluded: boolean; featureName: string }[];
 };
 const Prices = () => {
+  const [activeId, setActiveId] = useState("monthly");
   const t = useTranslations("prices");
-  const { prices, loading, error } = useStripePrices()
+  const plans = t.raw("plans")[activeId] || [];
+
+  const options = useMemo(
+    () => [
+      { id: "monthly", title: t("selectPeriod.monthly") },
+      { id: "yearly", title: t("selectPeriod.yearly") },
+    ],
+    [t]
+  );
+  const { prices, loading, error } = useStripePrices();
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
-  console.log(prices)
-  
+  console.log(prices);
+
   return (
     <section
       id="prices"
@@ -32,9 +43,15 @@ const Prices = () => {
           title={t("pricingTitle")}
           description={t("pricingDescription")}
         />
+        <PlansSelector
+          options={options}
+          activeId={activeId}
+          setActiveId={setActiveId}
+        />
         <div className="flex flex-col sm:flex-row gap-5 md:gap-10 px-5">
-          {t.raw("plans").map((plan: PlanType) => (
+          {plans.map((plan: PlanType) => (
             <PlanCard
+              activeId={activeId}
               key={plan.id}
               id={plan.id}
               name={plan.name}

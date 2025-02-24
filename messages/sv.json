@@ -195,7 +195,7 @@
   },
   "hero": {
     "headline": "Unlock the potential within your company.",
-    "description": "The Starwave team creates fast, high-conversion websites and landing pages for small and medium-sized businesses. Custom code, real results, starting from 260 Kr per month.",
+    "description": "The Starwave team offers fast, high-converting websites and online marketing solutions for small and medium-sized businesses.",
     "ctaButton": "Go to Prices",
     "referenceButton": "Reference"
   },
@@ -204,108 +204,212 @@
       "part1": "How",
       "part2": "we work?"
     },
-    "description": "After signing the contract, we’ll send you a short questionnaire about your business and the services you offer. Based on this, we’ll write the full website content, create the design, and after you approve it, we’ll build the website. The whole process usually takes 2-3 weeks from start to finish.",
-    "workSteps": [
-      {
-        "stepNr": "01",
-        "title": "Kickoff & Requirements Gathering",
-        "description": "At the project kickoff, we jointly determine the goals and requirements through a questionnaire, and our creative team creates a web design plan tailored to your needs."
-      },
-      {
-        "stepNr": "02",
-        "title": "Web Design Approval",
-        "description": "After presenting the design, we finalize it based on your feedback. Our goal is to ensure that the result meets your expectations in every way."
-      },
-      {
-        "stepNr": "03",
-        "title": "Implementation",
-        "description": "Based on the finalized design plan, the development and implementation of the website begins."
-      },
-      {
-        "stepNr": "04",
-        "title": "Testing",
-        "description": "After implementation, thorough testing takes place, where we check every function and element. The goal is to ensure the website works without issues and meets all technical requirements. Before final delivery, we send a demo link for final review."
-      },
-      {
-        "stepNr": "05",
-        "title": "Product Delivery",
-        "description": "After successful testing, we deliver the finished website, concluding the development phase of the project."
-      },
-      {
-        "stepNr": "06",
-        "title": "Maintenance",
-        "description": "During the operation of the delivered website, we monitor its performance and ensure necessary maintenance. Our goal is to keep the site up-to-date, fast, and user-friendly."
-      }
-    ]
+    "hwwbuttons": {
+      "webdev": "Web development",
+      "onlineMarketing": "Online Marketing"
+    },
+    "workSteps": {
+      "webdev": [
+        {
+          "stepNr": "01",
+          "title": "Kickoff & Requirements Gathering",
+          "description": "At the project kickoff, we jointly determine the goals and requirements through a questionnaire, and our creative team creates a web design plan tailored to your needs."
+        },
+        {
+          "stepNr": "02",
+          "title": "Web Design Approval",
+          "description": "After presenting the design, we finalize it based on your feedback. Our goal is to ensure that the result meets your expectations in every way."
+        },
+        {
+          "stepNr": "03",
+          "title": "Implementation",
+          "description": "Based on the finalized design plan, the development and implementation of the website begins."
+        },
+        {
+          "stepNr": "04",
+          "title": "Testing",
+          "description": "After implementation, thorough testing takes place, where we check every function and element. The goal is to ensure the website works without issues and meets all technical requirements. Before final delivery, we send a demo link for final review."
+        },
+        {
+          "stepNr": "05",
+          "title": "Product Delivery",
+          "description": "After successful testing, we deliver the finished website, concluding the development phase of the project."
+        },
+        {
+          "stepNr": "06",
+          "title": "Maintenance",
+          "description": "During the operation of the delivered website, we monitor its performance and ensure necessary maintenance. Our goal is to keep the site up-to-date, fast, and user-friendly."
+        }
+      ],
+      "onlineMarketing": [
+        {
+          "stepNr": "01",
+          "title": "Strategy and Goal Setting",
+          "description": "We define business objectives, target audience, and the best platforms for the campaign. A tailored strategy is created to achieve the desired results."
+        },
+        {
+          "stepNr": "02",
+          "title": "Content Planning and Scheduling",
+          "description": "We prepare posts in advance, considering trends and brand identity. Scheduling is optimized for maximum reach."
+        },
+        {
+          "stepNr": "03",
+          "title": "Creative Content Production",
+          "description": "We create eye-catching graphics, videos, and text content to ensure engaging and effective communication."
+        },
+        {
+          "stepNr": "04",
+          "title": "Community Management and Interaction",
+          "description": "We actively manage comments and messages, build an engaged audience, and increase user interaction."
+        },
+        {
+          "stepNr": "05",
+          "title": "Ad Management and Optimization",
+          "description": "We launch and continuously optimize campaigns to achieve the best results within the available budget."
+        },
+        {
+          "stepNr": "06",
+          "title": "Analysis and Reporting",
+          "description": "We regularly evaluate results, create reports, and provide recommendations for campaign improvement."
+        }
+      ]
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "In our solutions, we use the following technologies."
   },
   "prices": {
     "pricingTitle": "Pricing",
     "pricingDescription": "Choose the plan that best fits your budget.",
+    "selectPeriod": {
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
     "ctaGoToFAQ": "Do you have more questions about the subscriptions and prices? Check out our",
     "ctaFAQBtnText": "FAQ",
-    "plans": [
-      {
-        "id": "basic",
-        "name": "One-Time",
-        "price": "6500 Kr",
-        "featureList": [
-          {
-            "isIncluded": true,
-            "featureName": "Selectable design, custom code"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ Monthly 80 Kr maintenance fee"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ 240 Kr per page after 5 pages"
-          },
-          {
-            "isIncluded": true,
-            "featureName": "+ Monthly 140 Kr unlimited changes"
-          },
-          { "isIncluded": false, "featureName": "24/7 operation" },
-          { "isIncluded": false, "featureName": "Continuous updates" }
-        ]
-      },
-      {
-        "id": "premium",
-        "name": "Monthly",
-        "price": "260 Kr",
-        "featureList": [
-          {
-            "isIncluded": true,
-            "featureName": "Selectable design, custom code"
-          },
-          { "isIncluded": true, "featureName": "Hosting" },
-          {
-            "isIncluded": true,
-            "featureName": "+ 240 Kr per page after 5 pages"
-          },
-          { "isIncluded": true, "featureName": "Unlimited changes" },
-          { "isIncluded": true, "featureName": "24/7 operation" },
-          { "isIncluded": true, "featureName": "Continuous updates" }
-        ]
-      },
-      {
-        "id": "custom",
-        "name": "Custom",
-        "price": "Custom quote",
-        "featureList": [
-          { "isIncluded": true, "featureName": "Custom design, custom code" },
-          { "isIncluded": true, "featureName": "Hosting" },
-          {
-            "isIncluded": true,
-            "featureName": "Page count based on custom quote"
-          },
-          { "isIncluded": true, "featureName": "Unlimited changes" },
-          { "isIncluded": true, "featureName": "24/7 operation" },
-          { "isIncluded": true, "featureName": "Continuous updates" }
-        ]
-      }
-    ],
+    "plans": {
+      "monthly": [
+        {
+          "id": "basic",
+          "name": "Website Only",
+          "price": "25,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": false,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": false, "featureName": "Weekly posting" },
+            { "isIncluded": false, "featureName": "Google Ads setup" }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Startup Package",
+          "price": "55,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": true, "featureName": "Weekly posting" },
+            { "isIncluded": false, "featureName": "Google Ads setup" }
+          ]
+        },
+        {
+          "id": "custom",
+          "name": "Growing Business",
+          "price": "75,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": true, "featureName": "Weekly posting" },
+            { "isIncluded": true, "featureName": "Google Ads setup" }
+          ]
+        }
+      ],
+      "yearly": [
+        {
+          "id": "basic",
+          "name": "Website Only",
+          "price": "300,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": false,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": false, "featureName": "Weekly posting" },
+            { "isIncluded": false, "featureName": "Google Ads setup" }
+          ]
+        },
+        {
+          "id": "premium",
+          "name": "Startup Package",
+          "price": "660,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": true, "featureName": "Weekly posting" },
+            { "isIncluded": false, "featureName": "Google Ads setup" }
+          ]
+        },
+        {
+          "id": "custom",
+          "name": "Growing Business",
+          "price": "900,000 HUF",
+          "featureList": [
+            { "isIncluded": true, "featureName": "Custom design, custom code" },
+            { "isIncluded": true, "featureName": "Hosting" },
+            {
+              "isIncluded": true,
+              "featureName": "Unlimited revisions"
+            },
+            {
+              "isIncluded": true,
+              "featureName": "Facebook/Instagram campaign management"
+            },
+            { "isIncluded": true, "featureName": "Weekly posting" },
+            { "isIncluded": true, "featureName": "Google Ads setup" }
+          ]
+        }
+      ]
+    },
     "planCard": {
+      "yearlyLabel":"Yearly",
       "priceLabel": "Starting price",
       "monthlyLabel": "Monthly",
       "customMaintenance": "+ Custom maintenance fee",
@@ -339,7 +443,7 @@
     "findOutMore": "Find out more"
   },
   "servicesSection": {
-    "title": "About the Product",
+    "title": "About the Website",
     "description": "Every line of code is handcrafted to ensure top performance and make Google happy. This helps bring more clients to your website, driving more revenue for your business.",
     "services": [
       {

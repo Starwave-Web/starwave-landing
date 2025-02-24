@@ -6,11 +6,13 @@ import GiveQuoteButton from "./give-quote-button";
 import { useLocale, useTranslations } from "next-intl";
 
 const PlanCard = ({
+  activeId,
   id,
   name,
   price,
   featureList,
 }: {
+  activeId: string,
   id: string;
   name: string;
   price: string;
@@ -31,14 +33,11 @@ const PlanCard = ({
       >
         <div className="flex flex-col items-center gap-5">
           <div className="flex flex-col gap-6 items-center ">
-            <h3 className="text-h2-mobile md:text-h2 text-white bg-primary-dark rounded-[7px] px-[7px] group-data-[variant=premium]:text-black group-data-[variant=premium]:bg-primary-grey ">
-              {name}
+            <h3 className="text-h2-mobile md:text-h2 text-white bg-primary-dark rounded-[7px] px-[7px] group-data-[variant=premium]:text-black group-data-[variant=premium]:bg-primary-grey text-center">
+              <span>{name}</span>
             </h3>
-            <p className="text-p-mobile text-black group-data-[variant=premium]:hidden">
-              {t("priceLabel")}
-            </p>
-            <p className="text-p-mobile text-black hidden group-data-[variant=premium]:block">
-              {t("monthlyLabel")}
+            <p className="text-p-mobile text-black">
+              {activeId === "monthly" ? t("monthlyLabel") : t("yearlyLabel")}
             </p>
             <h1 className="text-h2-mobile md:text-h2 text-black text-center whitespace-nowrap group-data-[variant=custom]:whitespace-normal relative">
               {(locale === "en" || locale === "sv") && (
@@ -54,11 +53,7 @@ const PlanCard = ({
               </span>
             </h1>
             <p className="text-p-mobile text-black text-center">
-              {id === "custom"
-                ? t("customMaintenance")
-                : id === "basic"
-                ? t("basicMaintenance")
-                : t("premiumContract")}
+              {t("premiumContract")}
             </p>
             <p className="text-center hidden group-data-[variant=premium]:block text-sm -mt-6">{t('premiumContractRules')}</p>
           </div>
