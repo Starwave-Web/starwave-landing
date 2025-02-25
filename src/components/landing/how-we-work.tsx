@@ -31,12 +31,13 @@ const HowWeWork = () => {
           title={"Hogyan dolgozunk?"}
           description=""
         />
+        <div className="container px-5 flex flex-col mx-auto gap-[32px]">
         <HowWeWorkSelector
           options={options}
           activeId={activeId}
           setActiveId={setActiveId}
         />
-        <div className="flex flex-col gap-5 md:gap-[30px] px-5">
+        <div className="flex flex-col gap-5 md:gap-[30px]">
           {workSteps
             .map(
               (workStep: {
@@ -52,6 +53,7 @@ const HowWeWork = () => {
                 />
               )
             )}
+        </div>
         </div>
       </div>
     </section>

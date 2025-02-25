@@ -282,9 +282,9 @@
   "prices": {
     "pricingTitle": "Pricing",
     "pricingDescription": "Choose the plan that best fits your budget.",
-    "selectPeriod" : {
-      "monthly" : "Monthly",
-      "yearly" : "Yearly"
+    "selectPeriod": {
+      "monthly": "Monthly",
+      "yearly": "Yearly"
     },
     "ctaGoToFAQ": "Do you have more questions about the subscriptions and prices? Check out our",
     "ctaFAQBtnText": "FAQ",
@@ -409,7 +409,7 @@
       ]
     },
     "planCard": {
-      "yearlyLabel":"Yearly",
+      "yearlyLabel": "Yearly",
       "priceLabel": "Starting price",
       "monthlyLabel": "Monthly",
       "customMaintenance": "+ Custom maintenance fee",
@@ -417,6 +417,90 @@
       "premiumContract": "Minimum 1-year contract",
       "premiumContractRules": "(The discount is valid during the first year only.)",
       "giveQuoteBtn": "Ask for a quote"
+    },
+    "detailedPricesList": {
+      "title": "Detailed Price List",
+      "onlineMarketing": {
+        "title": "Online Marketing",
+        "prices": [
+          {
+            "id": "first-consultation",
+            "serviceName": "First Consultation",
+            "servicePrice": "Free"
+          },
+          {
+            "id": "weekly-2",
+            "serviceName": "Monthly Social Media Management (2 posts per week)",
+            "servicePrice": "35,000 HUF/month"
+          },
+          {
+            "id": "weekly-3",
+            "serviceName": "Monthly Social Media Management (3 posts per week)",
+            "servicePrice": "45,000 HUF/month"
+          },
+          {
+            "id": "weekly-4",
+            "serviceName": "Monthly Social Media Management (4 posts per week)",
+            "servicePrice": "55,000 HUF/month"
+          },
+          {
+            "id": "more-posts",
+            "serviceName": "Each Additional Post",
+            "servicePrice": "4,500 HUF/post"
+          },
+          {
+            "id": "fb-insta-ads",
+            "serviceName": "Monthly Facebook/Instagram Ads*",
+            "servicePrice": "20,000 HUF / campaign / month"
+          },
+          {
+            "id": "google-ads",
+            "serviceName": "Google Ads Campaign Management",
+            "servicePrice": "20,000 HUF / campaign / month"
+          },
+          {
+            "id": "only-online-marketing",
+            "serviceName": "Social Media Marketing Package (monthly consultation, content calendar, strategy planning, 8 post creations, *2 posts highlighted as ads (Facebook/Instagram), monthly report)",
+            "servicePrice": "From 50,000 HUF/month"
+          }
+        ],
+        "campaignManagement": "Ad Management: Does not include the advertising budget. It is recommended to start campaigns with a minimum budget of 30,000 HUF."
+      },
+      "webdev": {
+        "title": "Web Development",
+        "prices": [
+          {
+            "id": "first-consultation-web",
+            "serviceName": "First Consultation",
+            "servicePrice": "Free"
+          },
+          {
+            "id": "web-design",
+            "serviceName": "Custom Web Design",
+            "servicePrice": "150,000 HUF"
+          },
+          {
+            "id": "web-development",
+            "serviceName": "Web Development",
+            "servicePrice": "150,000 HUF"
+          },
+          {
+            "id": "full-website-development",
+            "serviceName": "Website Development Based on Custom Design",
+            "servicePrice": "300,000 HUF"
+          },
+          {
+            "id": "page-add-on",
+            "serviceName": "+ 10,000 HUF per page after 5 pages",
+            "servicePrice": "10,000 HUF/page"
+          },
+          {
+            "id": "website-maintenance",
+            "serviceName": "Website Maintenance",
+            "servicePrice": "15,000 HUF/month"
+          }
+        ]
+      }
     },
     "customQuoteBtn": "I am asking for a custom offer"
   },

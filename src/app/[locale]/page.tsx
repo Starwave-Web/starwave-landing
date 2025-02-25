@@ -19,8 +19,8 @@ export default function Home() {
       <CallToAction/>
       <Researches/>
       <HowWeWork/>
-      <Prices/>
       <Testimonials/>
+      <Prices/>
       <ContactUs/>
       <FAQ/>
       <Footer/>

@@ -416,6 +416,35 @@
       "premiumContractRules": "",
       "giveQuoteBtn": "Ajánlatkérés"
     },
+    "detailedPricesList": {
+      "title": "Részletes árlista",
+      "onlineMarketing": {
+        "title": "Online marketing",
+      "prices": [
+        {"id":"first-consultation", "serviceName": "Első konzultáció", "servicePrice": "Ingyenes"},
+        {"id":"weekly-2", "serviceName": "Havi Social Media kezelés (heti 2 poszt)", "servicePrice": "35.000 Ft/hó"},
+        {"id":"weekly-3", "serviceName": "Havi Social Media kezelés (heti 3 poszt)", "servicePrice": "45.000 Ft/hó"},
+        {"id":"weekly-4", "serviceName": "Havi Social Media kezelés (heti 4 poszt)", "servicePrice": "55.000 Ft/hó"},
+        {"id":"more-posts", "serviceName": "Minden további poszt", "servicePrice": "4.500 Ft/db"},
+        {"id":"fb-insta-ads", "serviceName": "Havi Facebook/Instagram hirdetés*", "servicePrice": "20.000 Ft / kampány / hó"},
+        {"id":"google-ads", "serviceName": "Google Ads hirdetéskezelés", "servicePrice": "20.000 Ft / kampány / hó"},
+        {"id":"only-online-marketing", "serviceName": "Social Media Marketing csomag (havi konzultáció, tartalomnaptár, stratégiák meghatározása, 8 poszt elkészítése, *elkészült posztokból 2 db hirdetésként kiemelve (Facebook/Instagram), havi riport)", "servicePrice": "50.000 Ft-tól/hó"}
+      ],
+      "campaignManagement": "Hirdetéskezelés: Nem tartalmazza a hirdetési költségkeretet. Minimum 30.000 Ft költségkerettel érdemes elindítani a hirdetéseket."
+
+      },
+      "webdev": {
+        "title": "Webfejlesztés",
+      "prices": [
+        {"id":"first-consultation-web", "serviceName": "Első konzultáció", "servicePrice": "Ingyenes"},
+        {"id":"web-design", "serviceName": "Egyedi webdesign", "servicePrice": "150.000 Ft"},
+        {"id":"web-development", "serviceName": "Első konzultáció", "servicePrice": "150.000 Ft"},
+        {"id":"full-website-development", "serviceName": "Weboldal készítés egyedi design alapján", "servicePrice": "300.000 Ft"},
+        {"id":"page-add-on", "serviceName": "+ 10.000 Ft oldalanként 5 oldal után", "servicePrice": "10.000 Ft/oldal"},
+        {"id":"website-maintenance", "serviceName": "Weboldal üzemeltetés", "servicePrice": "15.000 Ft/hó"}
+      ]
+      }
+    },
     "customQuoteBtn": "Egyedi ajánlatot kérek"
   },
   "researchesSection": {

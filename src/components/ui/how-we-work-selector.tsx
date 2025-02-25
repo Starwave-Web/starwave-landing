@@ -18,7 +18,7 @@ const HowWeWorkSelector = ({
     setActiveId(optionId);
   };
   return (
-    <div className="ml-2bg-primary-grey gap-1 sm:gap-1.5 rounded-[16px] sm:rounded-[20px] flex items-center p-1  sm:p-1.5 w-fit mx-auto sm:mx-0 mb-10 sm:mb-[54px]">
+    <div className="bg-primary-grey gap-1 sm:gap-1.5 rounded-[16px] sm:rounded-[20px] flex items-center p-1  sm:p-1.5 w-fit mx-auto sm:mx-0 mb-10 sm:mb-[54px]">
       {options.map((option) => (
         <button
           key={option.id}
