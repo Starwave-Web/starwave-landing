@@ -18,33 +18,31 @@ import { RadioGroup, RadioGroupItem } from "./radio-group";
 import { useToast } from "./use-toast";
 import sendToMixpanel from "@/src/lib/sendToMixpanel";
 import { useTranslations } from "next-intl";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/src/components/ui/select";
 
-export enum SUBJECT {
-  QUESTION = "question",
-  QUOTE = "quote",
-}
 
-const ContactForm = () => {
+const ContactFormPackage = () => {
   const { toast } = useToast();
   const t = useTranslations("contactUs.form");
 
   const formSchema = z.object({
     "form-name": z.string().default("contact"),
     "bot-field": z.string().optional(),
-    subject: z.enum([SUBJECT.QUESTION, SUBJECT.QUOTE]),
+    subject: z.string(),
     name: z
       .string()
-      .min(1, { message: t('validation.requiredField') })
-      .max(50, { message: t('validation.characterLimitExceeded') }),
+      .min(1, { message: t("validation.requiredField") })
+      .max(50, { message: t("validation.characterLimitExceeded") }),
     email: z
       .string()
-      .email(t('validation.invalidEmail'))
-      .min(1, { message: t('validation.requiredField') })
-      .max(50, { message: t('validation.characterLimitExceeded') }),
+      .email(t("validation.invalidEmail"))
+      .min(1, { message: t("validation.requiredField") })
+      .max(50, { message: t("validation.characterLimitExceeded") }),
+    package: z.string(),
     message: z
       .string()
-      .min(1, { message: t('validation.requiredField') })
-      .max(5000, { message: t('validation.characterLimitExceeded') }),
+      .min(1, { message: t("validation.requiredField") })
+      .max(5000, { message: t("validation.characterLimitExceeded") }),
   });
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -52,9 +50,10 @@ const ContactForm = () => {
     defaultValues: {
       "form-name": "contact",
       "bot-field": "",
-      subject: SUBJECT.QUESTION,
+      subject: "Package request",
       name: "",
       email: "",
+      package: "",
       message: "",
     },
   });
@@ -76,21 +75,21 @@ const ContactForm = () => {
       if (res.status === 200) {
         form.reset();
         toast({
-          title: t('successMessage.title'),
-          description: t('successMessage.description'),
+          title: t("successMessage.title"),
+          description: t("successMessage.description"),
         });
       } else {
         toast({
           variant: "destructive",
-          title: t('errorMessage.title'),
-          description: t('errorMessage.description'),
+          title: t("errorMessage.title"),
+          description: t("errorMessage.description"),
         });
       }
     } catch (error) {
       toast({
         variant: "destructive",
-        title: t('errorMessage.title'),
-        description: t('errorMessage.description'),
+        title: t("errorMessage.title"),
+        description: t("errorMessage.description"),
       });
     }
   };
@@ -125,32 +124,18 @@ const ContactForm = () => {
         />
         <FormField
           control={form.control}
-          name="subject"
+          name="name"
           render={({ field }) => (
-            <FormItem className="">
+            <FormItem>
+              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
+                {t("labels.name")}
+              </FormLabel>
               <FormControl>
-                <RadioGroup
-                  onValueChange={field.onChange}
-                  defaultValue={field.value}
-                  className="flex flex-row gap-[35px] justify-center sm:justify-start"
-                >
-                  <FormItem className="flex flex-col sm:flex-row items-center space-x-3 space-y-0 gap-[14px]">
-                    <FormControl>
-                      <RadioGroupItem value={SUBJECT.QUESTION} />
-                    </FormControl>
-                    <FormLabel className="font-normal text-p-mobile md:text-p">
-                      {t('subject.question')}
-                    </FormLabel>
-                  </FormItem>
-                  <FormItem className="flex flex-col sm:flex-row items-center space-x-3 space-y-0 gap-[14px]">
-                    <FormControl>
-                      <RadioGroupItem value={SUBJECT.QUOTE} />
-                    </FormControl>
-                    <FormLabel className="font-normal text-p-mobile md:text-p">
-                    {t('subject.quote')}
-                    </FormLabel>
-                  </FormItem>
-                </RadioGroup>
+                <Input
+                  className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
+                  placeholder={t("placeholders.name")}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -158,16 +143,12 @@ const ContactForm = () => {
         />
         <FormField
           control={form.control}
-          name="name"
+          name="subject"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
-              {t('labels.name')}
-              </FormLabel>
               <FormControl>
                 <Input
-                  className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
-                  placeholder={t('placeholders.name')}
+                  className="hidden"
                   {...field}
                 />
               </FormControl>
@@ -181,15 +162,37 @@ const ContactForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
-              {t('labels.email')}
+                {t("labels.email")}
               </FormLabel>
               <FormControl>
                 <Input
                   className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]"
-                  placeholder={t('placeholders.email')}
+                  placeholder={t("placeholders.email")}
                   {...field}
                 />
               </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="package"
+          render={({ field }) => (
+            <FormItem >
+              <FormLabel className="!text-form-label-mobile md:text-form-label text-black">{t("labels.package")}</FormLabel>
+              <Select value={field.value} onValueChange={field.onChange}>
+                <FormControl>
+                  <SelectTrigger className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[59px]">
+                    <SelectValue placeholder={field.value ?? t("selectValues.placeholder")} />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className="">
+                  <SelectItem value="website-only">{t("selectValues.websiteOnly")}</SelectItem>
+                  <SelectItem value="start-up">{t("selectValues.startUp")}</SelectItem>
+                  <SelectItem value="scale-up">{t("selectValues.scaleUp")}</SelectItem>
+                </SelectContent>
+              </Select>
               <FormMessage />
             </FormItem>
           )}
@@ -200,12 +203,12 @@ const ContactForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="!text-form-label-mobile md:text-form-label text-black">
-              {t('labels.message')}
+                {t("labels.message")}
               </FormLabel>
               <FormControl>
                 <Textarea
                   className="!text-p !md:text-form-input placeholder-[#898989] py-[18px] px-[30px] border border-black rounded-[14px] h-[190px]"
-                  placeholder={t('placeholders.message')}
+                  placeholder={t("placeholders.message")}
                   {...field}
                 />
               </FormControl>
@@ -218,11 +221,11 @@ const ContactForm = () => {
           className="w-full rounded-[14px] h-[68px]"
           type="submit"
         >
-          {t('button')}
+          {t("button")}
         </Button>
       </form>
     </Form>
   );
 };
 
-export default ContactForm;
+export default ContactFormPackage;

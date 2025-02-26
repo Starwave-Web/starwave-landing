@@ -544,7 +544,7 @@
   },
   "partnerLogos": {
     "title":"Munkáink",
-    "description":"Checkold eddigi munkáinkat! Kattints az egyik logóra.",
+    "description":"Tekintsd meg eddigi munkáinkat! Kattints az egyik logóra.",
     "electrician": "https://electrician-landing.netlify.app",
     "saas": "https://orbit-ops.netlify.app",
     "gardener": "https://harmatcsepp-kerttervezes.netlify.app",
